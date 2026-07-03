@@ -60,10 +60,6 @@
 
   color-scheme: dark;
 }
-:root[data-theme="dark"] .aurora__blob--1 { opacity: 0.5; }
-:root[data-theme="dark"] .aurora__blob--2 { opacity: 0.42; }
-:root[data-theme="dark"] .aurora__blob--3 { opacity: 0.44; }
-
 /* CTA atenuado en modo oscuro (no choca con el fondo) */
 :root[data-theme="dark"] .cta__inner {
   background: linear-gradient(135deg, #161B33 0%, #202A54 100%);
@@ -96,44 +92,13 @@ body {
 a { color: inherit; text-decoration: none; }
 
 /* ===================== Aurora: luces difusas animadas ===================== */
-.aurora {
-  position: fixed;
-  inset: 0;
-  z-index: 0;
-  overflow: hidden;
-  pointer-events: none;
-}
-/* El contenido va por encima de la aurora */
+.matrix { position: fixed; inset: 0; z-index: 0; pointer-events: none; }
+/* Velo translúcido que suaviza el fondo para poder leer el texto */
+.veil { position: fixed; inset: 0; z-index: 0; pointer-events: none; background: rgba(246, 247, 251, 0.5); }
+:root[data-theme="dark"] .veil { background: rgba(11, 13, 21, 0.55); }
+/* El contenido va por encima del fondo animado */
 main, .footer { position: relative; z-index: 1; }
-.aurora__blob {
-  position: absolute;
-  width: 62vmax;
-  height: 62vmax;
-  border-radius: 50%;
-  filter: blur(80px);
-  opacity: 0.7;
-  will-change: transform;
-}
-.aurora__blob--1 {
-  top: -22vmax; left: -14vmax;
-  background: radial-gradient(circle at 30% 30%, #4E7BFF, transparent 62%);
-  animation: drift1 18s var(--ease) infinite alternate;
-}
-.aurora__blob--2 {
-  top: -8vmax; right: -18vmax;
-  background: radial-gradient(circle at 60% 40%, #86A9FF, transparent 60%);
-  opacity: 0.6;
-  animation: drift2 22s var(--ease) infinite alternate;
-}
-.aurora__blob--3 {
-  bottom: -26vmax; left: 28%;
-  background: radial-gradient(circle at 50% 50%, #1B45E0, transparent 64%);
-  opacity: 0.5;
-  animation: drift3 20s var(--ease) infinite alternate;
-}
-@keyframes drift1 { from { transform: translate(0,0) scale(1); } to { transform: translate(24vmax, 16vmax) scale(1.28); } }
 @keyframes drift2 { from { transform: translate(0,0) scale(1.05); } to { transform: translate(-22vmax, 18vmax) scale(0.85); } }
-@keyframes drift3 { from { transform: translate(0,0) scale(1); } to { transform: translate(16vmax, -20vmax) scale(1.32); } }
 
 /* ===================== Reveal on scroll ===================== */
 [data-reveal] {
@@ -380,5 +345,4 @@ main, .footer { position: relative; z-index: 1; }
 @media (prefers-reduced-motion: reduce) {
   * { transition: none !important; scroll-behavior: auto !important; animation: none !important; }
   [data-reveal] { opacity: 1; transform: none; }
-  .aurora { display: none; }
 }

@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <script>
+    (function () {
+      try {
+        var t = localStorage.getItem("theme") ||
+          (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+        document.documentElement.setAttribute("data-theme", t);
+      } catch (e) {}
+    })();
+  </script>
+
+  <title>Korelabs — Software profesional para Windows</title>
+  <meta name="description" content="Korelabs crea software profesional, moderno y seguro para Windows. Descarga Optimus, el optimizador inteligente para Windows 10 y 11. Rápido, limpio y gratuito." />
+  <meta name="keywords" content="Korelabs, Optimus, optimizador Windows, software Windows, optimizar PC, limpiar Windows, descargar programas Windows" />
+  <meta name="author" content="Korelabs" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://alexkore.com/" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Korelabs" />
+  <meta property="og:title" content="Korelabs — Software profesional para Windows" />
+  <meta property="og:description" content="Descarga Optimus, el optimizador inteligente para Windows 10 y 11. Software moderno, seguro y gratuito por Korelabs." />
+  <meta property="og:url" content="https://alexkore.com/" />
+  <meta property="og:image" content="https://alexkore.com/assets/img/korelabs-logo.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Korelabs — Software profesional para Windows" />
+  <meta name="twitter:description" content="Descarga Optimus, el optimizador inteligente para Windows 10 y 11." />
+  <meta name="twitter:image" content="https://alexkore.com/assets/img/korelabs-logo.png" />
+
+  <meta name="theme-color" content="#FBFAF8" />
+  <link rel="icon" type="image/png" href="/favicon.png" />
+  <link rel="apple-touch-icon" href="/assets/img/korelabs-logo.png" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/assets/css/styles.css" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Korelabs",
+    "url": "https://alexkore.com",
+    "logo": "https://alexkore.com/assets/img/korelabs-logo.png",
+    "description": "Korelabs desarrolla software profesional, moderno y seguro para Windows."
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "Optimus",
+    "applicationCategory": "UtilitiesApplication",
+    "operatingSystem": "Windows 10, Windows 11",
+    "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+    "publisher": { "@type": "Organization", "name": "Korelabs" }
+  }
+  </script>
+</head>
+<body>
+  <!-- Luces difusas animadas de fondo -->
+  <div class="aurora" aria-hidden="true">
+    <span class="aurora__blob aurora__blob--1"></span>
+    <span class="aurora__blob aurora__blob--2"></span>
+    <span class="aurora__blob aurora__blob--3"></span>
+  </div>
+
+  <!-- NAV -->
+  <header class="nav" id="top">
+    <div class="container nav__inner">
+      <a class="brand" href="#top" aria-label="Korelabs inicio">
+        <img class="brand__logo" src="/assets/img/korelabs-logo.png" alt="Logo de Korelabs" width="25" height="30" />
+        <span class="brand__name">Korelabs</span>
+      </a>
+      <nav class="nav__links" aria-label="Navegación principal">
+        <a href="#productos">Productos</a>
+        <a href="#principios">Principios</a>
+        <a href="#nosotros">Nosotros</a>
+      </nav>
+      <div class="nav__actions">
+        <button class="theme-toggle" id="themeToggle" type="button" aria-label="Cambiar tema" title="Cambiar tema">
+          <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+          <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"></path></svg>
+        </button>
+        <a class="btn btn--primary btn--sm" href="#descargas"><img class="btn__k" src="/assets/img/korelabs-logo.png" alt="" aria-hidden="true" width="13" height="16" />Descargar Optimus</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container">
+        <p class="eyebrow" data-reveal>Estudio de software · Windows 10 &amp; 11</p>
+        <h1 class="hero__title" data-reveal>
+          Herramientas hechas
+          <span class="hero__accent">con criterio</span>
+          para tu PC.
+        </h1>
+        <div class="hero__row">
+          <p class="hero__sub" data-reveal>
+            En Korelabs construimos software nativo, cuidado al detalle y honesto.
+            Sin bloatware, sin anuncios, sin humo: solo rendimiento real y un diseño
+            que da gusto usar.
+          </p>
+          <div class="hero__cta" data-reveal>
+            <a class="btn btn--primary btn--lg" href="#descargas"><img class="btn__k" src="/assets/img/korelabs-logo.png" alt="" aria-hidden="true" width="15" height="18" />Descargar Optimus</a>
+            <a class="link-arrow" href="#productos">Ver productos</a>
+          </div>
+        </div>
+      </div>
+      <a class="scroll-cue" href="#productos" aria-label="Desplázate">
+        <span>Scroll</span>
+        <span class="scroll-cue__line"></span>
+      </a>
+    </section>
+
+    <!-- MARQUEE -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee__track">
+        <span>Rendimiento</span><span class="dot">•</span>
+        <span>Seguridad</span><span class="dot">•</span>
+        <span>Diseño</span><span class="dot">•</span>
+        <span>Nativo</span><span class="dot">•</span>
+        <span>Sin anuncios</span><span class="dot">•</span>
+        <span>Reversible</span><span class="dot">•</span>
+        <span>Rendimiento</span><span class="dot">•</span>
+        <span>Seguridad</span><span class="dot">•</span>
+        <span>Diseño</span><span class="dot">•</span>
+        <span>Nativo</span><span class="dot">•</span>
+        <span>Sin anuncios</span><span class="dot">•</span>
+        <span>Reversible</span><span class="dot">•</span>
+      </div>
+    </div>
+
+    <!-- SHOWCASE OPTIMUS (oscuro) -->
+    <section class="showcase" id="productos">
+      <div class="container">
+        <div class="showcase__head">
+          <div>
+            <span class="kicker kicker--light" data-reveal>01 — Producto destacado</span>
+            <h2 class="showcase__title" data-reveal>Optimus</h2>
+            <p class="showcase__lead" data-reveal>El optimizador inteligente para Windows.</p>
+          </div>
+          <span class="pill pill--live" data-reveal>Disponible</span>
+        </div>
+
+        <div class="showcase__grid">
+          <!-- Maqueta de la app -->
+          <div class="app" data-reveal id="descargas">
+            <div class="app__bar">
+              <span class="app__dots"><i></i><i></i><i></i></span>
+              <span class="app__name">
+                <img src="/assets/img/korelabs-logo.png" alt="" aria-hidden="true" class="app__logo" />
+                Optimus
+              </span>
+              <span class="app__win"><i></i><i></i><i></i></span>
+            </div>
+            <div class="app__body">
+              <aside class="app__side">
+                <span class="app__navitem is-active">Dashboard</span>
+                <span class="app__navitem">Memoria</span>
+                <span class="app__navitem">CPU</span>
+                <span class="app__navitem">Procesos</span>
+                <span class="app__navitem">Inicio</span>
+                <span class="app__navitem">Monitor</span>
+                <span class="app__navitem app__navitem--accent">Modo Gamer</span>
+              </aside>
+              <div class="app__main">
+                <div class="app__stats">
+                  <div class="stat">
+                    <div class="stat__top"><span>Memoria</span><b>42%</b></div>
+                    <div class="bar"><span style="width:42%"></span></div>
+                  </div>
+                  <div class="stat">
+                    <div class="stat__top"><span>CPU</span><b>18%</b></div>
+                    <div class="bar"><span style="width:18%"></span></div>
+                  </div>
+                  <div class="stat">
+                    <div class="stat__top"><span>Disco</span><b>63%</b></div>
+                    <div class="bar"><span style="width:63%"></span></div>
+                  </div>
+                </div>
+                <div class="app__cta">
+                  <span class="app__cta-label">Listo para optimizar</span>
+                  <span class="app__cta-btn">Optimizar ahora</span>
+                </div>
+                <ul class="app__list">
+                  <li><span>chrome.exe</span><b>512 MB</b></li>
+                  <li><span>Code.exe</span><b>388 MB</b></li>
+                  <li><span>spotify.exe</span><b>210 MB</b></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Descripción -->
+          <div class="showcase__info">
+            <p class="showcase__text" data-reveal>
+              Reúne administrador de procesos, optimizador de memoria, gestor de
+              inicio y monitor de hardware en una sola app nativa. Cada acción es
+              segura y reversible, con puntos de restauración incluidos.
+            </p>
+            <ul class="feature-list" data-reveal>
+              <li><b>RAM, CPU y disco</b><span>Optimización en un clic, sin riesgos.</span></li>
+              <li><b>Procesos e inicio</b><span>Controla qué se ejecuta y qué arranca con Windows.</span></li>
+              <li><b>Monitor en vivo</b><span>Temperatura, uso y rendimiento en tiempo real.</span></li>
+              <li><b>Modo Gamer</b><span>Máximo rendimiento cuando más lo necesitas.</span></li>
+            </ul>
+            <div class="showcase__actions" data-reveal>
+              <a class="btn btn--primary btn--lg" href="https://github.com/Korelabs88/Optimus/releases/latest" rel="noopener" data-download="optimus"><img class="btn__k" src="/assets/img/korelabs-logo.png" alt="" aria-hidden="true" width="15" height="18" />Descargar para Windows</a>
+              <span class="showcase__meta">Windows 10/11 · 64-bit · Gratis</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Próximos -->
+        <div class="soon-grid">
+          <article class="soon" data-reveal>
+            <span class="pill">Próximamente</span>
+            <h3 class="soon__title">Nuevo proyecto</h3>
+            <p class="soon__text">La siguiente herramienta de Korelabs ya está en desarrollo.</p>
+          </article>
+          <article class="soon" data-reveal>
+            <span class="pill">Próximamente</span>
+            <h3 class="soon__title">Nuevo proyecto</h3>
+            <p class="soon__text">Más software con la misma filosofía: rápido, limpio y seguro.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRINCIPIOS -->
+    <section class="section" id="principios">
+      <div class="container">
+        <div class="section__head">
+          <span class="kicker" data-reveal>02 — Principios</span>
+          <h2 class="section__title" data-reveal>Cómo trabajamos.</h2>
+        </div>
+
+        <ol class="principles">
+          <li class="principle" data-reveal>
+            <span class="principle__num">01</span>
+            <div class="principle__body">
+              <h3>Rendimiento real</h3>
+              <p>Software nativo y liviano que aprovecha tu hardware sin ralentizar el sistema.</p>
+            </div>
+          </li>
+          <li class="principle" data-reveal>
+            <span class="principle__num">02</span>
+            <div class="principle__body">
+              <h3>Seguridad primero</h3>
+              <p>Acciones reversibles, puntos de restauración y confirmaciones. Nunca tocamos lo que no se debe.</p>
+            </div>
+          </li>
+          <li class="principle" data-reveal>
+            <span class="principle__num">03</span>
+            <div class="principle__body">
+              <h3>Diseño con criterio</h3>
+              <p>Interfaces claras y coherentes, pensadas para que cualquiera las entienda a la primera.</p>
+            </div>
+          </li>
+          <li class="principle" data-reveal>
+            <span class="principle__num">04</span>
+            <div class="principle__body">
+              <h3>Sin trucos</h3>
+              <p>Cero bloatware, cero anuncios, cero telemetría oculta. Solo herramientas honestas.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- NOSOTROS -->
+    <section class="section section--about" id="nosotros">
+      <div class="container about">
+        <div class="about__left">
+          <span class="kicker" data-reveal>03 — Nosotros</span>
+          <h2 class="about__title" data-reveal>Software libre para todos.</h2>
+        </div>
+        <div class="about__right" data-reveal>
+          <p class="about__lead">
+            Korelabs es un estudio independiente enfocado en crear herramientas de
+            escritorio que respetan a quien las usa: sin trucos comerciales, sin
+            anuncios y con obsesión por el detalle.
+          </p>
+          <p class="about__text">
+            Creemos que el buen software se nota en las cosas pequeñas: en la rapidez
+            de su apertura, la claridad de su interfaz y la seguridad que transmite.
+            Ese es el estándar de cada proyecto que publicamos.
+          </p>
+          <div class="about__signature">
+            <span class="about__name">Blue</span>
+            <span class="about__role">Fundador</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta">
+      <div class="container cta__inner" data-reveal>
+        <h2 class="cta__title">Prueba Optimus hoy.</h2>
+        <p class="cta__text">Gratis, sin registro y listo en minutos.</p>
+        <a class="btn btn--primary btn--lg" href="#descargas"><img class="btn__k" src="/assets/img/korelabs-logo.png" alt="" aria-hidden="true" width="15" height="18" />Descargar para Windows</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div class="footer__col footer__col--brand">
+        <a class="brand" href="#top">
+          <img class="brand__logo" src="/assets/img/korelabs-logo.png" alt="Korelabs" width="23" height="28" />
+          <span class="brand__name">Korelabs</span>
+        </a>
+        <p class="footer__tag">Software profesional para Windows.</p>
+      </div>
+      <div class="footer__col">
+        <h4>Producto</h4>
+        <a href="#productos">Optimus</a>
+        <a href="#descargas">Descargar</a>
+        <a href="#principios">Principios</a>
+      </div>
+      <div class="footer__col">
+        <h4>Korelabs</h4>
+        <a href="#nosotros">Nosotros</a>
+        <a href="https://github.com/Korelabs88" rel="noopener">GitHub</a>
+      </div>
+      <div class="footer__col">
+        <h4>Legal</h4>
+        <a href="#top">Privacidad</a>
+        <a href="#top">Términos</a>
+      </div>
+    </div>
+    <div class="container footer__bottom">
+      <p>© <span id="year"></span> Korelabs. Todos los derechos reservados.</p>
+      <p>Hecho con criterio para todo el mundo.</p>
+    </div>
+  </footer>
+
+  <script src="/assets/js/main.js" defer></script>
+</body>
+</html>

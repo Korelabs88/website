@@ -206,7 +206,7 @@ main, .footer { position: relative; z-index: 1; }
 .section__lead { color: var(--muted); font-size: 1.08rem; margin-top: 12px; }
 .section__lead--left { max-width: 56ch; }
 
-.products-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 28px; margin-top: 48px; }
+.products-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; margin-top: 48px; }
 .product-card {
   display: flex; flex-direction: column; gap: 18px;
   padding: 28px; border-radius: var(--radius);
@@ -230,6 +230,9 @@ main, .footer { position: relative; z-index: 1; }
 .app--compact { box-shadow: none; }
 .app__body--compact { min-height: 200px; grid-template-columns: 110px 1fr; }
 .app__body--coto { display: flex; flex-direction: column; gap: 12px; padding: 16px; min-height: 200px; }
+.app__body--dicto { display: flex; flex-direction: column; gap: 12px; padding: 16px; min-height: 200px; }
+.app__dicto-bar { height: 6px; border-radius: 6px; background: var(--app-side); overflow: hidden; }
+.app__dicto-bar span { display: block; height: 100%; width: 62%; border-radius: 6px; background: linear-gradient(90deg, var(--accent), var(--accent-3)); }
 .app__logo--round { border-radius: 4px; }
 .app__tabs { display: flex; gap: 6px; }
 .app__tab { font-size: 11px; font-weight: 600; padding: 5px 10px; border-radius: 8px; color: var(--muted); background: var(--app-side); border: 1px solid var(--line); }
@@ -372,6 +375,9 @@ main, .footer { position: relative; z-index: 1; }
 .footer__bottom { display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap; margin-top: 52px; padding-top: 26px; border-top: 1px solid var(--line); color: var(--muted-2); font-size: 14px; }
 
 /* ===================== Responsive ===================== */
+@media (max-width: 1200px) {
+  .products-grid { grid-template-columns: repeat(2, 1fr); }
+}
 @media (max-width: 900px) {
   .products-grid { grid-template-columns: 1fr; }
   .radar-grid { grid-template-columns: repeat(2, 1fr); }

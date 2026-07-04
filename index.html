@@ -15,8 +15,8 @@
   </script>
 
   <title>Korelabs — Software profesional para Windows</title>
-  <meta name="description" content="Korelabs crea software profesional, moderno y seguro para Windows. Descarga Optimus (optimizador) y Coto (conversor de archivos local). Gratis y sin servidores." />
-  <meta name="keywords" content="Korelabs, Optimus, Coto, conversor PDF, OCR local, optimizador Windows, software Windows, convertir archivos" />
+  <meta name="description" content="Korelabs crea software profesional, moderno y seguro para Windows. Descarga Optimus, Coto y Dicto: optimización, conversión y transcripción 100% local. Gratis y sin servidores." />
+  <meta name="keywords" content="Korelabs, Optimus, Coto, Dicto, transcripción local, Whisper, conversor PDF, OCR local, optimizador Windows" />
   <meta name="author" content="Korelabs" />
   <meta name="robots" content="index, follow" />
   <link rel="canonical" href="https://alexkore.com/" />
@@ -24,12 +24,12 @@
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="Korelabs" />
   <meta property="og:title" content="Korelabs — Software profesional para Windows" />
-  <meta property="og:description" content="Descarga Optimus y Coto: software moderno, seguro y gratuito para Windows 10 y 11 por Korelabs." />
+  <meta property="og:description" content="Descarga Optimus, Coto y Dicto: software moderno, seguro y gratuito para Windows 10 y 11 por Korelabs." />
   <meta property="og:url" content="https://alexkore.com/" />
   <meta property="og:image" content="https://alexkore.com/assets/img/korelabs-logo.png" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Korelabs — Software profesional para Windows" />
-  <meta name="twitter:description" content="Optimus y Coto: software gratuito, local y privado para Windows 10 y 11." />
+  <meta name="twitter:description" content="Optimus, Coto y Dicto: software gratuito, local y privado para Windows 10 y 11." />
   <meta name="twitter:image" content="https://alexkore.com/assets/img/korelabs-logo.png" />
 
   <meta name="theme-color" content="#FBFAF8" />
@@ -74,6 +74,18 @@
     "description": "Conversor de archivos 100% local: imágenes, PDF, Office y OCR sin subir nada a internet."
   }
   </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "Dicto",
+    "applicationCategory": "UtilitiesApplication",
+    "operatingSystem": "Windows 10, Windows 11",
+    "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+    "publisher": { "@type": "Organization", "name": "Korelabs" },
+    "description": "Transcripción local de audio y video con Whisper. Exporta TXT, SRT, VTT y DOCX sin subir nada a internet."
+  }
+  </script>
 </head>
 <body>
   <!-- Fondo animado tipo matrix (azul neón) -->
@@ -92,6 +104,7 @@
         <a href="#productos">Programas</a>
         <a href="#optimus">Optimus</a>
         <a href="#coto">Coto</a>
+        <a href="#dicto">Dicto</a>
         <a href="#radar">Próximos</a>
         <a href="#principios">Principios</a>
       </nav>
@@ -118,7 +131,7 @@
         <div class="hero__row">
           <p class="hero__sub" data-reveal>
             Korelabs desarrolla herramientas de escritorio que reemplazan lo que
-            hoy cobran por suscripción: optimización, conversión de archivos, OCR
+            hoy cobran por suscripción: optimización, conversión de archivos, transcripción
             y más. Todo corre en tu PC, sin subir datos a servidores.
           </p>
           <div class="hero__cta" data-reveal>
@@ -156,7 +169,7 @@
       <div class="container">
         <div class="section__head section__head--center" data-reveal>
           <span class="kicker">01 — Programas</span>
-          <h2 class="section__title">Dos herramientas, mismo criterio.</h2>
+          <h2 class="section__title">Tres herramientas, mismo criterio.</h2>
           <p class="section__lead">Gratis para siempre · 100% local · Sin crear cuenta</p>
         </div>
 
@@ -246,6 +259,46 @@
               <a class="link-arrow" href="https://github.com/Korelabs88/coto-releases/releases/download/v0.1.1/COTO-0.1.1-Portable.zip" rel="noopener">Portable</a>
             </div>
           </article>
+
+          <!-- Dicto -->
+          <article class="product-card" id="dicto" data-reveal>
+            <div class="product-card__head">
+              <div class="product-card__brand">
+                <img src="/assets/img/dicto-logo.png" alt="" width="32" height="32" class="product-card__logo product-card__logo--round" />
+                <div>
+                  <h3 class="product-card__name">Dicto</h3>
+                  <p class="product-card__tag">Transcripción local de audio y video</p>
+                </div>
+              </div>
+              <span class="pill pill--live">v0.1.0</span>
+            </div>
+            <div class="app app--compact app--dicto">
+              <div class="app__bar">
+                <span class="app__dots"><i></i><i></i><i></i></span>
+                <span class="app__name"><img src="/assets/img/dicto-logo.png" alt="" class="app__logo app__logo--round" />Dicto</span>
+                <span class="app__win"><i></i><i></i><i></i></span>
+              </div>
+              <div class="app__body app__body--dicto">
+                <div class="app__drop">🎙 Arrastra audio o video aquí</div>
+                <div class="app__row">
+                  <span class="app__chip">MP3 → TXT</span>
+                  <span class="app__chip">MP4 → SRT</span>
+                  <span class="app__chip">Whisper</span>
+                </div>
+                <div class="app__dicto-bar"><span></span></div>
+              </div>
+            </div>
+            <p class="product-card__desc">Audio y video a texto con Whisper en tu equipo. Reuniones, clases y podcasts exportados a TXT, SRT, VTT o DOCX. Nada se sube a la nube.</p>
+            <ul class="product-card__features">
+              <li>Whisper local (tiny → medium)</li>
+              <li>Detección automática de idioma</li>
+              <li>Cola por lotes con FFmpeg incluido</li>
+            </ul>
+            <div class="product-card__actions">
+              <a class="btn btn--primary" href="https://github.com/Korelabs88/dicto-releases/releases/download/v0.1.0/DICTO-0.1.0-Setup.exe" rel="noopener">Instalador</a>
+              <a class="link-arrow" href="https://github.com/Korelabs88/dicto-releases/releases/download/v0.1.0/DICTO-0.1.0-Portable.zip" rel="noopener">Portable</a>
+            </div>
+          </article>
         </div>
       </div>
     </section>
@@ -259,11 +312,6 @@
           <p class="section__lead section__lead--left">Ideas para el próximo programa Korelabs. Misma filosofía: tu PC hace el trabajo, no un servidor con suscripción.</p>
         </div>
         <div class="radar-grid">
-          <article class="radar-card" data-reveal>
-            <span class="radar-card__replaces">Alternativa a Otter.ai · Rev</span>
-            <h3 class="radar-card__title">Transcripción local</h3>
-            <p class="radar-card__text">Audio y video a texto con Whisper en tu equipo. Reuniones, clases y podcasts sin subirlos a la nube.</p>
-          </article>
           <article class="radar-card" data-reveal>
             <span class="radar-card__replaces">Alternativa a Loom · Snagit</span>
             <h3 class="radar-card__title">Captura de pantalla</h3>
@@ -363,11 +411,12 @@
     <!-- CTA -->
     <section class="cta">
       <div class="container cta__inner" data-reveal>
-        <h2 class="cta__title">Empieza con Optimus o Coto.</h2>
+        <h2 class="cta__title">Empieza con Optimus, Coto o Dicto.</h2>
         <p class="cta__text">Gratis, sin registro y listo en minutos. Windows 10/11 · 64-bit.</p>
         <div class="cta__buttons">
           <a class="btn btn--primary btn--lg" href="#optimus">Optimus</a>
           <a class="btn btn--primary btn--lg" href="#coto">Coto</a>
+          <a class="btn btn--primary btn--lg" href="#dicto">Dicto</a>
         </div>
       </div>
     </section>
@@ -387,6 +436,7 @@
         <h4>Programas</h4>
         <a href="#optimus">Optimus</a>
         <a href="#coto">Coto</a>
+        <a href="#dicto">Dicto</a>
         <a href="#radar">Próximos</a>
         <a href="#principios">Principios</a>
       </div>

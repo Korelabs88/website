@@ -102,11 +102,8 @@
       </a>
       <nav class="nav__links" aria-label="Navegación principal">
         <a href="#productos">Programas</a>
-        <a href="#optimus">Optimus</a>
-        <a href="#coto">Coto</a>
-        <a href="#dicto">Dicto</a>
-        <a href="#radar">Próximos</a>
         <a href="#principios">Principios</a>
+        <a href="#nosotros">Nosotros</a>
       </nav>
       <div class="nav__actions">
         <button class="theme-toggle" id="themeToggle" type="button" aria-label="Cambiar tema" title="Cambiar tema">
@@ -136,7 +133,7 @@
           </p>
           <div class="hero__cta" data-reveal>
             <a class="btn btn--primary btn--lg" href="#productos">Ver programas</a>
-            <a class="link-arrow" href="#radar">Qué viene después</a>
+            <a class="link-arrow" href="#principios">Nuestros principios</a>
           </div>
         </div>
       </div>
@@ -169,173 +166,84 @@
       <div class="container">
         <div class="section__head section__head--center" data-reveal>
           <span class="kicker">01 — Programas</span>
-          <h2 class="section__title">Tres herramientas, mismo criterio.</h2>
-          <p class="section__lead">Gratis para siempre · 100% local · Sin crear cuenta</p>
+          <h2 class="section__title">Local, gratis y privado.</h2>
+          <p class="section__lead">Herramientas de escritorio que reemplazan lo que hoy cobran por suscripción. Todo corre en tu PC: sin cuenta, sin nube, sin trucos.</p>
         </div>
 
-        <div class="products-grid">
-          <!-- Optimus -->
-          <article class="product-card" id="optimus" data-reveal>
-            <div class="product-card__head">
-              <div class="product-card__brand">
-                <img src="/assets/img/optimus-logo.png" alt="" width="32" height="32" class="product-card__logo" />
-                <div>
-                  <h3 class="product-card__name">Optimus</h3>
-                  <p class="product-card__tag">Optimizador inteligente para Windows</p>
+        <div class="products-list">
+          <article class="product-row" id="optimus" data-reveal>
+            <div class="product-row__brand">
+              <img src="/assets/img/optimus-logo.png" alt="" width="44" height="44" class="product-row__logo" />
+              <div>
+                <div class="product-row__title">
+                  <h3 class="product-row__name">Optimus</h3>
+                  <span class="pill pill--live">v0.2.0</span>
                 </div>
-              </div>
-              <span class="pill pill--live">v0.2.0</span>
-            </div>
-            <div class="app app--compact">
-              <div class="app__bar">
-                <span class="app__dots"><i></i><i></i><i></i></span>
-                <span class="app__name"><img src="/assets/img/optimus-logo.png" alt="" class="app__logo" />Optimus</span>
-                <span class="app__win"><i></i><i></i><i></i></span>
-              </div>
-              <div class="app__body app__body--compact">
-                <aside class="app__side">
-                  <span class="app__navitem is-active">Dashboard</span>
-                  <span class="app__navitem">Memoria</span>
-                  <span class="app__navitem">Disco</span>
-                  <span class="app__navitem app__navitem--accent">Limpieza</span>
-                </aside>
-                <div class="app__main">
-                  <div class="app__stats">
-                    <div class="stat"><div class="stat__top"><span>RAM</span><b>42%</b></div><div class="bar"><span style="width:42%"></span></div></div>
-                    <div class="stat"><div class="stat__top"><span>CPU</span><b>18%</b></div><div class="bar"><span style="width:18%"></span></div></div>
-                  </div>
-                  <div class="app__cta"><span class="app__cta-label">Listo</span><span class="app__cta-btn">Optimizar</span></div>
-                </div>
+                <p class="product-row__tag">Optimizador inteligente para Windows</p>
               </div>
             </div>
-            <p class="product-card__desc">Monitor de hardware, procesos, inicio, modo gamer y limpieza profunda de disco. Seguro y reversible.</p>
-            <ul class="product-card__features">
-              <li>RAM, CPU, disco y temperatura en vivo</li>
-              <li>Limpieza profunda sin tocar lo crítico</li>
-              <li>Modo Gamer y gestión de inicio</li>
-            </ul>
-            <div class="product-card__actions">
+            <div class="product-row__body">
+              <p class="product-row__desc">Monitor de hardware, procesos, inicio, modo gamer y limpieza profunda de disco. Seguro y reversible.</p>
+              <ul class="product-row__highlights">
+                <li>RAM, CPU y disco en vivo</li>
+                <li>Limpieza profunda</li>
+                <li>Modo Gamer</li>
+              </ul>
+            </div>
+            <div class="product-row__actions">
               <a class="btn btn--primary" href="https://github.com/Korelabs88/optimus-releases/releases/download/v0.2.0/OPTIMUS-0.2.0-Setup.exe" rel="noopener">Instalador</a>
               <a class="link-arrow" href="https://github.com/Korelabs88/optimus-releases/releases/download/v0.2.0/OPTIMUS-0.2.0-Portable.exe" rel="noopener">Portable</a>
             </div>
           </article>
 
-          <!-- Coto -->
-          <article class="product-card" id="coto" data-reveal>
-            <div class="product-card__head">
-              <div class="product-card__brand">
-                <img src="/assets/img/coto-logo.png" alt="" width="32" height="32" class="product-card__logo product-card__logo--round" />
-                <div>
-                  <h3 class="product-card__name">Coto</h3>
-                  <p class="product-card__tag">Conversor de archivos local</p>
+          <article class="product-row" id="coto" data-reveal>
+            <div class="product-row__brand">
+              <img src="/assets/img/coto-logo.png" alt="" width="44" height="44" class="product-row__logo product-row__logo--round" />
+              <div>
+                <div class="product-row__title">
+                  <h3 class="product-row__name">Coto</h3>
+                  <span class="pill pill--live">v0.1.1</span>
                 </div>
-              </div>
-              <span class="pill pill--live">v0.1.1</span>
-            </div>
-            <div class="app app--compact app--coto">
-              <div class="app__bar">
-                <span class="app__dots"><i></i><i></i><i></i></span>
-                <span class="app__name"><img src="/assets/img/coto-logo.png" alt="" class="app__logo app__logo--round" />Coto</span>
-                <span class="app__win"><i></i><i></i><i></i></span>
-              </div>
-              <div class="app__body app__body--coto">
-                <div class="app__tabs">
-                  <span class="app__tab is-active">Convertir</span>
-                  <span class="app__tab">PDF</span>
-                  <span class="app__tab">Imagen</span>
-                </div>
-                <div class="app__drop">⇅ Arrastra tus archivos aquí</div>
-                <div class="app__row"><span class="app__chip">PNG → JPG</span><span class="app__chip">PDF → Word</span><span class="app__chip">OCR</span></div>
+                <p class="product-row__tag">Conversor de archivos local</p>
               </div>
             </div>
-            <p class="product-card__desc">Imágenes, PDF, Office y OCR multiidioma. Unir, dividir, comprimir y proteger PDF. Sin subir nada a internet.</p>
-            <ul class="product-card__features">
-              <li>Conversión por lotes con OCR incluido</li>
-              <li>PDF ↔ Word, Excel, imágenes</li>
-              <li>Herramientas PDF e imagen integradas</li>
-            </ul>
-            <div class="product-card__actions">
+            <div class="product-row__body">
+              <p class="product-row__desc">Imágenes, PDF, Office y OCR multiidioma. Unir, dividir, comprimir y proteger PDF sin subir nada a internet.</p>
+              <ul class="product-row__highlights">
+                <li>Conversión por lotes</li>
+                <li>PDF ↔ Office</li>
+                <li>OCR incluido</li>
+              </ul>
+            </div>
+            <div class="product-row__actions">
               <a class="btn btn--primary" href="https://github.com/Korelabs88/coto-releases/releases/download/v0.1.1/COTO-0.1.1-Setup.exe" rel="noopener">Instalador</a>
               <a class="link-arrow" href="https://github.com/Korelabs88/coto-releases/releases/download/v0.1.1/COTO-0.1.1-Portable.zip" rel="noopener">Portable</a>
             </div>
           </article>
 
-          <!-- Dicto -->
-          <article class="product-card" id="dicto" data-reveal>
-            <div class="product-card__head">
-              <div class="product-card__brand">
-                <img src="/assets/img/dicto-logo.png" alt="" width="32" height="32" class="product-card__logo product-card__logo--round" />
-                <div>
-                  <h3 class="product-card__name">Dicto</h3>
-                  <p class="product-card__tag">Transcripción local de audio y video</p>
+          <article class="product-row" id="dicto" data-reveal>
+            <div class="product-row__brand">
+              <img src="/assets/img/dicto-logo.png" alt="" width="44" height="44" class="product-row__logo product-row__logo--round" />
+              <div>
+                <div class="product-row__title">
+                  <h3 class="product-row__name">Dicto</h3>
+                  <span class="pill pill--live">v0.1.0</span>
                 </div>
-              </div>
-              <span class="pill pill--live">v0.1.0</span>
-            </div>
-            <div class="app app--compact app--dicto">
-              <div class="app__bar">
-                <span class="app__dots"><i></i><i></i><i></i></span>
-                <span class="app__name"><img src="/assets/img/dicto-logo.png" alt="" class="app__logo app__logo--round" />Dicto</span>
-                <span class="app__win"><i></i><i></i><i></i></span>
-              </div>
-              <div class="app__body app__body--dicto">
-                <div class="app__drop">🎙 Arrastra audio o video aquí</div>
-                <div class="app__row">
-                  <span class="app__chip">MP3 → TXT</span>
-                  <span class="app__chip">MP4 → SRT</span>
-                  <span class="app__chip">Whisper</span>
-                </div>
-                <div class="app__dicto-bar"><span></span></div>
+                <p class="product-row__tag">Transcripción local de audio y video</p>
               </div>
             </div>
-            <p class="product-card__desc">Audio y video a texto con Whisper en tu equipo. Reuniones, clases y podcasts exportados a TXT, SRT, VTT o DOCX. Nada se sube a la nube.</p>
-            <ul class="product-card__features">
-              <li>Whisper local (tiny → medium)</li>
-              <li>Detección automática de idioma</li>
-              <li>Cola por lotes con FFmpeg incluido</li>
-            </ul>
-            <div class="product-card__actions">
+            <div class="product-row__body">
+              <p class="product-row__desc">Audio y video a texto con Whisper en tu equipo. Exporta TXT, SRT, VTT o DOCX. Nada se sube a la nube.</p>
+              <ul class="product-row__highlights">
+                <li>Whisper local</li>
+                <li>Multiidioma</li>
+                <li>FFmpeg incluido</li>
+              </ul>
+            </div>
+            <div class="product-row__actions">
               <a class="btn btn--primary" href="https://github.com/Korelabs88/dicto-releases/releases/download/v0.1.0/DICTO-0.1.0-Setup.exe" rel="noopener">Instalador</a>
               <a class="link-arrow" href="https://github.com/Korelabs88/dicto-releases/releases/download/v0.1.0/DICTO-0.1.0-Portable.zip" rel="noopener">Portable</a>
             </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- PRÓXIMOS / RADAR -->
-    <section class="section section--radar" id="radar">
-      <div class="container">
-        <div class="section__head" data-reveal>
-          <span class="kicker">02 — En el radar</span>
-          <h2 class="section__title">Lo que hoy es de pago, mañana local y gratis.</h2>
-          <p class="section__lead section__lead--left">Ideas para el próximo programa Korelabs. Misma filosofía: tu PC hace el trabajo, no un servidor con suscripción.</p>
-        </div>
-        <div class="radar-grid">
-          <article class="radar-card" data-reveal>
-            <span class="radar-card__replaces">Alternativa a Loom · Snagit</span>
-            <h3 class="radar-card__title">Captura de pantalla</h3>
-            <p class="radar-card__text">Grabar pantalla, webcam y micrófono. Exportar MP4/GIF localmente, sin límite de minutos ni marca de agua.</p>
-          </article>
-          <article class="radar-card" data-reveal>
-            <span class="radar-card__replaces">Alternativa a HandBrake Pro · CloudConvert</span>
-            <h3 class="radar-card__title">Conversor de video</h3>
-            <p class="radar-card__text">MP4, MKV, AVI, recortar, comprimir y extraer audio con FFmpeg. Por lotes, sin colas en servidores.</p>
-          </article>
-          <article class="radar-card" data-reveal>
-            <span class="radar-card__replaces">Alternativa a DupeGuru · Gemini Photos</span>
-            <h3 class="radar-card__title">Duplicados inteligentes</h3>
-            <p class="radar-card__text">Detectar fotos, videos y archivos repetidos por contenido (hash), no solo por nombre. Liberar espacio con preview.</p>
-          </article>
-          <article class="radar-card" data-reveal>
-            <span class="radar-card__replaces">Alternativa a Eraser · Privacidad premium</span>
-            <h3 class="radar-card__title">Borrado seguro</h3>
-            <p class="radar-card__text">Eliminar archivos de forma irreversible (sobrescritura). Limpiar rastros, papelera y espacio libre.</p>
-          </article>
-          <article class="radar-card" data-reveal>
-            <span class="radar-card__replaces">Alternativa a Bulk Rename · Renamer</span>
-            <h3 class="radar-card__title">Renombrador por lotes</h3>
-            <p class="radar-card__text">Reglas avanzadas: prefijos, fechas EXIF, numeración, regex. Vista previa antes de aplicar.</p>
           </article>
         </div>
       </div>
@@ -345,7 +253,7 @@
     <section class="section" id="principios">
       <div class="container">
         <div class="section__head">
-          <span class="kicker" data-reveal>03 — Principios</span>
+          <span class="kicker" data-reveal>02 — Principios</span>
           <h2 class="section__title" data-reveal>Cómo trabajamos.</h2>
         </div>
 
@@ -386,7 +294,7 @@
     <section class="section section--about" id="nosotros">
       <div class="container about">
         <div class="about__left">
-          <span class="kicker" data-reveal>04 — Nosotros</span>
+          <span class="kicker" data-reveal>03 — Nosotros</span>
           <h2 class="about__title" data-reveal>Software libre para todos.</h2>
         </div>
         <div class="about__right" data-reveal>
@@ -402,7 +310,7 @@
           </p>
           <div class="about__signature">
             <span class="about__name">Blue</span>
-            <span class="about__role">Fundador</span>
+            <span class="about__role">Creador</span>
           </div>
         </div>
       </div>
@@ -411,12 +319,10 @@
     <!-- CTA -->
     <section class="cta">
       <div class="container cta__inner" data-reveal>
-        <h2 class="cta__title">Empieza con Optimus, Coto o Dicto.</h2>
-        <p class="cta__text">Gratis, sin registro y listo en minutos. Windows 10/11 · 64-bit.</p>
+        <h2 class="cta__title">Descarga gratis. Sin registro.</h2>
+        <p class="cta__text">Elige un programa, instálalo en minutos. Windows 10/11 · 64-bit.</p>
         <div class="cta__buttons">
-          <a class="btn btn--primary btn--lg" href="#optimus">Optimus</a>
-          <a class="btn btn--primary btn--lg" href="#coto">Coto</a>
-          <a class="btn btn--primary btn--lg" href="#dicto">Dicto</a>
+          <a class="btn btn--primary btn--lg" href="#productos">Ver programas</a>
         </div>
       </div>
     </section>
@@ -434,10 +340,10 @@
       </div>
       <div class="footer__col">
         <h4>Programas</h4>
+        <a href="#productos">Todos</a>
         <a href="#optimus">Optimus</a>
         <a href="#coto">Coto</a>
         <a href="#dicto">Dicto</a>
-        <a href="#radar">Próximos</a>
         <a href="#principios">Principios</a>
       </div>
       <div class="footer__col">

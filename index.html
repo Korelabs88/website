@@ -29,7 +29,7 @@
   <meta property="og:image" content="https://alexkore.com/assets/img/korelabs-logo.png" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Korelabs — Software profesional para Windows" />
-  <meta name="twitter:description" content="Descarga Optimus, el optimizador inteligente para Windows 10 y 11." />
+  <meta name="twitter:description" content="Optimus y Coto: software gratuito, local y privado para Windows 10 y 11." />
   <meta name="twitter:image" content="https://alexkore.com/assets/img/korelabs-logo.png" />
 
   <meta name="theme-color" content="#FBFAF8" />
@@ -89,17 +89,18 @@
         <span class="brand__name">Korelabs</span>
       </a>
       <nav class="nav__links" aria-label="Navegación principal">
-        <a href="#productos">Productos</a>
+        <a href="#productos">Programas</a>
+        <a href="#optimus">Optimus</a>
         <a href="#coto">Coto</a>
+        <a href="#radar">Próximos</a>
         <a href="#principios">Principios</a>
-        <a href="#nosotros">Nosotros</a>
       </nav>
       <div class="nav__actions">
         <button class="theme-toggle" id="themeToggle" type="button" aria-label="Cambiar tema" title="Cambiar tema">
           <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
           <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"></path></svg>
         </button>
-        <a class="btn btn--primary btn--sm" href="#descargas"><img class="btn__k" src="/assets/img/korelabs-logo.png" alt="" aria-hidden="true" width="13" height="16" />Descargar Optimus</a>
+        <a class="btn btn--primary btn--sm" href="#productos">Descargar</a>
       </div>
     </div>
   </header>
@@ -110,19 +111,19 @@
       <div class="container">
         <p class="eyebrow" data-reveal>Estudio de software · Windows 10 &amp; 11</p>
         <h1 class="hero__title" data-reveal>
-          Herramientas hechas
-          <span class="hero__accent">con criterio</span>
-          para tu PC.
+          Software local,
+          <span class="hero__accent">gratis</span>
+          y privado.
         </h1>
         <div class="hero__row">
           <p class="hero__sub" data-reveal>
-            En Korelabs construimos software nativo, cuidado al detalle y honesto.
-            Sin bloatware, sin anuncios, sin humo: solo rendimiento real y un diseño
-            que da gusto usar.
+            Korelabs desarrolla herramientas de escritorio que reemplazan lo que
+            hoy cobran por suscripción: optimización, conversión de archivos, OCR
+            y más. Todo corre en tu PC, sin subir datos a servidores.
           </p>
           <div class="hero__cta" data-reveal>
-            <a class="btn btn--primary btn--lg" href="#descargas"><img class="btn__k" src="/assets/img/korelabs-logo.png" alt="" aria-hidden="true" width="15" height="18" />Descargar Optimus</a>
-            <a class="link-arrow" href="#productos">Ver productos</a>
+            <a class="btn btn--primary btn--lg" href="#productos">Ver programas</a>
+            <a class="link-arrow" href="#radar">Qué viene después</a>
           </div>
         </div>
       </div>
@@ -135,125 +136,158 @@
     <!-- MARQUEE -->
     <div class="marquee" aria-hidden="true">
       <div class="marquee__track">
-        <span>Rendimiento</span><span class="dot">•</span>
-        <span>Seguridad</span><span class="dot">•</span>
-        <span>Diseño</span><span class="dot">•</span>
-        <span>Nativo</span><span class="dot">•</span>
+        <span>Local</span><span class="dot">•</span>
+        <span>Privado</span><span class="dot">•</span>
+        <span>Gratis</span><span class="dot">•</span>
         <span>Sin anuncios</span><span class="dot">•</span>
+        <span>Nativo</span><span class="dot">•</span>
         <span>Reversible</span><span class="dot">•</span>
-        <span>Rendimiento</span><span class="dot">•</span>
-        <span>Seguridad</span><span class="dot">•</span>
-        <span>Diseño</span><span class="dot">•</span>
-        <span>Nativo</span><span class="dot">•</span>
+        <span>Local</span><span class="dot">•</span>
+        <span>Privado</span><span class="dot">•</span>
+        <span>Gratis</span><span class="dot">•</span>
         <span>Sin anuncios</span><span class="dot">•</span>
+        <span>Nativo</span><span class="dot">•</span>
         <span>Reversible</span><span class="dot">•</span>
       </div>
     </div>
 
-    <!-- SHOWCASE OPTIMUS (oscuro) -->
-    <section class="showcase" id="productos">
+    <!-- PROGRAMAS -->
+    <section class="section section--products" id="productos">
       <div class="container">
-        <div class="showcase__head">
-          <div>
-            <span class="kicker kicker--light" data-reveal>01 — Producto destacado</span>
-            <h2 class="showcase__title" data-reveal>Optimus</h2>
-            <p class="showcase__lead" data-reveal>El optimizador inteligente para Windows.</p>
-          </div>
-          <span class="pill pill--live" data-reveal>Disponible</span>
+        <div class="section__head section__head--center" data-reveal>
+          <span class="kicker">01 — Programas</span>
+          <h2 class="section__title">Dos herramientas, mismo criterio.</h2>
+          <p class="section__lead">Gratis para siempre · 100% local · Sin crear cuenta</p>
         </div>
 
-        <div class="showcase__grid">
-          <!-- Maqueta de la app -->
-          <div class="app" data-reveal id="descargas">
-            <div class="app__bar">
-              <span class="app__dots"><i></i><i></i><i></i></span>
-              <span class="app__name">
-                <img src="/assets/img/optimus-logo.png" alt="" aria-hidden="true" class="app__logo" />
-                Optimus
-              </span>
-              <span class="app__win"><i></i><i></i><i></i></span>
+        <div class="products-grid">
+          <!-- Optimus -->
+          <article class="product-card" id="optimus" data-reveal>
+            <div class="product-card__head">
+              <div class="product-card__brand">
+                <img src="/assets/img/optimus-logo.png" alt="" width="32" height="32" class="product-card__logo" />
+                <div>
+                  <h3 class="product-card__name">Optimus</h3>
+                  <p class="product-card__tag">Optimizador inteligente para Windows</p>
+                </div>
+              </div>
+              <span class="pill pill--live">v0.2.0</span>
             </div>
-            <div class="app__body">
-              <aside class="app__side">
-                <span class="app__navitem is-active">Dashboard</span>
-                <span class="app__navitem">Memoria</span>
-                <span class="app__navitem">CPU</span>
-                <span class="app__navitem">Procesos</span>
-                <span class="app__navitem">Inicio</span>
-                <span class="app__navitem">Monitor</span>
-                <span class="app__navitem app__navitem--accent">Modo Gamer</span>
-              </aside>
-              <div class="app__main">
-                <div class="app__stats">
-                  <div class="stat">
-                    <div class="stat__top"><span>Memoria</span><b>42%</b></div>
-                    <div class="bar"><span style="width:42%"></span></div>
+            <div class="app app--compact">
+              <div class="app__bar">
+                <span class="app__dots"><i></i><i></i><i></i></span>
+                <span class="app__name"><img src="/assets/img/optimus-logo.png" alt="" class="app__logo" />Optimus</span>
+                <span class="app__win"><i></i><i></i><i></i></span>
+              </div>
+              <div class="app__body app__body--compact">
+                <aside class="app__side">
+                  <span class="app__navitem is-active">Dashboard</span>
+                  <span class="app__navitem">Memoria</span>
+                  <span class="app__navitem">Disco</span>
+                  <span class="app__navitem app__navitem--accent">Limpieza</span>
+                </aside>
+                <div class="app__main">
+                  <div class="app__stats">
+                    <div class="stat"><div class="stat__top"><span>RAM</span><b>42%</b></div><div class="bar"><span style="width:42%"></span></div></div>
+                    <div class="stat"><div class="stat__top"><span>CPU</span><b>18%</b></div><div class="bar"><span style="width:18%"></span></div></div>
                   </div>
-                  <div class="stat">
-                    <div class="stat__top"><span>CPU</span><b>18%</b></div>
-                    <div class="bar"><span style="width:18%"></span></div>
-                  </div>
-                  <div class="stat">
-                    <div class="stat__top"><span>Disco</span><b>63%</b></div>
-                    <div class="bar"><span style="width:63%"></span></div>
-                  </div>
+                  <div class="app__cta"><span class="app__cta-label">Listo</span><span class="app__cta-btn">Optimizar</span></div>
                 </div>
-                <div class="app__cta">
-                  <span class="app__cta-label">Listo para optimizar</span>
-                  <span class="app__cta-btn">Optimizar ahora</span>
-                </div>
-                <ul class="app__list">
-                  <li><span>chrome.exe</span><b>512 MB</b></li>
-                  <li><span>Code.exe</span><b>388 MB</b></li>
-                  <li><span>spotify.exe</span><b>210 MB</b></li>
-                </ul>
               </div>
             </div>
-          </div>
-
-          <!-- Descripción -->
-          <div class="showcase__info">
-            <p class="showcase__text" data-reveal>
-              Reúne administrador de procesos, optimizador de memoria, gestor de
-              inicio y monitor de hardware en una sola app nativa. Cada acción es
-              segura y reversible, con puntos de restauración incluidos.
-            </p>
-            <ul class="feature-list" data-reveal>
-              <li><b>RAM, CPU y disco</b><span>Optimización en un clic, sin riesgos.</span></li>
-              <li><b>Procesos e inicio</b><span>Controla qué se ejecuta y qué arranca con Windows.</span></li>
-              <li><b>Monitor en vivo</b><span>Temperatura, uso y rendimiento en tiempo real.</span></li>
-              <li><b>Modo Gamer</b><span>Máximo rendimiento cuando más lo necesitas.</span></li>
+            <p class="product-card__desc">Monitor de hardware, procesos, inicio, modo gamer y limpieza profunda de disco. Seguro y reversible.</p>
+            <ul class="product-card__features">
+              <li>RAM, CPU, disco y temperatura en vivo</li>
+              <li>Limpieza profunda sin tocar lo crítico</li>
+              <li>Modo Gamer y gestión de inicio</li>
             </ul>
-            <div class="showcase__actions" data-reveal>
-              <a class="btn btn--primary btn--lg" href="https://github.com/Korelabs88/optimus-releases/releases/download/v0.2.0/OPTIMUS-0.2.0-Setup.exe" rel="noopener" data-download="optimus-installer"><img class="btn__k" src="/assets/img/korelabs-logo.png" alt="" aria-hidden="true" width="15" height="18" />Descargar para Windows</a>
-              <a class="link-arrow" href="https://github.com/Korelabs88/optimus-releases/releases/download/v0.2.0/OPTIMUS-0.2.0-Portable.exe" rel="noopener" data-download="optimus-portable">Versión portable</a>
-              <span class="showcase__meta">Windows 10/11 · 64-bit · Gratis · v0.2.0</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- Próximos / Coto -->
-        <div class="soon-grid">
-          <article class="soon soon--live" data-reveal id="coto">
-            <span class="pill pill--live">Disponible</span>
-            <h3 class="soon__title">
-              <img src="/assets/img/coto-logo.png" alt="" aria-hidden="true" width="28" height="28" style="vertical-align:middle;margin-right:8px;border-radius:6px;" />
-              Coto
-            </h3>
-            <p class="soon__text">
-              Conversor de archivos 100% local: imágenes, PDF, Office y OCR.
-              Sin servidores, sin límites, sin premium. Todo en tu PC.
-            </p>
-            <div class="showcase__actions" style="margin-top:1rem;">
-              <a class="btn btn--primary" href="https://github.com/Korelabs88/coto-releases/releases/download/v0.1.1/COTO-0.1.1-Setup.exe" rel="noopener" data-download="coto-installer">Descargar instalador</a>
-              <a class="link-arrow" href="https://github.com/Korelabs88/coto-releases/releases/download/v0.1.1/COTO-0.1.1-Portable.zip" rel="noopener" data-download="coto-portable">Versión portable</a>
-              <span class="showcase__meta">Windows 10/11 · 64-bit · Gratis · v0.1.1</span>
+            <div class="product-card__actions">
+              <a class="btn btn--primary" href="https://github.com/Korelabs88/optimus-releases/releases/download/v0.2.0/OPTIMUS-0.2.0-Setup.exe" rel="noopener">Instalador</a>
+              <a class="link-arrow" href="https://github.com/Korelabs88/optimus-releases/releases/download/v0.2.0/OPTIMUS-0.2.0-Portable.exe" rel="noopener">Portable</a>
             </div>
           </article>
-          <article class="soon" data-reveal>
-            <span class="pill">Próximamente</span>
-            <h3 class="soon__title">Nuevo proyecto</h3>
-            <p class="soon__text">Más software con la misma filosofía: rápido, limpio y seguro.</p>
+
+          <!-- Coto -->
+          <article class="product-card" id="coto" data-reveal>
+            <div class="product-card__head">
+              <div class="product-card__brand">
+                <img src="/assets/img/coto-logo.png" alt="" width="32" height="32" class="product-card__logo product-card__logo--round" />
+                <div>
+                  <h3 class="product-card__name">Coto</h3>
+                  <p class="product-card__tag">Conversor de archivos local</p>
+                </div>
+              </div>
+              <span class="pill pill--live">v0.1.1</span>
+            </div>
+            <div class="app app--compact app--coto">
+              <div class="app__bar">
+                <span class="app__dots"><i></i><i></i><i></i></span>
+                <span class="app__name"><img src="/assets/img/coto-logo.png" alt="" class="app__logo app__logo--round" />Coto</span>
+                <span class="app__win"><i></i><i></i><i></i></span>
+              </div>
+              <div class="app__body app__body--coto">
+                <div class="app__tabs">
+                  <span class="app__tab is-active">Convertir</span>
+                  <span class="app__tab">PDF</span>
+                  <span class="app__tab">Imagen</span>
+                </div>
+                <div class="app__drop">⇅ Arrastra tus archivos aquí</div>
+                <div class="app__row"><span class="app__chip">PNG → JPG</span><span class="app__chip">PDF → Word</span><span class="app__chip">OCR</span></div>
+              </div>
+            </div>
+            <p class="product-card__desc">Imágenes, PDF, Office y OCR multiidioma. Unir, dividir, comprimir y proteger PDF. Sin subir nada a internet.</p>
+            <ul class="product-card__features">
+              <li>Conversión por lotes con OCR incluido</li>
+              <li>PDF ↔ Word, Excel, imágenes</li>
+              <li>Herramientas PDF e imagen integradas</li>
+            </ul>
+            <div class="product-card__actions">
+              <a class="btn btn--primary" href="https://github.com/Korelabs88/coto-releases/releases/download/v0.1.1/COTO-0.1.1-Setup.exe" rel="noopener">Instalador</a>
+              <a class="link-arrow" href="https://github.com/Korelabs88/coto-releases/releases/download/v0.1.1/COTO-0.1.1-Portable.zip" rel="noopener">Portable</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRÓXIMOS / RADAR -->
+    <section class="section section--radar" id="radar">
+      <div class="container">
+        <div class="section__head" data-reveal>
+          <span class="kicker">02 — En el radar</span>
+          <h2 class="section__title">Lo que hoy es de pago, mañana local y gratis.</h2>
+          <p class="section__lead section__lead--left">Ideas para el próximo programa Korelabs. Misma filosofía: tu PC hace el trabajo, no un servidor con suscripción.</p>
+        </div>
+        <div class="radar-grid">
+          <article class="radar-card" data-reveal>
+            <span class="radar-card__replaces">Alternativa a Otter.ai · Rev</span>
+            <h3 class="radar-card__title">Transcripción local</h3>
+            <p class="radar-card__text">Audio y video a texto con Whisper en tu equipo. Reuniones, clases y podcasts sin subirlos a la nube.</p>
+          </article>
+          <article class="radar-card" data-reveal>
+            <span class="radar-card__replaces">Alternativa a Loom · Snagit</span>
+            <h3 class="radar-card__title">Captura de pantalla</h3>
+            <p class="radar-card__text">Grabar pantalla, webcam y micrófono. Exportar MP4/GIF localmente, sin límite de minutos ni marca de agua.</p>
+          </article>
+          <article class="radar-card" data-reveal>
+            <span class="radar-card__replaces">Alternativa a HandBrake Pro · CloudConvert</span>
+            <h3 class="radar-card__title">Conversor de video</h3>
+            <p class="radar-card__text">MP4, MKV, AVI, recortar, comprimir y extraer audio con FFmpeg. Por lotes, sin colas en servidores.</p>
+          </article>
+          <article class="radar-card" data-reveal>
+            <span class="radar-card__replaces">Alternativa a DupeGuru · Gemini Photos</span>
+            <h3 class="radar-card__title">Duplicados inteligentes</h3>
+            <p class="radar-card__text">Detectar fotos, videos y archivos repetidos por contenido (hash), no solo por nombre. Liberar espacio con preview.</p>
+          </article>
+          <article class="radar-card" data-reveal>
+            <span class="radar-card__replaces">Alternativa a Eraser · Privacidad premium</span>
+            <h3 class="radar-card__title">Borrado seguro</h3>
+            <p class="radar-card__text">Eliminar archivos de forma irreversible (sobrescritura). Limpiar rastros, papelera y espacio libre.</p>
+          </article>
+          <article class="radar-card" data-reveal>
+            <span class="radar-card__replaces">Alternativa a Bulk Rename · Renamer</span>
+            <h3 class="radar-card__title">Renombrador por lotes</h3>
+            <p class="radar-card__text">Reglas avanzadas: prefijos, fechas EXIF, numeración, regex. Vista previa antes de aplicar.</p>
           </article>
         </div>
       </div>
@@ -263,7 +297,7 @@
     <section class="section" id="principios">
       <div class="container">
         <div class="section__head">
-          <span class="kicker" data-reveal>02 — Principios</span>
+          <span class="kicker" data-reveal>03 — Principios</span>
           <h2 class="section__title" data-reveal>Cómo trabajamos.</h2>
         </div>
 
@@ -304,7 +338,7 @@
     <section class="section section--about" id="nosotros">
       <div class="container about">
         <div class="about__left">
-          <span class="kicker" data-reveal>03 — Nosotros</span>
+          <span class="kicker" data-reveal>04 — Nosotros</span>
           <h2 class="about__title" data-reveal>Software libre para todos.</h2>
         </div>
         <div class="about__right" data-reveal>
@@ -329,9 +363,12 @@
     <!-- CTA -->
     <section class="cta">
       <div class="container cta__inner" data-reveal>
-        <h2 class="cta__title">Prueba Optimus hoy.</h2>
-        <p class="cta__text">Gratis, sin registro y listo en minutos.</p>
-        <a class="btn btn--primary btn--lg" href="#descargas"><img class="btn__k" src="/assets/img/korelabs-logo.png" alt="" aria-hidden="true" width="15" height="18" />Descargar para Windows</a>
+        <h2 class="cta__title">Empieza con Optimus o Coto.</h2>
+        <p class="cta__text">Gratis, sin registro y listo en minutos. Windows 10/11 · 64-bit.</p>
+        <div class="cta__buttons">
+          <a class="btn btn--primary btn--lg" href="#optimus">Optimus</a>
+          <a class="btn btn--primary btn--lg" href="#coto">Coto</a>
+        </div>
       </div>
     </section>
   </main>
@@ -347,10 +384,10 @@
         <p class="footer__tag">Software profesional para Windows.</p>
       </div>
       <div class="footer__col">
-        <h4>Producto</h4>
-        <a href="#productos">Optimus</a>
+        <h4>Programas</h4>
+        <a href="#optimus">Optimus</a>
         <a href="#coto">Coto</a>
-        <a href="#descargas">Descargar</a>
+        <a href="#radar">Próximos</a>
         <a href="#principios">Principios</a>
       </div>
       <div class="footer__col">

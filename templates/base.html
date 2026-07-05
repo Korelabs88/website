@@ -43,7 +43,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="/assets/css/styles.css?v=3" />
+  <link rel="stylesheet" href="/assets/css/styles.css?v=4" />
 
   {% block head_extra %}{% endblock %}
 </head>
@@ -59,7 +59,7 @@
       </a>
       <nav class="nav__links" aria-label="{{ t.nav_aria }}">
         <a href="{{ lang | url_for('home') }}#productos">{{ t.nav_programs }}</a>
-        <a href="{{ lang | url_for('home') }}#guias">{{ t.nav_guides }}</a>
+        <a href="{{ lang | url_for('blog') }}">{{ t.nav_blog }}</a>
         <a href="{{ lang | url_for('home') }}#principios">{{ t.nav_principles }}</a>
         <a href="{{ lang | url_for('home') }}#nosotros">{{ t.nav_about }}</a>
       </nav>
@@ -103,7 +103,7 @@
       </div>
       <div class="footer__col">
         <h4>{{ t.footer_resources }}</h4>
-        <a href="{{ lang | url_for('home') }}#guias">{{ t.nav_guides }}</a>
+        <a href="{{ lang | url_for('blog') }}">{{ t.nav_blog }}</a>
         <a href="{{ lang | url_for('faq') }}">{{ t.nav_faq }}</a>
         <a href="https://github.com/Korelabs88" rel="noopener">GitHub</a>
       </div>
@@ -120,5 +120,6 @@
   </footer>
 
   <script src="/assets/js/main.js" defer></script>
+  {% block body_extra %}{% endblock %}
 </body>
 </html>

@@ -21,7 +21,7 @@ LANGS = ("es", "en", "pt")
 DEFAULT_LANG = "es"
 TODAY = date.today().isoformat()
 
-GUIDE_PATH = {"es": "guias", "en": "guides", "pt": "guias"}
+BLOG_PATH = "blog"
 FAQ_PATH = {"es": "preguntas-frecuentes", "en": "faq", "pt": "perguntas-frequentes"}
 
 
@@ -30,8 +30,8 @@ def load_json(path: Path) -> dict:
 
 
 def page_key(page_type: str, slug: str | None = None) -> str:
-    if page_type == "home":
-        return "home"
+    if page_type in ("home", "blog", "faq"):
+        return page_type
     return f"{page_type}:{slug}"
 
 
@@ -43,8 +43,10 @@ def url_for(lang: str, page_type: str, slug: str | None = None) -> str:
         return f"{base}{slug}/"
     if page_type == "faq":
         return f"{base}{FAQ_PATH[lang]}/"
-    if page_type == "guide":
-        return f"{base}{GUIDE_PATH[lang]}/{slug}/"
+    if page_type == "blog":
+        return f"{base}{BLOG_PATH}/"
+    if page_type == "article":
+        return f"{base}{BLOG_PATH}/{slug}/"
     raise ValueError(f"Unknown page type: {page_type}")
 
 
@@ -121,13 +123,11 @@ def write_redirects() -> None:
     lines = [
         "/ /es/ 302",
         "/index.html /es/ 302",
+        # URLs antiguas de guías → blog
+        "/es/guias/* /es/blog/:splat 301",
+        "/en/guides/* /en/blog/:splat 301",
+        "/pt/guias/* /pt/blog/:splat 301",
     ]
-    for lang in LANGS:
-        if lang != DEFAULT_LANG:
-            continue
-        for other in LANGS:
-            if other == lang:
-                continue
     (DIST / "_redirects").write_text("\n".join(lines) + "\n", encoding="utf-8")
 
 
@@ -200,8 +200,9 @@ def main() -> None:
             guides_list.append(
                 {
                     "title": ginfo["title"],
-                    "url": url_for(lang, "guide", g["slug"]),
+                    "url": url_for(lang, "article", g["slug"]),
                     "description": ginfo.get("description", ""),
+                    "product": g.get("product"),
                 }
             )
         html = env.get_template("home.html").render(
@@ -213,7 +214,8 @@ def main() -> None:
             canonical=SITE_URL + rel,
             alternates=alts,
             products=products_data,
-            guides_list=guides_list,
+            guides_list=guides_list[:3],
+            blog_url=url_for(lang, "blog"),
             page_type="home",
         )
         write_page(rel, html)
@@ -232,7 +234,7 @@ def main() -> None:
                     related_guides.append(
                         {
                             "title": g[lang]["title"],
-                            "url": url_for(lang, "guide", g["slug"]),
+                            "url": url_for(lang, "article", g["slug"]),
                         }
                     )
             schema = {
@@ -294,27 +296,70 @@ def main() -> None:
         )
         write_page(rel, html)
 
-    # --- Guides ---
+    # --- Blog (índice de artículos) ---
+    product_labels = {"optimus": "Optimus", "coto": "Coto", "dicto": "Dicto"}
+    for lang in LANGS:
+        t = i18n[lang]
+        rel = url_for(lang, "blog")
+        register(lang, "blog", None, rel)
+        alts = build_alternates("blog", None, registry)
+        articles = []
+        for g in guides_manifest["guides"]:
+            ginfo = g[lang]
+            pid = g.get("product")
+            articles.append(
+                {
+                    "title": ginfo["title"],
+                    "description": ginfo.get("description", ""),
+                    "url": url_for(lang, "article", g["slug"]),
+                    "product": pid,
+                    "product_label": product_labels.get(pid, "") if pid else "",
+                }
+            )
+        blog_schema = {
+            "@context": "https://schema.org",
+            "@type": "Blog",
+            "name": t["blog_index_title"],
+            "description": t["blog_meta_description"],
+            "url": SITE_URL + rel,
+            "publisher": {"@type": "Organization", "name": "Korelabs"},
+            "inLanguage": lang,
+        }
+        html = env.get_template("blog.html").render(
+            lang=lang,
+            t=t,
+            title=t["blog_meta_title"],
+            description=t["blog_meta_description"],
+            site_url=SITE_URL,
+            canonical=SITE_URL + rel,
+            alternates=alts,
+            articles=articles,
+            schema_json=json.dumps(blog_schema, ensure_ascii=False),
+            page_type="blog",
+        )
+        write_page(rel, html)
+
+    # --- Artículos ---
     for g in guides_manifest["guides"]:
         slug = g["slug"]
         for lang in LANGS:
-            rel = url_for(lang, "guide", slug)
-            register(lang, "guide", slug, rel)
+            rel = url_for(lang, "article", slug)
+            register(lang, "article", slug, rel)
             ginfo = g[lang]
             md_path = CONTENT / "guides" / ginfo["file"]
             meta, body_html = parse_guide_md(md_path.read_text(encoding="utf-8"))
             body_html, toc = extract_toc(body_html)
-            alts = build_alternates("guide", slug, registry)
+            alts = build_alternates("article", slug, registry)
             product_id = g.get("product")
             product_url = url_for(lang, "product", product_id) if product_id else None
             related = []
             for rs in g.get("related", []):
                 for og in guides_manifest["guides"]:
                     if og["slug"] == rs:
-                        related.append({"title": og[lang]["title"], "url": url_for(lang, "guide", rs)})
+                        related.append({"title": og[lang]["title"], "url": url_for(lang, "article", rs)})
             breadcrumbs = [
                 {"name": i18n[lang]["nav_home"], "url": url_for(lang, "home")},
-                {"name": i18n[lang]["nav_guides"], "url": url_for(lang, "home") + "#guias"},
+                {"name": i18n[lang]["nav_blog"], "url": url_for(lang, "blog")},
                 {"name": ginfo["title"], "url": rel},
             ]
             article_schema = {

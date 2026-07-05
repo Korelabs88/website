@@ -39,8 +39,14 @@ dist/             Output desplegado (no commitear)
 ## Añadir contenido
 
 - **Producto:** editar `content/products.json` y rebuild
-- **Guía:** añadir entrada en `content/guides/manifest.json` + archivo `.md` en 3 idiomas
+- **Artículo del blog:** añadir entrada en `content/guides/manifest.json` + archivo `.md` en 3 idiomas en `content/guides/`
 - **UI:** editar `content/i18n/{es,en,pt}.json`
+
+### Blog
+
+- Índice: `/es/blog/`, `/en/blog/`, `/pt/blog/`
+- Artículos: `/es/blog/{slug}/` (ej. `/es/blog/liberar-ram-windows/`)
+- Las URLs antiguas `/es/guias/…` redirigen automáticamente al blog
 
 ## SEO
 

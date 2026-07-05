@@ -100,22 +100,28 @@
   </div>
 </section>
 
-<section class="section section--guides" id="guias">
+<section class="section section--guides" id="blog">
   <div class="container">
     <div class="section__head section__head--center" data-reveal>
-      <span class="kicker">{{ t.guides_kicker }}</span>
-      <h2 class="section__title">{{ t.guides_title }}</h2>
-      <p class="section__lead">{{ t.guides_lead }}</p>
+      <span class="kicker">{{ t.blog_kicker }}</span>
+      <h2 class="section__title">{{ t.blog_teaser_title }}</h2>
+      <p class="section__lead">{{ t.blog_teaser_lead }}</p>
     </div>
     <div class="guides-grid">
       {% for guide in guides_list %}
       <article class="guide-card" data-reveal>
+        {% if guide.product %}
+        <span class="blog-card__tag blog-card__tag--sm">{{ guide.product | capitalize }}</span>
+        {% endif %}
         <h3 class="guide-card__title"><a href="{{ guide.url }}">{{ guide.title }}</a></h3>
         <p class="guide-card__desc">{{ guide.description }}</p>
-        <a class="link-arrow" href="{{ guide.url }}">{{ t.guides_read }}</a>
+        <a class="link-arrow" href="{{ guide.url }}">{{ t.blog_read }}</a>
       </article>
       {% endfor %}
     </div>
+    <p class="section__cta-link" data-reveal>
+      <a class="btn btn--secondary" href="{{ blog_url }}">{{ t.blog_view_all }}</a>
+    </p>
   </div>
 </section>
 

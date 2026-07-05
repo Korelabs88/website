@@ -1,0 +1,62 @@
+{% extends "base.html" %}
+{% block head_extra %}
+<script type="application/ld+json">{{ schema_json | safe }}</script>
+{% endblock %}
+{% block content %}
+<section class="page-hero">
+  <div class="container">
+    <nav class="breadcrumbs" aria-label="Breadcrumb">
+      <a href="{{ lang | url_for('home') }}">{{ t.breadcrumb_home }}</a>
+      <span aria-hidden="true">/</span>
+      <span>{{ t.nav_blog }}</span>
+    </nav>
+    <h1 class="page-hero__title">{{ t.blog_index_title }}</h1>
+    <p class="page-hero__tagline">{{ t.blog_index_lead }}</p>
+  </div>
+</section>
+
+<section class="section section--blog">
+  <div class="container">
+    <div class="blog-filters" role="navigation" aria-label="{{ t.blog_filter_aria }}">
+      <button type="button" class="blog-filter is-active" data-filter="all">{{ t.blog_filter_all }}</button>
+      <button type="button" class="blog-filter" data-filter="optimus">Optimus</button>
+      <button type="button" class="blog-filter" data-filter="coto">Coto</button>
+      <button type="button" class="blog-filter" data-filter="dicto">Dicto</button>
+    </div>
+
+    <div class="blog-grid">
+      {% for article in articles %}
+      <article class="blog-card" data-reveal data-product="{{ article.product or '' }}">
+        {% if article.product_label %}
+        <span class="blog-card__tag">{{ article.product_label }}</span>
+        {% endif %}
+        <h2 class="blog-card__title"><a href="{{ article.url }}">{{ article.title }}</a></h2>
+        <p class="blog-card__desc">{{ article.description }}</p>
+        <a class="link-arrow" href="{{ article.url }}">{{ t.blog_read }}</a>
+      </article>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+{% endblock %}
+
+{% block body_extra %}
+<script>
+(function () {
+  var filters = document.querySelectorAll(".blog-filter");
+  var cards = document.querySelectorAll(".blog-card[data-product]");
+  if (!filters.length || !cards.length) return;
+  filters.forEach(function (btn) {
+    btn.addEventListener("click", function () {
+      var f = btn.getAttribute("data-filter");
+      filters.forEach(function (b) { b.classList.remove("is-active"); });
+      btn.classList.add("is-active");
+      cards.forEach(function (card) {
+        var p = card.getAttribute("data-product") || "";
+        card.hidden = f !== "all" && p !== f;
+      });
+    });
+  });
+})();
+</script>
+{% endblock %}

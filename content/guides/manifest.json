@@ -1,6 +1,14 @@
 {
   "guides": [
     {
+      "slug": "game-mode-windows-paradoja",
+      "product": "optimus",
+      "related": ["optimizar-windows-gaming", "sobreoptimizar-windows-fps", "fps-promedio-vs-fluidez", "pc-limpio-multitarea-gaming"],
+      "es": { "title": "Game Mode de Windows: milagro en un juego, sabotaje en el de al lado", "description": "Qué hace el Modo de juego de Windows, por qué ayuda en un título y empeora en otro, y cómo probarlo sin asumir.", "file": "game-mode-windows-paradoja.es.md" },
+      "en": { "title": "Windows Game Mode: miracle in one game, sabotage in the next", "description": "What Windows Game Mode does, why it helps one title and hurts another, and how to test without assuming.", "file": "game-mode-windows-paradoja.en.md" },
+      "pt": { "title": "Game Mode do Windows: milagre num jogo, sabotagem no outro", "description": "O que o Modo de jogo do Windows faz, por que ajuda num título e piora noutro, e como testar sem assumir.", "file": "game-mode-windows-paradoja.pt.md" }
+    },
+    {
       "slug": "pc-limpio-multitarea-gaming",
       "product": "optimus",
       "related": ["sobreoptimizar-windows-fps", "optimizar-windows-gaming", "ram-no-esta-llena-standby", "liberar-ram-windows"],
@@ -107,7 +115,7 @@
     {
       "slug": "optimizar-windows-gaming",
       "product": "optimus",
-      "related": ["pc-limpio-multitarea-gaming", "sobreoptimizar-windows-fps", "bajar-graficos-minimo-paradoja", "liberar-ram-windows"],
+      "related": ["game-mode-windows-paradoja", "pc-limpio-multitarea-gaming", "sobreoptimizar-windows-fps", "liberar-ram-windows"],
       "es": { "title": "Cómo optimizar Windows 11 para gaming (modo gamer)", "description": "Pasos concretos para reducir latencia y liberar recursos antes de jugar. Incluye modo gamer de Optimus.", "file": "optimizar-windows-gaming.es.md" },
       "en": { "title": "How to optimize Windows 11 for gaming (game mode)", "description": "Concrete steps to reduce latency and free resources before gaming. Includes Optimus game mode.", "file": "optimizar-windows-gaming.en.md" },
       "pt": { "title": "Como otimizar Windows 11 para jogos (modo gamer)", "description": "Passos concretos para reduzir latência e liberar recursos antes de jogar. Inclui modo gamer do Optimus.", "file": "optimizar-windows-gaming.pt.md" }

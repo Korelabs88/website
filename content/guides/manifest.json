@@ -1,6 +1,14 @@
 {
   "guides": [
     {
+      "slug": "sobreoptimizar-windows-fps",
+      "product": "optimus",
+      "related": ["optimizar-windows-gaming", "fps-promedio-vs-fluidez", "ram-no-esta-llena-standby", "liberar-ram-windows"],
+      "es": { "title": "Tuneaste Windows durante 3 horas para ganar 3 FPS: felicidades", "description": "Por qué el debloat y tweaks de registro casi no suben FPS, cuándo sí optimizar Windows, y qué evitar para no romper el sistema.", "file": "sobreoptimizar-windows-fps.es.md" },
+      "en": { "title": "You tuned Windows for 3 hours to gain 3 FPS: congratulations", "description": "Why debloat and registry tweaks barely raise FPS, when Windows optimization actually helps, and what to avoid breaking your system.", "file": "sobreoptimizar-windows-fps.en.md" },
+      "pt": { "title": "Você tunou o Windows por 3 horas para ganhar 3 FPS: parabéns", "description": "Por que debloat e tweaks de registro quase não sobem FPS, quando otimizar Windows ajuda de verdade, e o que evitar para não quebrar o sistema.", "file": "sobreoptimizar-windows-fps.pt.md" }
+    },
+    {
       "slug": "bajar-graficos-minimo-paradoja",
       "product": "optimus",
       "related": ["dlss-fsr-mejor-que-nativo", "fps-promedio-vs-fluidez", "optimizar-windows-gaming", "ram-gpu-cpu-disco-juegos"],
@@ -91,7 +99,7 @@
     {
       "slug": "optimizar-windows-gaming",
       "product": "optimus",
-      "related": ["bajar-graficos-minimo-paradoja", "dlss-fsr-mejor-que-nativo", "compraste-gpu-equivocada", "ram-gpu-cpu-disco-juegos"],
+      "related": ["sobreoptimizar-windows-fps", "bajar-graficos-minimo-paradoja", "liberar-ram-windows", "ram-no-esta-llena-standby"],
       "es": { "title": "Cómo optimizar Windows 11 para gaming (modo gamer)", "description": "Pasos concretos para reducir latencia y liberar recursos antes de jugar. Incluye modo gamer de Optimus.", "file": "optimizar-windows-gaming.es.md" },
       "en": { "title": "How to optimize Windows 11 for gaming (game mode)", "description": "Concrete steps to reduce latency and free resources before gaming. Includes Optimus game mode.", "file": "optimizar-windows-gaming.en.md" },
       "pt": { "title": "Como otimizar Windows 11 para jogos (modo gamer)", "description": "Passos concretos para reduzir latência e liberar recursos antes de jogar. Inclui modo gamer do Optimus.", "file": "optimizar-windows-gaming.pt.md" }

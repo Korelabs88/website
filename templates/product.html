@@ -35,6 +35,9 @@
       {% for section in pdata.sections %}
       <h2>{{ section.title }}</h2>
       <p>{{ section.text }}</p>
+      {% if section.link_slug %}
+      <p><a class="link-arrow" href="{{ lang | url_for('article', section.link_slug) }}">{{ section.link_label }}</a></p>
+      {% endif %}
       {% endfor %}
       <ul class="prose__features">
         {% for f in pdata.features %}

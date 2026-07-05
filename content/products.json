@@ -31,6 +31,12 @@
           {
             "title": "Modo Gamer",
             "text": "Prioriza recursos para juegos: reduce procesos en segundo plano y optimiza la respuesta del sistema cuando lo necesitas."
+          },
+          {
+            "title": "Serie: Paradojas del gaming en PC",
+            "text": "16 artículos sobre mitos de hardware, FPS, RAM standby, ray tracing, streaming y cuándo dejar de medir. Diagnosticá antes de gastar en un upgrade.",
+            "link_slug": "paradojas-del-gaming",
+            "link_label": "Ver índice de la serie"
           }
         ],
         "features": ["RAM, CPU y disco en vivo", "Liberación real de memoria standby", "Limpieza profunda reversible", "Modo Gamer", "Sin telemetría"],
@@ -59,6 +65,12 @@
           {
             "title": "Game Mode",
             "text": "Prioritize resources for gaming: reduce background processes and improve system responsiveness when you need it."
+          },
+          {
+            "title": "Series: PC gaming paradoxes",
+            "text": "16 articles on hardware myths, FPS, standby RAM, ray tracing, streaming, and when to stop measuring. Diagnose before you upgrade.",
+            "link_slug": "paradojas-del-gaming",
+            "link_label": "View series index"
           }
         ],
         "features": ["Live RAM, CPU and disk", "Real standby memory purge", "Reversible deep cleanup", "Game Mode", "No telemetry"],
@@ -87,6 +99,12 @@
           {
             "title": "Modo Gamer",
             "text": "Priorize recursos para jogos: reduza processos em segundo plano e melhore a resposta do sistema quando precisar."
+          },
+          {
+            "title": "Série: Paradoxos do gaming no PC",
+            "text": "16 artigos sobre mitos de hardware, FPS, RAM standby, ray tracing, streaming e quando parar de medir. Diagnostique antes de fazer upgrade.",
+            "link_slug": "paradojas-del-gaming",
+            "link_label": "Ver índice da série"
           }
         ],
         "features": ["RAM, CPU e disco ao vivo", "Liberação real de standby", "Limpeza profunda reversível", "Modo Gamer", "Sem telemetria"],

@@ -237,6 +237,17 @@ def main() -> None:
                             "url": url_for(lang, "article", g["slug"]),
                         }
                     )
+            if pid == "optimus":
+                hub_slug = "paradojas-del-gaming"
+                hub = next((g for g in guides_manifest["guides"] if g["slug"] == hub_slug), None)
+                if hub:
+                    hub_entry = {
+                        "title": hub[lang]["title"],
+                        "url": url_for(lang, "article", hub_slug),
+                    }
+                    related_guides = [hub_entry] + [
+                        g for g in related_guides if hub_slug not in g["url"]
+                    ]
             schema = {
                 "@context": "https://schema.org",
                 "@type": "SoftwareApplication",
@@ -260,7 +271,7 @@ def main() -> None:
                 alternates=alts,
                 product=product,
                 pdata=pdata,
-                related_guides=related_guides[:3],
+                related_guides=related_guides[:4],
                 faq_url=url_for(lang, "faq"),
                 schema_json=json.dumps(schema, ensure_ascii=False),
                 page_type="product",

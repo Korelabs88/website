@@ -116,6 +116,8 @@ En pocos días tu web aparecerá al buscar "Korelabs" o "Optimus" en Google.
 
 ### Deploy "Success" pero URLs dan 404
 
+> **Retry en commit viejo:** si el log dice `Built 108 pages -> .../dist` pero el output del dashboard es `public`, hiciste **Retry** en un deploy anterior a `03bd6bd`. No uses Retry en commits viejos: esperá el deploy automático del último `main` o empujá un commit nuevo.
+
 1. Abrí el **log del deploy** y buscá la línea `Built 108 pages -> .../public`. Si no aparece, el build de Python falló o no corrió.
 2. **`.gitignore` no debe listar `public/`** — Pages no sube archivos ignorados.
 3. **Build output = `public`** (Settings o `wrangler.toml`).

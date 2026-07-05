@@ -1,6 +1,22 @@
 {
   "guides": [
     {
+      "slug": "paradojas-del-gaming",
+      "product": "optimus",
+      "related": ["compraste-gpu-equivocada", "fps-promedio-vs-fluidez", "steam-backlog-paradoja", "optimizar-windows-gaming"],
+      "es": { "title": "Paradojas del gaming en PC: 11 mitos que te hacen gastar mal", "description": "Índice de la serie: GPU, RAM, DLSS, FPS, SSD, Windows, backlog y más. Diagnostica antes de comprar hardware.", "file": "paradojas-del-gaming.es.md" },
+      "en": { "title": "PC gaming paradoxes: 11 myths that make you overspend", "description": "Series index: GPU, RAM, DLSS, FPS, SSD, Windows, backlog and more. Diagnose before buying hardware.", "file": "paradojas-del-gaming.en.md" },
+      "pt": { "title": "Paradoxos do gaming no PC: 11 mitos que fazem gastar mal", "description": "Índice da série: GPU, RAM, DLSS, FPS, SSD, Windows, backlog e mais. Diagnostique antes de comprar hardware.", "file": "paradojas-del-gaming.pt.md" }
+    },
+    {
+      "slug": "steam-backlog-paradoja",
+      "product": "optimus",
+      "related": ["paradojas-del-gaming", "compraste-gpu-equivocada", "ssd-no-mejora-fps", "fps-promedio-vs-fluidez"],
+      "es": { "title": "Tenés 500 juegos en Steam y jugás 3: tu verdadero cuello de botella es otro", "description": "Por qué el backlog limita tu disfrute más que la GPU: tiempo, dopamina de compra y parálisis de elección.", "file": "steam-backlog-paradoja.es.md" },
+      "en": { "title": "You have 500 Steam games and play 3: your real bottleneck is elsewhere", "description": "Why backlog limits enjoyment more than GPU: time, purchase dopamine, and choice paralysis.", "file": "steam-backlog-paradoja.en.md" },
+      "pt": { "title": "Tem 500 jogos na Steam e joga 3: seu gargalo real é outro", "description": "Por que backlog limita prazer mais que GPU: tempo, dopamina de compra e paralisia de escolha.", "file": "steam-backlog-paradoja.pt.md" }
+    },
+    {
       "slug": "antivirus-gaming-paradoja",
       "product": "optimus",
       "related": ["sobreoptimizar-windows-fps", "game-mode-windows-paradoja", "fps-promedio-vs-fluidez", "optimizar-windows-gaming"],
@@ -83,7 +99,7 @@
     {
       "slug": "ram-gpu-cpu-disco-juegos",
       "product": "optimus",
-      "related": ["ssd-no-mejora-fps", "compraste-gpu-equivocada", "optimizar-windows-gaming", "liberar-ram-windows"],
+      "related": ["paradojas-del-gaming", "ram-gpu-cpu-disco-juegos", "optimizar-windows-gaming", "liberar-ram-windows"],
       "es": { "title": "Cómo afectan la RAM, GPU, CPU y el disco en los juegos", "description": "Qué componente limita FPS, tiempos de carga y stuttering. Guía clara para entender cuellos de botella y qué mejorar primero.", "file": "ram-gpu-cpu-disco-juegos.es.md" },
       "en": { "title": "How RAM, GPU, CPU and storage affect gaming", "description": "Which part limits FPS, load times and stuttering. A clear guide to bottlenecks and what to upgrade first.", "file": "ram-gpu-cpu-disco-juegos.en.md" },
       "pt": { "title": "Como RAM, GPU, CPU e disco afetam jogos", "description": "Qual peça limita FPS, tempo de carga e stutter. Guia claro sobre gargalos e o que melhorar primeiro.", "file": "ram-gpu-cpu-disco-juegos.pt.md" }

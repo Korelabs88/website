@@ -1,9 +1,17 @@
 {
   "guides": [
     {
+      "slug": "compraste-gpu-equivocada",
+      "product": "optimus",
+      "related": ["ram-gpu-cpu-disco-juegos", "optimizar-windows-gaming", "liberar-ram-windows"],
+      "es": { "title": "Compraste la GPU equivocada (y ni te diste cuenta)", "description": "Por qué una GPU top no sube tus FPS: cuellos de botella con la CPU, señales claras y cómo evitar gastar de más.", "file": "compraste-gpu-equivocada.es.md" },
+      "en": { "title": "You bought the wrong GPU (and didn't even notice)", "description": "Why a top GPU won't raise your FPS: CPU bottlenecks, clear signals, and how to avoid overspending.", "file": "compraste-gpu-equivocada.en.md" },
+      "pt": { "title": "Você comprou a GPU errada (e nem percebeu)", "description": "Por que uma GPU top não sobe seus FPS: gargalos com a CPU, sinais claros e como evitar gastar demais.", "file": "compraste-gpu-equivocada.pt.md" }
+    },
+    {
       "slug": "ram-gpu-cpu-disco-juegos",
       "product": "optimus",
-      "related": ["optimizar-windows-gaming", "liberar-ram-windows", "que-es-ddr-memoria-ram"],
+      "related": ["compraste-gpu-equivocada", "optimizar-windows-gaming", "liberar-ram-windows", "que-es-ddr-memoria-ram"],
       "es": { "title": "Cómo afectan la RAM, GPU, CPU y el disco en los juegos", "description": "Qué componente limita FPS, tiempos de carga y stuttering. Guía clara para entender cuellos de botella y qué mejorar primero.", "file": "ram-gpu-cpu-disco-juegos.es.md" },
       "en": { "title": "How RAM, GPU, CPU and storage affect gaming", "description": "Which part limits FPS, load times and stuttering. A clear guide to bottlenecks and what to upgrade first.", "file": "ram-gpu-cpu-disco-juegos.en.md" },
       "pt": { "title": "Como RAM, GPU, CPU e disco afetam jogos", "description": "Qual peça limita FPS, tempo de carga e stutter. Guia claro sobre gargalos e o que melhorar primeiro.", "file": "ram-gpu-cpu-disco-juegos.pt.md" }
@@ -43,7 +51,7 @@
     {
       "slug": "optimizar-windows-gaming",
       "product": "optimus",
-      "related": ["ram-gpu-cpu-disco-juegos", "liberar-ram-windows", "memoria-standby-windows"],
+      "related": ["compraste-gpu-equivocada", "ram-gpu-cpu-disco-juegos", "liberar-ram-windows", "memoria-standby-windows"],
       "es": { "title": "Cómo optimizar Windows 11 para gaming (modo gamer)", "description": "Pasos concretos para reducir latencia y liberar recursos antes de jugar. Incluye modo gamer de Optimus.", "file": "optimizar-windows-gaming.es.md" },
       "en": { "title": "How to optimize Windows 11 for gaming (game mode)", "description": "Concrete steps to reduce latency and free resources before gaming. Includes Optimus game mode.", "file": "optimizar-windows-gaming.en.md" },
       "pt": { "title": "Como otimizar Windows 11 para jogos (modo gamer)", "description": "Passos concretos para reduzir latência e liberar recursos antes de jogar. Inclui modo gamer do Optimus.", "file": "optimizar-windows-gaming.pt.md" }

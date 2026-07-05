@@ -43,7 +43,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="/assets/css/styles.css?v=4" />
+  <link rel="stylesheet" href="/assets/css/styles.css?v=5" />
 
   {% block head_extra %}{% endblock %}
 </head>
@@ -64,13 +64,30 @@
         <a href="{{ lang | url_for('home') }}#nosotros">{{ t.nav_about }}</a>
       </nav>
       <div class="nav__actions">
-        <div class="lang-switch" role="navigation" aria-label="{{ t.lang_aria }}">
-          {% for code, label in t.langs.items() %}
-          <a class="lang-switch__item{% if code == lang %} is-active{% endif %}"
-             href="{{ alternates.get(code, lang | url_for('home')) }}"
-             hreflang="{{ code }}"
-             {% if code == lang %}aria-current="page"{% endif %}>{{ label }}</a>
-          {% endfor %}
+        <div class="lang-dropdown" data-lang-dropdown>
+          <button class="lang-dropdown__toggle" type="button"
+                  aria-expanded="false"
+                  aria-haspopup="listbox"
+                  aria-label="{{ t.lang_aria }}"
+                  id="langToggle">
+            <svg class="lang-dropdown__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <circle cx="12" cy="12" r="10"></circle>
+              <path d="M2 12h20"></path>
+              <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+            </svg>
+          </button>
+          <ul class="lang-dropdown__menu" role="listbox" aria-labelledby="langToggle" hidden>
+            {% for code, label in t.langs.items() %}
+            <li role="presentation">
+              <a class="lang-dropdown__item{% if code == lang %} is-active{% endif %}"
+                 role="option"
+                 href="{{ alternates.get(code) or (code | url_for('home')) }}"
+                 hreflang="{{ code }}"
+                 lang="{{ code }}"
+                 {% if code == lang %}aria-current="true"{% endif %}>{{ label }}</a>
+            </li>
+            {% endfor %}
+          </ul>
         </div>
         <button class="theme-toggle" id="themeToggle" type="button" aria-label="{{ t.theme_aria }}" title="{{ t.theme_aria }}">
           <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>

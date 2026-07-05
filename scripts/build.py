@@ -190,10 +190,11 @@ def main() -> None:
 
     # --- Home ---
     for lang in LANGS:
+        register(lang, "home", None, url_for(lang, "home"))
+    home_alts = build_alternates("home", None, registry)
+    for lang in LANGS:
         t = i18n[lang]
         rel = url_for(lang, "home")
-        register(lang, "home", None, rel)
-        alts = build_alternates("home", None, registry)
         guides_list = []
         for g in guides_manifest["guides"]:
             ginfo = g[lang]
@@ -212,7 +213,7 @@ def main() -> None:
             description=t["home_meta_description"],
             site_url=SITE_URL,
             canonical=SITE_URL + rel,
-            alternates=alts,
+            alternates=home_alts,
             products=products_data,
             guides_list=guides_list[:3],
             blog_url=url_for(lang, "blog"),
@@ -224,10 +225,11 @@ def main() -> None:
     for product in products_data["products"]:
         pid = product["id"]
         for lang in LANGS:
+            register(lang, "product", pid, url_for(lang, "product", pid))
+        product_alts = build_alternates("product", pid, registry)
+        for lang in LANGS:
             pdata = product[lang]
             rel = url_for(lang, "product", pid)
-            register(lang, "product", pid, rel)
-            alts = build_alternates("product", pid, registry)
             related_guides = []
             for g in guides_manifest["guides"]:
                 if g.get("product") == pid:
@@ -268,7 +270,7 @@ def main() -> None:
                 description=pdata["meta_description"],
                 site_url=SITE_URL,
                 canonical=SITE_URL + rel,
-                alternates=alts,
+                alternates=product_alts,
                 product=product,
                 pdata=pdata,
                 related_guides=related_guides[:4],
@@ -280,9 +282,10 @@ def main() -> None:
 
     # --- FAQ ---
     for lang in LANGS:
+        register(lang, "faq", None, url_for(lang, "faq"))
+    faq_alts = build_alternates("faq", None, registry)
+    for lang in LANGS:
         rel = url_for(lang, "faq")
-        register(lang, "faq", None, rel)
-        alts = build_alternates("faq", None, registry)
         fdata = faq_data[lang]
         faq_schema = {
             "@context": "https://schema.org",
@@ -300,7 +303,7 @@ def main() -> None:
             description=fdata["meta_description"],
             site_url=SITE_URL,
             canonical=SITE_URL + rel,
-            alternates=alts,
+            alternates=faq_alts,
             fdata=fdata,
             schema_json=json.dumps(faq_schema, ensure_ascii=False),
             page_type="faq",
@@ -310,10 +313,11 @@ def main() -> None:
     # --- Blog (índice de artículos) ---
     product_labels = {"optimus": "Optimus", "coto": "Coto", "dicto": "Dicto"}
     for lang in LANGS:
+        register(lang, "blog", None, url_for(lang, "blog"))
+    blog_alts = build_alternates("blog", None, registry)
+    for lang in LANGS:
         t = i18n[lang]
         rel = url_for(lang, "blog")
-        register(lang, "blog", None, rel)
-        alts = build_alternates("blog", None, registry)
         articles = []
         for g in guides_manifest["guides"]:
             ginfo = g[lang]
@@ -343,7 +347,7 @@ def main() -> None:
             description=t["blog_meta_description"],
             site_url=SITE_URL,
             canonical=SITE_URL + rel,
-            alternates=alts,
+            alternates=blog_alts,
             articles=articles,
             schema_json=json.dumps(blog_schema, ensure_ascii=False),
             page_type="blog",
@@ -354,13 +358,14 @@ def main() -> None:
     for g in guides_manifest["guides"]:
         slug = g["slug"]
         for lang in LANGS:
+            register(lang, "article", slug, url_for(lang, "article", slug))
+        article_alts = build_alternates("article", slug, registry)
+        for lang in LANGS:
             rel = url_for(lang, "article", slug)
-            register(lang, "article", slug, rel)
             ginfo = g[lang]
             md_path = CONTENT / "guides" / ginfo["file"]
             meta, body_html = parse_guide_md(md_path.read_text(encoding="utf-8"))
             body_html, toc = extract_toc(body_html)
-            alts = build_alternates("article", slug, registry)
             product_id = g.get("product")
             product_url = url_for(lang, "product", product_id) if product_id else None
             related = []
@@ -400,7 +405,7 @@ def main() -> None:
                 t=i18n[lang],
                 site_url=SITE_URL,
                 canonical=SITE_URL + rel,
-                alternates=alts,
+                alternates=article_alts,
                 title=ginfo["title"],
                 description=ginfo["description"],
                 body_html=body_html,

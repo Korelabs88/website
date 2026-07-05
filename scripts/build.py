@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Genera el sitio estático multilingüe de Korelabs en dist/."""
+"""Genera el sitio estático multilingüe de Korelabs en public/."""
 
 from __future__ import annotations
 
@@ -15,7 +15,7 @@ from jinja2 import Environment, FileSystemLoader, select_autoescape
 ROOT = Path(__file__).resolve().parent.parent
 TEMPLATES = ROOT / "templates"
 CONTENT = ROOT / "content"
-DIST = ROOT / "dist"
+DIST = ROOT / "public"
 SITE_URL = "https://alexkore.com"
 LANGS = ("es", "en", "pt")
 DEFAULT_LANG = "es"
@@ -424,6 +424,9 @@ def main() -> None:
 
     total = sum(len(v) for v in urls_by_lang.values())
     print(f"Built {total} pages -> {DIST}")
+    index = DIST / "es" / "index.html"
+    if total == 0 or not index.is_file():
+        raise SystemExit(f"Build verification failed: missing output at {index}")
 
 
 if __name__ == "__main__":

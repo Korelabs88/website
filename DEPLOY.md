@@ -43,13 +43,15 @@ git push -u origin main
 4. Configuración de build:
    - **Framework preset**: None
    - **Build command**: `pip install -r requirements.txt && python scripts/generate_guides.py && python scripts/build.py`
-   - **Build output directory**: `dist`
+   - **Build output directory**: `public`
    - **Environment variable** (opcional): `PYTHON_VERSION=3.12`
 5. Deploy. Te dará una URL tipo `website.pages.dev` para probar.
 
-> **Importante:** el directorio de salida (`dist`) **no debe estar en `.gitignore`**. Cloudflare Pages omite del deploy los archivos que coinciden con `.gitignore`, aunque el build sea exitoso. Si ves deploy "Success" pero todas las URLs dan 404, revisá esto primero.
+> **Importante:** el directorio de salida (`public`) **no debe estar en `.gitignore`**. Cloudflare Pages omite del deploy los archivos que coinciden con `.gitignore`. Si el dashboard dice `dist`, cámbialo a `public` o confía en `wrangler.toml` del repo.
 
-> **Python:** añade variable de entorno `PYTHON_VERSION=3.12` en Settings → Environment variables.
+> **Python:** añade variable de entorno `PYTHON_VERSION=3.12` en Settings → Environment variables (o usa `.python-version` del repo).
+
+> **Build en repo:** `wrangler.toml` define `pages_build_output_dir = "public"` y el comando de build. Si el dashboard difiere, el toml del repo debería prevalecer tras el próximo deploy.
 
 > **Indexación:** en Settings → disable "Managed robots.txt" si sustituye tu `robots.txt`; activa "Allow search engine indexing" (sin `X-Robots-Tag: noindex`).
 
@@ -99,10 +101,16 @@ En pocos días tu web aparecerá al buscar "Korelabs" o "Optimus" en Google.
 
 ### Deploy "Success" pero URLs dan 404
 
-1. **`.gitignore` no debe listar `dist/`** — Pages no sube archivos ignorados.
-2. Tras corregir, **Retry deployment** en Cloudflare.
-3. Verificá: `https://tu-proyecto.pages.dev/es/` debe dar **200** (no 404).
-4. `https://tu-proyecto.pages.dev/robots.txt` debe contener `Sitemap: https://alexkore.com/sitemap.xml` (no el robots genérico de Cloudflare).
+1. Abrí el **log del deploy** y buscá la línea `Built 108 pages -> .../public`. Si no aparece, el build de Python falló o no corrió.
+2. **`.gitignore` no debe listar `public/`** — Pages no sube archivos ignorados.
+3. **Build output = `public`** (Settings o `wrangler.toml`).
+4. Tras corregir, **Retry deployment** en Cloudflare.
+5. Verificá: `https://website-3lj.pages.dev/es/` debe dar **200** (no 404).
+6. `robots.txt` debe contener `Sitemap: https://alexkore.com/sitemap.xml` (no el robots genérico de Cloudflare).
+
+### alexkore.com muestra sitio viejo (sin `/es/`)
+
+Si `https://alexkore.com/` responde 200 pero `https://alexkore.com/es/blog/...` da 404, y el canonical es `https://alexkore.com/` (sin `/es/`), el dominio **no está sirviendo el deploy nuevo**. Revisá en Pages → Custom domains que `alexkore.com` apunte a **este** proyecto y que no haya otro registro DNS/Worker compitiendo en la zona de Cloudflare.
 
 ### Search Console rechaza indexación
 
@@ -114,8 +122,8 @@ En pocos días tu web aparecerá al buscar "Korelabs" o "Optimus" en Google.
 ## Actualizar la web más adelante
 
 1. Edita contenido en `content/` o plantillas en `templates/`.
-2. Ejecuta localmente: `python scripts/build.py` (opcional, para previsualizar en `dist/`).
-3. `git push` — Cloudflare reconstruye y despliega desde `dist/`.
+2. Ejecuta localmente: `python scripts/build.py` (opcional, para previsualizar en `public/`).
+3. `git push` — Cloudflare reconstruye y despliega desde `public/`.
 
 Para añadir un programa: actualiza `content/products.json` y las traducciones en `content/i18n/`.
 

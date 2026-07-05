@@ -1,5 +1,6 @@
-# NO ignorar dist/ — Cloudflare Pages excluye del deploy cualquier ruta
-# que coincida con .gitignore (ver DEPLOY.md). No commitees dist/ manualmente.
+# NO ignorar public/ — Cloudflare Pages excluye del deploy rutas en .gitignore
+# Carpeta legacy local (opcional borrar): dist/
+dist/
 
 # Sistema
 .DS_Store

@@ -1,0 +1,6 @@
+name = "website"
+compatibility_date = "2024-01-01"
+pages_build_output_dir = "public"
+
+[build]
+command = "pip install -r requirements.txt && python scripts/generate_guides.py && python scripts/build.py"

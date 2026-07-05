@@ -11,10 +11,10 @@ python scripts/generate_guides.py   # solo si faltan guías
 python scripts/build.py
 ```
 
-Abre `dist/es/index.html` con un servidor local, o:
+Abre `public/es/index.html` con un servidor local, o:
 
 ```powershell
-cd dist && python -m http.server 8080
+cd public && python -m http.server 8080
 ```
 
 Visita http://localhost:8080/es/
@@ -24,8 +24,8 @@ Visita http://localhost:8080/es/
 ```
 content/          Datos (i18n, productos, FAQ, guías Markdown)
 templates/        Plantillas Jinja2
-scripts/build.py  Genera dist/
-dist/             Output desplegado (no commitear)
+scripts/build.py  Genera public/
+public/           Output desplegado (no commitear)
 ```
 
 ## Cloudflare Pages
@@ -33,7 +33,7 @@ dist/             Output desplegado (no commitear)
 | Campo | Valor |
 |-------|-------|
 | Build command | `pip install -r requirements.txt && python scripts/generate_guides.py && python scripts/build.py` |
-| Build output | `dist` |
+| Build output | `public` |
 | Python version | 3.12 |
 
 ## Añadir contenido

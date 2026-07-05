@@ -3,15 +3,23 @@
     {
       "slug": "paradojas-del-gaming",
       "product": "optimus",
-      "related": ["compraste-gpu-equivocada", "fps-promedio-vs-fluidez", "steam-backlog-paradoja", "optimizar-windows-gaming"],
-      "es": { "title": "Paradojas del gaming en PC: 11 mitos que te hacen gastar mal", "description": "Índice de la serie: GPU, RAM, DLSS, FPS, SSD, Windows, backlog y más. Diagnostica antes de comprar hardware.", "file": "paradojas-del-gaming.es.md" },
-      "en": { "title": "PC gaming paradoxes: 11 myths that make you overspend", "description": "Series index: GPU, RAM, DLSS, FPS, SSD, Windows, backlog and more. Diagnose before buying hardware.", "file": "paradojas-del-gaming.en.md" },
-      "pt": { "title": "Paradoxos do gaming no PC: 11 mitos que fazem gastar mal", "description": "Índice da série: GPU, RAM, DLSS, FPS, SSD, Windows, backlog e mais. Diagnostique antes de comprar hardware.", "file": "paradojas-del-gaming.pt.md" }
+      "related": ["compraste-gpu-equivocada", "fps-promedio-vs-fluidez", "steam-backlog-paradoja", "comprar-juego-dia-1-paradoja"],
+      "es": { "title": "Paradojas del gaming en PC: 12 mitos que te hacen gastar mal", "description": "Índice de la serie: GPU, RAM, DLSS, FPS, SSD, Windows, backlog, preventas y más. Diagnostica antes de comprar hardware.", "file": "paradojas-del-gaming.es.md" },
+      "en": { "title": "PC gaming paradoxes: 12 myths that make you overspend", "description": "Series index: GPU, RAM, DLSS, FPS, SSD, Windows, backlog, pre-orders and more. Diagnose before buying hardware.", "file": "paradojas-del-gaming.en.md" },
+      "pt": { "title": "Paradoxos do gaming no PC: 12 mitos que fazem gastar mal", "description": "Índice da série: GPU, RAM, DLSS, FPS, SSD, Windows, backlog, pré-vendas e mais. Diagnostique antes de comprar hardware.", "file": "paradojas-del-gaming.pt.md" }
+    },
+    {
+      "slug": "comprar-juego-dia-1-paradoja",
+      "product": "optimus",
+      "related": ["paradojas-del-gaming", "steam-backlog-paradoja", "fps-promedio-vs-fluidez", "ssd-no-mejora-fps"],
+      "es": { "title": "Comprar el juego el día 1 es la peor decisión que tomás como fan", "description": "Escasez falsa en preventas digitales, bugs de lanzamiento, cajas sin disco y cuándo tiene sentido esperar o comprar con los ojos abiertos.", "file": "comprar-juego-dia-1-paradoja.es.md" },
+      "en": { "title": "Buying a game on day one is the worst decision you make as a fan", "description": "False scarcity in digital pre-orders, launch bugs, box-with-no-disc editions, and when to wait or buy with eyes open.", "file": "comprar-juego-dia-1-paradoja.en.md" },
+      "pt": { "title": "Comprar o jogo no dia 1 é a pior decisão que você toma como fã", "description": "Escassez falsa em pré-vendas digitais, bugs de lançamento, caixas sem disco e quando vale esperar ou comprar de olhos abertos.", "file": "comprar-juego-dia-1-paradoja.pt.md" }
     },
     {
       "slug": "steam-backlog-paradoja",
       "product": "optimus",
-      "related": ["paradojas-del-gaming", "compraste-gpu-equivocada", "ssd-no-mejora-fps", "fps-promedio-vs-fluidez"],
+      "related": ["paradojas-del-gaming", "comprar-juego-dia-1-paradoja", "compraste-gpu-equivocada", "fps-promedio-vs-fluidez"],
       "es": { "title": "Tenés 500 juegos en Steam y jugás 3: tu verdadero cuello de botella es otro", "description": "Por qué el backlog limita tu disfrute más que la GPU: tiempo, dopamina de compra y parálisis de elección.", "file": "steam-backlog-paradoja.es.md" },
       "en": { "title": "You have 500 Steam games and play 3: your real bottleneck is elsewhere", "description": "Why backlog limits enjoyment more than GPU: time, purchase dopamine, and choice paralysis.", "file": "steam-backlog-paradoja.en.md" },
       "pt": { "title": "Tem 500 jogos na Steam e joga 3: seu gargalo real é outro", "description": "Por que backlog limita prazer mais que GPU: tempo, dopamina de compra e paralisia de escolha.", "file": "steam-backlog-paradoja.pt.md" }

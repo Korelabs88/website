@@ -1,6 +1,14 @@
 {
   "guides": [
     {
+      "slug": "ram-no-esta-llena-standby",
+      "product": "optimus",
+      "related": ["memoria-standby-windows", "liberar-ram-windows", "compraste-gpu-equivocada"],
+      "es": { "title": "Tu RAM no está \"llena\", está trabajando: dejá de entrar en pánico", "description": "Por qué el 91% de RAM en Windows no es emergencia: memoria standby, cuándo sí importa y cómo liberar margen sin destruir la caché.", "file": "ram-no-esta-llena-standby.es.md" },
+      "en": { "title": "Your RAM isn't \"full\", it's working: stop panicking", "description": "Why 91% RAM in Windows isn't an emergency: standby memory, when it matters, and how to free margin without destroying cache.", "file": "ram-no-esta-llena-standby.en.md" },
+      "pt": { "title": "Sua RAM não está \"cheia\", está trabalhando: pare de entrar em pânico", "description": "Por que 91% de RAM no Windows não é emergência: memória standby, quando importa e como liberar margem sem destruir o cache.", "file": "ram-no-esta-llena-standby.pt.md" }
+    },
+    {
       "slug": "compraste-gpu-equivocada",
       "product": "optimus",
       "related": ["ram-gpu-cpu-disco-juegos", "optimizar-windows-gaming", "liberar-ram-windows"],
@@ -11,7 +19,7 @@
     {
       "slug": "ram-gpu-cpu-disco-juegos",
       "product": "optimus",
-      "related": ["compraste-gpu-equivocada", "optimizar-windows-gaming", "liberar-ram-windows", "que-es-ddr-memoria-ram"],
+      "related": ["ram-no-esta-llena-standby", "compraste-gpu-equivocada", "optimizar-windows-gaming", "liberar-ram-windows"],
       "es": { "title": "Cómo afectan la RAM, GPU, CPU y el disco en los juegos", "description": "Qué componente limita FPS, tiempos de carga y stuttering. Guía clara para entender cuellos de botella y qué mejorar primero.", "file": "ram-gpu-cpu-disco-juegos.es.md" },
       "en": { "title": "How RAM, GPU, CPU and storage affect gaming", "description": "Which part limits FPS, load times and stuttering. A clear guide to bottlenecks and what to upgrade first.", "file": "ram-gpu-cpu-disco-juegos.en.md" },
       "pt": { "title": "Como RAM, GPU, CPU e disco afetam jogos", "description": "Qual peça limita FPS, tempo de carga e stutter. Guia claro sobre gargalos e o que melhorar primeiro.", "file": "ram-gpu-cpu-disco-juegos.pt.md" }
@@ -35,7 +43,7 @@
     {
       "slug": "liberar-ram-windows",
       "product": "optimus",
-      "related": ["computacion-cuantica-pcs-obsoletas", "liberar-ram-windows", "memoria-standby-windows", "optimus-vs-wise-memory-optimizer"],
+      "related": ["ram-no-esta-llena-standby", "memoria-standby-windows", "optimus-vs-wise-memory-optimizer"],
       "es": { "title": "Cómo liberar RAM en Windows 10/11 sin programas de pago", "description": "Guía práctica para liberar memoria RAM en Windows de forma segura. Qué funciona, qué evitar y cómo usar Optimus gratis.", "file": "liberar-ram-windows.es.md" },
       "en": { "title": "How to free up RAM on Windows 10/11 without paid tools", "description": "Practical guide to free RAM on Windows safely. What works, what to avoid, and how to use Optimus for free.", "file": "liberar-ram-windows.en.md" },
       "pt": { "title": "Como liberar RAM no Windows 10/11 sem programas pagos", "description": "Guia prática para liberar memória RAM no Windows com segurança. O que funciona, o que evitar e como usar Optimus grátis.", "file": "liberar-ram-windows.pt.md" }
@@ -43,7 +51,7 @@
     {
       "slug": "memoria-standby-windows",
       "product": "optimus",
-      "related": ["que-es-ddr-memoria-ram", "liberar-ram-windows", "optimizar-windows-gaming"],
+      "related": ["ram-no-esta-llena-standby", "que-es-ddr-memoria-ram", "liberar-ram-windows", "optimizar-windows-gaming"],
       "es": { "title": "Qué es la memoria standby en Windows y cómo liberarla", "description": "Explicación clara de la lista standby, por qué Windows retiene RAM y cómo recuperarla sin riesgos.", "file": "memoria-standby-windows.es.md" },
       "en": { "title": "What is Windows standby memory and how to free it", "description": "Clear explanation of the standby list, why Windows keeps RAM cached, and how to reclaim it safely.", "file": "memoria-standby-windows.en.md" },
       "pt": { "title": "O que é memória standby no Windows e como liberá-la", "description": "Explicação clara da lista standby, por que o Windows retém RAM e como recuperá-la sem riscos.", "file": "memoria-standby-windows.pt.md" }

@@ -1,9 +1,17 @@
 {
   "guides": [
     {
+      "slug": "que-es-ddr-memoria-ram",
+      "product": "optimus",
+      "related": ["liberar-ram-windows", "memoria-standby-windows"],
+      "es": { "title": "¿Qué es DDR? Por qué hay 5 generaciones y cuándo llegará el DDR6", "description": "Guía clara sobre memoria DDR: qué significa, evolución desde DDR hasta DDR5, rumores del DDR6 y qué ventajas podría traer frente al DDR5.", "file": "que-es-ddr-memoria-ram.es.md" },
+      "en": { "title": "What is DDR? Why there are 5 generations and when DDR6 may arrive", "description": "Clear guide on DDR memory: what it means, evolution from DDR to DDR5, DDR6 rumors and possible advantages over DDR5.", "file": "que-es-ddr-memoria-ram.en.md" },
+      "pt": { "title": "O que é DDR? Por que existem 5 gerações e quando chegará o DDR6", "description": "Guia clara sobre memória DDR: o que significa, evolução do DDR ao DDR5, rumores do DDR6 e possíveis vantagens sobre o DDR5.", "file": "que-es-ddr-memoria-ram.pt.md" }
+    },
+    {
       "slug": "liberar-ram-windows",
       "product": "optimus",
-      "related": ["memoria-standby-windows", "optimus-vs-wise-memory-optimizer"],
+      "related": ["que-es-ddr-memoria-ram", "memoria-standby-windows", "optimus-vs-wise-memory-optimizer"],
       "es": { "title": "Cómo liberar RAM en Windows 10/11 sin programas de pago", "description": "Guía práctica para liberar memoria RAM en Windows de forma segura. Qué funciona, qué evitar y cómo usar Optimus gratis.", "file": "liberar-ram-windows.es.md" },
       "en": { "title": "How to free up RAM on Windows 10/11 without paid tools", "description": "Practical guide to free RAM on Windows safely. What works, what to avoid, and how to use Optimus for free.", "file": "liberar-ram-windows.en.md" },
       "pt": { "title": "Como liberar RAM no Windows 10/11 sem programas pagos", "description": "Guia prática para liberar memória RAM no Windows com segurança. O que funciona, o que evitar e como usar Optimus grátis.", "file": "liberar-ram-windows.pt.md" }
@@ -11,7 +19,7 @@
     {
       "slug": "memoria-standby-windows",
       "product": "optimus",
-      "related": ["liberar-ram-windows", "optimizar-windows-gaming"],
+      "related": ["que-es-ddr-memoria-ram", "liberar-ram-windows", "optimizar-windows-gaming"],
       "es": { "title": "Qué es la memoria standby en Windows y cómo liberarla", "description": "Explicación clara de la lista standby, por qué Windows retiene RAM y cómo recuperarla sin riesgos.", "file": "memoria-standby-windows.es.md" },
       "en": { "title": "What is Windows standby memory and how to free it", "description": "Clear explanation of the standby list, why Windows keeps RAM cached, and how to reclaim it safely.", "file": "memoria-standby-windows.en.md" },
       "pt": { "title": "O que é memória standby no Windows e como liberá-la", "description": "Explicação clara da lista standby, por que o Windows retém RAM e como recuperá-la sem riscos.", "file": "memoria-standby-windows.pt.md" }

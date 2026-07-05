@@ -1,6 +1,14 @@
 {
   "guides": [
     {
+      "slug": "bajar-graficos-minimo-paradoja",
+      "product": "optimus",
+      "related": ["dlss-fsr-mejor-que-nativo", "fps-promedio-vs-fluidez", "optimizar-windows-gaming", "ram-gpu-cpu-disco-juegos"],
+      "es": { "title": "Bajar gráficos al mínimo te puede estar arruinando la partida", "description": "Cuándo bajar settings ayuda en ranked y cuándo te quita información en mundo abierto: cosmético vs funcional, LOD y pop-in.", "file": "bajar-graficos-minimo-paradoja.es.md" },
+      "en": { "title": "Lowering graphics to minimum may be ruining your match", "description": "When lowering settings helps in ranked vs when it removes information in open worlds: cosmetic vs functional, LOD and pop-in.", "file": "bajar-graficos-minimo-paradoja.en.md" },
+      "pt": { "title": "Baixar gráficos ao mínimo pode estar arruinando sua partida", "description": "Quando baixar settings ajuda no ranked e quando tira informação em mundo aberto: cosmético vs funcional, LOD e pop-in.", "file": "bajar-graficos-minimo-paradoja.pt.md" }
+    },
+    {
       "slug": "ssd-no-mejora-fps",
       "product": "optimus",
       "related": ["compraste-gpu-equivocada", "ram-gpu-cpu-disco-juegos", "fps-promedio-vs-fluidez", "optimizar-windows-gaming"],
@@ -19,7 +27,7 @@
     {
       "slug": "dlss-fsr-mejor-que-nativo",
       "product": "optimus",
-      "related": ["fps-promedio-vs-fluidez", "ram-gpu-cpu-disco-juegos", "compraste-gpu-equivocada", "optimizar-windows-gaming"],
+      "related": ["bajar-graficos-minimo-paradoja", "fps-promedio-vs-fluidez", "ram-gpu-cpu-disco-juegos", "compraste-gpu-equivocada"],
       "es": { "title": "DLSS a 1080p se ve mejor que nativo a 4K: bienvenido a la mentira que sí funciona", "description": "Por qué DLSS y FSR pueden sentirse mejor que resolución nativa: frame time, modos de calidad y cuándo activarlos.", "file": "dlss-fsr-mejor-que-nativo.es.md" },
       "en": { "title": "DLSS at 1080p looks better than native 4K: welcome to the lie that works", "description": "Why DLSS and FSR can feel better than native resolution: frame time, quality modes, and when to enable them.", "file": "dlss-fsr-mejor-que-nativo.en.md" },
       "pt": { "title": "DLSS em 1080p parece melhor que nativo em 4K: bem-vindo à mentira que funciona", "description": "Por que DLSS e FSR podem sentir melhor que resolução nativa: frame time, modos de qualidade e quando ativar.", "file": "dlss-fsr-mejor-que-nativo.pt.md" }
@@ -83,7 +91,7 @@
     {
       "slug": "optimizar-windows-gaming",
       "product": "optimus",
-      "related": ["dlss-fsr-mejor-que-nativo", "compraste-gpu-equivocada", "ram-gpu-cpu-disco-juegos", "memoria-standby-windows"],
+      "related": ["bajar-graficos-minimo-paradoja", "dlss-fsr-mejor-que-nativo", "compraste-gpu-equivocada", "ram-gpu-cpu-disco-juegos"],
       "es": { "title": "Cómo optimizar Windows 11 para gaming (modo gamer)", "description": "Pasos concretos para reducir latencia y liberar recursos antes de jugar. Incluye modo gamer de Optimus.", "file": "optimizar-windows-gaming.es.md" },
       "en": { "title": "How to optimize Windows 11 for gaming (game mode)", "description": "Concrete steps to reduce latency and free resources before gaming. Includes Optimus game mode.", "file": "optimizar-windows-gaming.en.md" },
       "pt": { "title": "Como otimizar Windows 11 para jogos (modo gamer)", "description": "Passos concretos para reduzir latência e liberar recursos antes de jogar. Inclui modo gamer do Optimus.", "file": "optimizar-windows-gaming.pt.md" }

@@ -1,6 +1,14 @@
 {
   "guides": [
     {
+      "slug": "computacion-cuantica-pcs-obsoletas",
+      "product": "optimus",
+      "related": ["que-es-ddr-memoria-ram", "liberar-ram-windows"],
+      "es": { "title": "Computación cuántica: ¿se volverán obsoletas las PCs actuales?", "description": "Qué puede y qué no puede hacer un ordenador cuántico hoy, por qué tu PC clásico seguirá siendo útil y en qué escenarios sí cambiará todo.", "file": "computacion-cuantica-pcs-obsoletas.es.md" },
+      "en": { "title": "Quantum computing: will today's PCs become obsolete?", "description": "What quantum computers can and can't do today, why your classical PC will stay useful, and where the real disruption may happen.", "file": "computacion-cuantica-pcs-obsoletas.en.md" },
+      "pt": { "title": "Computação quântica: os PCs atuais ficarão obsoletos?", "description": "O que computadores quânticos podem e não podem fazer hoje, por que seu PC clássico continuará útil e onde a disrupção pode acontecer.", "file": "computacion-cuantica-pcs-obsoletas.pt.md" }
+    },
+    {
       "slug": "que-es-ddr-memoria-ram",
       "product": "optimus",
       "related": ["liberar-ram-windows", "memoria-standby-windows"],
@@ -11,7 +19,7 @@
     {
       "slug": "liberar-ram-windows",
       "product": "optimus",
-      "related": ["que-es-ddr-memoria-ram", "memoria-standby-windows", "optimus-vs-wise-memory-optimizer"],
+      "related": ["computacion-cuantica-pcs-obsoletas", "liberar-ram-windows", "memoria-standby-windows", "optimus-vs-wise-memory-optimizer"],
       "es": { "title": "Cómo liberar RAM en Windows 10/11 sin programas de pago", "description": "Guía práctica para liberar memoria RAM en Windows de forma segura. Qué funciona, qué evitar y cómo usar Optimus gratis.", "file": "liberar-ram-windows.es.md" },
       "en": { "title": "How to free up RAM on Windows 10/11 without paid tools", "description": "Practical guide to free RAM on Windows safely. What works, what to avoid, and how to use Optimus for free.", "file": "liberar-ram-windows.en.md" },
       "pt": { "title": "Como liberar RAM no Windows 10/11 sem programas pagos", "description": "Guia prática para liberar memória RAM no Windows com segurança. O que funciona, o que evitar e como usar Optimus grátis.", "file": "liberar-ram-windows.pt.md" }

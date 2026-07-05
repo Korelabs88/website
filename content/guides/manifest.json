@@ -3,10 +3,18 @@
     {
       "slug": "paradojas-del-gaming",
       "product": "optimus",
-      "related": ["compraste-gpu-equivocada", "pc-streamer-vs-capturadora-paradoja", "fps-promedio-vs-fluidez", "ray-tracing-foto-vs-jugar-paradoja"],
-      "es": { "title": "Paradojas del gaming en PC: 15 mitos que te hacen gastar mal", "description": "Índice de la serie: GPU, RAM, DLSS, RT, FPS, streaming, Hz, SSD, Windows, backlog y más. Diagnostica antes de comprar hardware.", "file": "paradojas-del-gaming.es.md" },
-      "en": { "title": "PC gaming paradoxes: 15 myths that make you overspend", "description": "Series index: GPU, RAM, DLSS, RT, FPS, streaming, Hz, SSD, Windows, backlog and more. Diagnose before buying hardware.", "file": "paradojas-del-gaming.en.md" },
-      "pt": { "title": "Paradoxos do gaming no PC: 15 mitos que fazem gastar mal", "description": "Índice da série: GPU, RAM, DLSS, RT, FPS, streaming, Hz, SSD, Windows, backlog e mais. Diagnostique antes de comprar hardware.", "file": "paradojas-del-gaming.pt.md" }
+      "related": ["entender-hardware-disfrutar-menos-paradoja", "compraste-gpu-equivocada", "fps-promedio-vs-fluidez", "pc-streamer-vs-capturadora-paradoja"],
+      "es": { "title": "Paradojas del gaming en PC: 16 mitos que te hacen gastar mal", "description": "Índice completo de la serie: GPU, RAM, DLSS, RT, FPS, streaming, Hz, SSD, Windows, backlog y cierre. Diagnostica antes de gastar.", "file": "paradojas-del-gaming.es.md" },
+      "en": { "title": "PC gaming paradoxes: 16 myths that make you overspend", "description": "Full series index: GPU, RAM, DLSS, RT, FPS, streaming, Hz, SSD, Windows, backlog and finale. Diagnose before buying hardware.", "file": "paradojas-del-gaming.en.md" },
+      "pt": { "title": "Paradoxos do gaming no PC: 16 mitos que fazem gastar mal", "description": "Índice completo da série: GPU, RAM, DLSS, RT, FPS, streaming, Hz, SSD, Windows, backlog e fechamento. Diagnostique antes de comprar.", "file": "paradojas-del-gaming.pt.md" }
+    },
+    {
+      "slug": "entender-hardware-disfrutar-menos-paradoja",
+      "product": "optimus",
+      "related": ["paradojas-del-gaming", "fps-promedio-vs-fluidez", "sobreoptimizar-windows-fps", "optimizar-windows-gaming"],
+      "es": { "title": "Cuanto más entendés de hardware, peor se siente tu juego favorito", "description": "Cierre de la serie: el síndrome del frame time, medir para decidir vs obsesionarte, y cómo volver a disfrutar sin desaprender.", "file": "entender-hardware-disfrutar-menos-paradoja.es.md" },
+      "en": { "title": "The more you understand hardware, the worse your favorite game feels", "description": "Series finale: frame time syndrome, measure to decide vs obsess, and how to enjoy again without unlearning.", "file": "entender-hardware-disfrutar-menos-paradoja.en.md" },
+      "pt": { "title": "Quanto mais você entende de hardware, pior seu jogo favorito parece", "description": "Fechamento da série: síndrome do frame time, medir pra decidir vs obsessão, e como curtir de novo sem desaprender.", "file": "entender-hardware-disfrutar-menos-paradoja.pt.md" }
     },
     {
       "slug": "pc-streamer-vs-capturadora-paradoja",

@@ -1,6 +1,6 @@
 PC gaming has a narrative problem: everyone sells the same story — more GPU, more RAM, more tweaks, more FPS on screen. But when you actually measure, the experience doesn't improve as promised. Not because your PC is broken. Because **the bottleneck is almost never where marketing said it was**.
 
-This series collects **15 gaming paradoxes**: real contradictions between what we believe, what we measure, and what we feel while playing. Hardware, software, Windows, metrics, even your Steam library. Same thread throughout: **diagnose before you spend**.
+This series collects **16 gaming paradoxes**: real contradictions between what we believe, what we measure, and what we feel while playing. Hardware, software, Windows, metrics, streaming, purchases — and a finale on **when to stop measuring**. Same thread throughout: **diagnose before you spend; enjoy when there's nothing to diagnose**.
 
 ## The core idea
 
@@ -21,8 +21,9 @@ This series collects **15 gaming paradoxes**: real contradictions between what w
 | More games = more playing | Backlog is the limit |
 | Pre-order at midnight = scarcity | Digital files never run out |
 | Expensive streamer PC = better stream | Two modest PCs split the work |
+| More hardware knowledge = more fun | Unlimited knowledge = less peace |
 
-## All 15 articles (suggested order)
+## All 16 articles (suggested order)
 
 ### Hardware: where is the limit?
 
@@ -64,12 +65,17 @@ This series collects **15 gaming paradoxes**: real contradictions between what w
 
 15. **[A mid-range PC + capture card beats your "streamer" PC](/en/blog/pc-streamer-vs-capturadora-paradoja/)** — Streaming is a second job. Splitting tasks across two systems usually beats one expensive machine.
 
+### Series finale (the meta-paradox)
+
+16. **[The more you understand hardware, the worse your favorite game feels](/en/blog/entender-hardware-disfrutar-menos-paradoja/)** — Frame time syndrome: measure to decide, not to obsess. Turn off the overlay and play again.
+
 ## Checklist before your next upgrade
 
 1. **Which component is maxed?** GPU, CPU, RAM, drive — measure in real combat, not menus.
 2. **1% low or average?** Average FPS alone misleads.
 3. **Software optimization first?** Drivers, close heavy apps, game mode — before buying hardware.
-4. **Does this spending hit my real limit?** Monolithic streamer PC won't fix architecture; RT premium won't fix ranked; new GPU won't fix backlog.
+4. **Does this spending hit my real limit?** Monolithic streamer PC, RT premium, or new GPU won't fix non-hardware limits.
+5. **Measuring all the time or only when something feels wrong?** Permanent overlay steals enjoyment — see finale (#16).
 
 ## Optimus: optimize the session, not the obsession
 
@@ -83,12 +89,12 @@ Free, local, Windows 10/11. Concrete steps: [optimize Windows 11 for gaming](/en
 
 ## Frequently asked questions
 
-**Where to start if I only read one?** Wrong GPU or 300 FPS feels awful — covers 80% of bad purchases.
+**Where to start if I only read one?** Wrong GPU (#1) or 300 FPS feels awful (#5). If you've read everything: the finale (#16).
 
 **Do these paradoxes mean never upgrade?** No. They mean **upgrade with diagnosis**, not FOMO.
 
-**More articles coming?** This series closes at 15; the blog continues with Optimus and hardware guides.
+**Is the series continuing?** It closes at **16 articles** with the enjoyment meta-paradox. The blog continues with Optimus and hardware guides.
 
 **Can I share the series?** Yes. This index: `/en/blog/paradojas-del-gaming/`.
 
-Next time a video promises "+200 FPS with a secret trick," come back here. Paradoxes don't read ads. They read your setup — and your real life.
+Diagnose when you need to. When you don't, open the game and play — like before you knew what 1% low meant.

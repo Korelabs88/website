@@ -1,6 +1,14 @@
 {
   "guides": [
     {
+      "slug": "antivirus-gaming-paradoja",
+      "product": "optimus",
+      "related": ["sobreoptimizar-windows-fps", "game-mode-windows-paradoja", "fps-promedio-vs-fluidez", "optimizar-windows-gaming"],
+      "es": { "title": "Desactivaste el antivirus para jugar mejor... y no cambió nada", "description": "Por qué desactivar Windows Defender casi no sube FPS, cuándo sí importa el antivirus, y qué hacer en vez de dejar el PC expuesto.", "file": "antivirus-gaming-paradoja.es.md" },
+      "en": { "title": "You disabled antivirus to game better... and nothing changed", "description": "Why disabling Windows Defender barely raises FPS, when antivirus actually matters, and what to do instead of leaving your PC exposed.", "file": "antivirus-gaming-paradoja.en.md" },
+      "pt": { "title": "Desativou o antivírus para jogar melhor... e nada mudou", "description": "Por que desativar Windows Defender quase não sobe FPS, quando antivírus importa de verdade, e o que fazer em vez de deixar o PC exposto.", "file": "antivirus-gaming-paradoja.pt.md" }
+    },
+    {
       "slug": "game-mode-windows-paradoja",
       "product": "optimus",
       "related": ["optimizar-windows-gaming", "sobreoptimizar-windows-fps", "fps-promedio-vs-fluidez", "pc-limpio-multitarea-gaming"],

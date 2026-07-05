@@ -54,7 +54,7 @@ def build_alternates(page_type: str, slug: str | None, registry: dict) -> dict[s
     alts: dict[str, str] = {}
     for lang in LANGS:
         if page_key(page_type, slug) in registry.get(lang, {}):
-            alts[lang] = SITE_URL + registry[lang][page_key(page_type, slug)]
+            alts[lang] = registry[lang][page_key(page_type, slug)]
     return alts
 
 

@@ -1,9 +1,17 @@
 {
   "guides": [
     {
+      "slug": "fps-promedio-vs-fluidez",
+      "product": "optimus",
+      "related": ["dlss-fsr-mejor-que-nativo", "ram-no-esta-llena-standby", "compraste-gpu-equivocada", "ram-gpu-cpu-disco-juegos"],
+      "es": { "title": "300 FPS y se siente como el orto: por qué el número no es la fluidez", "description": "FPS promedio vs 1% low: por qué 300 FPS pueden sentirse mal, qué métrica mirar y cómo mejorar la consistencia real.", "file": "fps-promedio-vs-fluidez.es.md" },
+      "en": { "title": "300 FPS and it still feels awful: why the number isn't smoothness", "description": "Average FPS vs 1% low: why 300 FPS can feel bad, which metric to watch, and how to improve real consistency.", "file": "fps-promedio-vs-fluidez.en.md" },
+      "pt": { "title": "300 FPS e ainda parece ruim: por que o número não é fluidez", "description": "FPS médio vs 1% low: por que 300 FPS podem sentir mal, qual métrica olhar e como melhorar consistência real.", "file": "fps-promedio-vs-fluidez.pt.md" }
+    },
+    {
       "slug": "dlss-fsr-mejor-que-nativo",
       "product": "optimus",
-      "related": ["ram-gpu-cpu-disco-juegos", "compraste-gpu-equivocada", "optimizar-windows-gaming"],
+      "related": ["fps-promedio-vs-fluidez", "ram-gpu-cpu-disco-juegos", "compraste-gpu-equivocada", "optimizar-windows-gaming"],
       "es": { "title": "DLSS a 1080p se ve mejor que nativo a 4K: bienvenido a la mentira que sí funciona", "description": "Por qué DLSS y FSR pueden sentirse mejor que resolución nativa: frame time, modos de calidad y cuándo activarlos.", "file": "dlss-fsr-mejor-que-nativo.es.md" },
       "en": { "title": "DLSS at 1080p looks better than native 4K: welcome to the lie that works", "description": "Why DLSS and FSR can feel better than native resolution: frame time, quality modes, and when to enable them.", "file": "dlss-fsr-mejor-que-nativo.en.md" },
       "pt": { "title": "DLSS em 1080p parece melhor que nativo em 4K: bem-vindo à mentira que funciona", "description": "Por que DLSS e FSR podem sentir melhor que resolução nativa: frame time, modos de qualidade e quando ativar.", "file": "dlss-fsr-mejor-que-nativo.pt.md" }
@@ -11,7 +19,7 @@
     {
       "slug": "ram-no-esta-llena-standby",
       "product": "optimus",
-      "related": ["memoria-standby-windows", "liberar-ram-windows", "compraste-gpu-equivocada"],
+      "related": ["fps-promedio-vs-fluidez", "memoria-standby-windows", "liberar-ram-windows", "compraste-gpu-equivocada"],
       "es": { "title": "Tu RAM no está \"llena\", está trabajando: dejá de entrar en pánico", "description": "Por qué el 91% de RAM en Windows no es emergencia: memoria standby, cuándo sí importa y cómo liberar margen sin destruir la caché.", "file": "ram-no-esta-llena-standby.es.md" },
       "en": { "title": "Your RAM isn't \"full\", it's working: stop panicking", "description": "Why 91% RAM in Windows isn't an emergency: standby memory, when it matters, and how to free margin without destroying cache.", "file": "ram-no-esta-llena-standby.en.md" },
       "pt": { "title": "Sua RAM não está \"cheia\", está trabalhando: pare de entrar em pânico", "description": "Por que 91% de RAM no Windows não é emergência: memória standby, quando importa e como liberar margem sem destruir o cache.", "file": "ram-no-esta-llena-standby.pt.md" }

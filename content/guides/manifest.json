@@ -3,10 +3,18 @@
     {
       "slug": "paradojas-del-gaming",
       "product": "optimus",
-      "related": ["compraste-gpu-equivocada", "fps-promedio-vs-fluidez", "steam-backlog-paradoja", "comprar-juego-dia-1-paradoja"],
-      "es": { "title": "Paradojas del gaming en PC: 12 mitos que te hacen gastar mal", "description": "Índice de la serie: GPU, RAM, DLSS, FPS, SSD, Windows, backlog, preventas y más. Diagnostica antes de comprar hardware.", "file": "paradojas-del-gaming.es.md" },
-      "en": { "title": "PC gaming paradoxes: 12 myths that make you overspend", "description": "Series index: GPU, RAM, DLSS, FPS, SSD, Windows, backlog, pre-orders and more. Diagnose before buying hardware.", "file": "paradojas-del-gaming.en.md" },
-      "pt": { "title": "Paradoxos do gaming no PC: 12 mitos que fazem gastar mal", "description": "Índice da série: GPU, RAM, DLSS, FPS, SSD, Windows, backlog, pré-vendas e mais. Diagnostique antes de comprar hardware.", "file": "paradojas-del-gaming.pt.md" }
+      "related": ["compraste-gpu-equivocada", "fps-promedio-vs-fluidez", "144hz-percepcion-vs-habilidad-paradoja", "steam-backlog-paradoja"],
+      "es": { "title": "Paradojas del gaming en PC: 13 mitos que te hacen gastar mal", "description": "Índice de la serie: GPU, RAM, DLSS, FPS, Hz, SSD, Windows, backlog, preventas y más. Diagnostica antes de comprar hardware.", "file": "paradojas-del-gaming.es.md" },
+      "en": { "title": "PC gaming paradoxes: 13 myths that make you overspend", "description": "Series index: GPU, RAM, DLSS, FPS, Hz, SSD, Windows, backlog, pre-orders and more. Diagnose before buying hardware.", "file": "paradojas-del-gaming.en.md" },
+      "pt": { "title": "Paradoxos do gaming no PC: 13 mitos que fazem gastar mal", "description": "Índice da série: GPU, RAM, DLSS, FPS, Hz, SSD, Windows, backlog, pré-vendas e mais. Diagnostique antes de comprar hardware.", "file": "paradojas-del-gaming.pt.md" }
+    },
+    {
+      "slug": "144hz-percepcion-vs-habilidad-paradoja",
+      "product": "optimus",
+      "related": ["paradojas-del-gaming", "fps-promedio-vs-fluidez", "compraste-gpu-equivocada", "dlss-fsr-mejor-que-nativo"],
+      "es": { "title": "Pasaste a 144Hz y ahora 60Hz te da asco: pero seguís perdiendo igual", "description": "Por qué un monitor de alta tasa de refresco mejora la percepción, no tu skill: mitos del ojo humano, input lag y cuándo sí vale la pena.", "file": "144hz-percepcion-vs-habilidad-paradoja.es.md" },
+      "en": { "title": "You switched to 144Hz and now 60Hz feels awful — but you still lose just as much", "description": "Why a high refresh monitor improves perception, not skill: human eye myths, input lag, and when it's actually worth it.", "file": "144hz-percepcion-vs-habilidad-paradoja.en.md" },
+      "pt": { "title": "Mudou pra 144Hz e agora 60Hz parece horrível — mas continua perdendo igual", "description": "Por que monitor de alta taxa melhora percepção, não skill: mitos do olho humano, input lag e quando vale a pena.", "file": "144hz-percepcion-vs-habilidad-paradoja.pt.md" }
     },
     {
       "slug": "comprar-juego-dia-1-paradoja",

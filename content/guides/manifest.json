@@ -3,10 +3,18 @@
     {
       "slug": "paradojas-del-gaming",
       "product": "optimus",
-      "related": ["compraste-gpu-equivocada", "fps-promedio-vs-fluidez", "144hz-percepcion-vs-habilidad-paradoja", "steam-backlog-paradoja"],
-      "es": { "title": "Paradojas del gaming en PC: 13 mitos que te hacen gastar mal", "description": "Índice de la serie: GPU, RAM, DLSS, FPS, Hz, SSD, Windows, backlog, preventas y más. Diagnostica antes de comprar hardware.", "file": "paradojas-del-gaming.es.md" },
-      "en": { "title": "PC gaming paradoxes: 13 myths that make you overspend", "description": "Series index: GPU, RAM, DLSS, FPS, Hz, SSD, Windows, backlog, pre-orders and more. Diagnose before buying hardware.", "file": "paradojas-del-gaming.en.md" },
-      "pt": { "title": "Paradoxos do gaming no PC: 13 mitos que fazem gastar mal", "description": "Índice da série: GPU, RAM, DLSS, FPS, Hz, SSD, Windows, backlog, pré-vendas e mais. Diagnostique antes de comprar hardware.", "file": "paradojas-del-gaming.pt.md" }
+      "related": ["compraste-gpu-equivocada", "fps-promedio-vs-fluidez", "ray-tracing-foto-vs-jugar-paradoja", "144hz-percepcion-vs-habilidad-paradoja"],
+      "es": { "title": "Paradojas del gaming en PC: 14 mitos que te hacen gastar mal", "description": "Índice de la serie: GPU, RAM, DLSS, RT, FPS, Hz, SSD, Windows, backlog, preventas y más. Diagnostica antes de comprar hardware.", "file": "paradojas-del-gaming.es.md" },
+      "en": { "title": "PC gaming paradoxes: 14 myths that make you overspend", "description": "Series index: GPU, RAM, DLSS, RT, FPS, Hz, SSD, Windows, backlog, pre-orders and more. Diagnose before buying hardware.", "file": "paradojas-del-gaming.en.md" },
+      "pt": { "title": "Paradoxos do gaming no PC: 14 mitos que fazem gastar mal", "description": "Índice da série: GPU, RAM, DLSS, RT, FPS, Hz, SSD, Windows, backlog, pré-vendas e mais. Diagnostique antes de comprar hardware.", "file": "paradojas-del-gaming.pt.md" }
+    },
+    {
+      "slug": "ray-tracing-foto-vs-jugar-paradoja",
+      "product": "optimus",
+      "related": ["paradojas-del-gaming", "dlss-fsr-mejor-que-nativo", "fps-promedio-vs-fluidez", "compraste-gpu-equivocada"],
+      "es": { "title": "Ray tracing: la única gráfica que activás para la foto y apagás para jugar", "description": "Por qué pagás por RT en la GPU y lo desactivás en ranked: costo en FPS, DLSS como paracaídas y cuándo sí vale la pena.", "file": "ray-tracing-foto-vs-jugar-paradoja.es.md" },
+      "en": { "title": "Ray tracing: the only graphics setting you enable for photos and disable to play", "description": "Why you pay for GPU RT and turn it off in ranked: FPS cost, DLSS as parachute, and when it's actually worth it.", "file": "ray-tracing-foto-vs-jugar-paradoja.en.md" },
+      "pt": { "title": "Ray tracing: a única config gráfica que ativa pra foto e desliga pra jogar", "description": "Por que paga RT na GPU e desliga no ranked: custo em FPS, DLSS como para-quedas e quando vale a pena.", "file": "ray-tracing-foto-vs-jugar-paradoja.pt.md" }
     },
     {
       "slug": "144hz-percepcion-vs-habilidad-paradoja",

@@ -1,6 +1,6 @@
 PC gaming has a narrative problem: everyone sells the same story — more GPU, more RAM, more tweaks, more FPS on screen. But when you actually measure, the experience doesn't improve as promised. Not because your PC is broken. Because **the bottleneck is almost never where marketing said it was**.
 
-This series collects **13 gaming paradoxes**: real contradictions between what we believe, what we measure, and what we feel while playing. Hardware, software, Windows, metrics, even your Steam library. Same thread throughout: **diagnose before you spend**.
+This series collects **14 gaming paradoxes**: real contradictions between what we believe, what we measure, and what we feel while playing. Hardware, software, Windows, metrics, even your Steam library. Same thread throughout: **diagnose before you spend**.
 
 ## The core idea
 
@@ -9,6 +9,7 @@ This series collects **13 gaming paradoxes**: real contradictions between what w
 | More GPU = more fun | CPU may be the limit |
 | 91% RAM = emergency | Much of it is useful standby |
 | Native = best | DLSS can feel better |
+| RT ON = pro graphics | You turn it off to actually play |
 | 300 FPS = smooth | 1% low rules |
 | 144Hz = win more | Better perception ≠ better skill |
 | Gen5 NVMe = better player | Drive barely works in combat |
@@ -20,7 +21,7 @@ This series collects **13 gaming paradoxes**: real contradictions between what w
 | More games = more playing | Backlog is the limit |
 | Pre-order at midnight = scarcity | Digital files never run out |
 
-## All 13 articles (suggested order)
+## All 14 articles (suggested order)
 
 ### Hardware: where is the limit?
 
@@ -40,28 +41,30 @@ This series collects **13 gaming paradoxes**: real contradictions between what w
 
 7. **[You switched to 144Hz and now 60Hz feels awful](/en/blog/144hz-percepcion-vs-habilidad-paradoja/)** — Better perception, not better aim. The monitor doesn't train reflexes or skill.
 
+8. **[Ray tracing: enable for photos, disable to play](/en/blog/ray-tracing-foto-vs-jugar-paradoja/)** — You pay for incredible GPU lights and turn them off in ranked. RT = tourist mode.
+
 ### Windows and ecosystem: optimize without breaking
 
-8. **[You tuned Windows 3 hours for 3 FPS](/en/blog/sobreoptimizar-windows-fps/)** — Debloat, regedit, random scripts vs drivers and closing real apps.
+9. **[You tuned Windows 3 hours for 3 FPS](/en/blog/sobreoptimizar-windows-fps/)** — Debloat, regedit, random scripts vs drivers and closing real apps.
 
-9. **[You want a clean PC but have 8 programs open](/en/blog/pc-limpio-multitarea-gaming/)** — Discord, Spotify, RGB: modern gaming is multitasking disguised as a single session.
+10. **[You want a clean PC but have 8 programs open](/en/blog/pc-limpio-multitarea-gaming/)** — Discord, Spotify, RGB: modern gaming is multitasking disguised as a single session.
 
-10. **[Game Mode: miracle in one game, sabotage in the next](/en/blog/game-mode-windows-paradoja/)** — One global switch doesn't fit every title.
+11. **[Game Mode: miracle in one game, sabotage in the next](/en/blog/game-mode-windows-paradoja/)** — One global switch doesn't fit every title.
 
-11. **[You disabled antivirus and nothing changed](/en/blog/antivirus-gaming-paradoja/)** — Modern Defender isn't your bottleneck; disabling it is real risk.
+12. **[You disabled antivirus and nothing changed](/en/blog/antivirus-gaming-paradoja/)** — Modern Defender isn't your bottleneck; disabling it is real risk.
 
 ### Purchases and culture (not hardware)
 
-12. **[You have 500 Steam games and play 3](/en/blog/steam-backlog-paradoja/)** — Your real limit is time and attention, not GPU. Steam doesn't sell hours on sale.
+13. **[You have 500 Steam games and play 3](/en/blog/steam-backlog-paradoja/)** — Your real limit is time and attention, not GPU. Steam doesn't sell hours on sale.
 
-13. **[Buying a game on day one is the worst decision you make as a fan](/en/blog/comprar-juego-dia-1-paradoja/)** — No digital stock runs out; you pay full price for the least polished version and midnight hype.
+14. **[Buying a game on day one is the worst decision you make as a fan](/en/blog/comprar-juego-dia-1-paradoja/)** — No digital stock runs out; you pay full price for the least polished version and midnight hype.
 
 ## Checklist before your next upgrade
 
 1. **Which component is maxed?** GPU, CPU, RAM, drive — measure in real combat, not menus.
 2. **1% low or average?** Average FPS alone misleads.
 3. **Software optimization first?** Drivers, close heavy apps, game mode — before buying hardware.
-4. **Does this spending hit my real limit?** 144Hz monitor won't fix aim; new GPU won't fix backlog or midnight pre-orders.
+4. **Does this spending hit my real limit?** RT premium won't fix ranked; 144Hz won't fix aim; new GPU won't fix backlog.
 
 ## Optimus: optimize the session, not the obsession
 
@@ -79,7 +82,7 @@ Free, local, Windows 10/11. Concrete steps: [optimize Windows 11 for gaming](/en
 
 **Do these paradoxes mean never upgrade?** No. They mean **upgrade with diagnosis**, not FOMO.
 
-**More articles coming?** This series closes at 13; the blog continues with Optimus and hardware guides.
+**More articles coming?** This series closes at 14; the blog continues with Optimus and hardware guides.
 
 **Can I share the series?** Yes. This index: `/en/blog/paradojas-del-gaming/`.
 

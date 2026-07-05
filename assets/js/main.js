@@ -23,41 +23,12 @@ if (themeToggle) {
   });
 }
 
-// Selector de idioma (dropdown)
-(function langDropdown() {
-  const dropdown = document.querySelector("[data-lang-dropdown]");
-  if (!dropdown) return;
-
-  const toggle = dropdown.querySelector(".lang-dropdown__toggle");
-  const menu = dropdown.querySelector(".lang-dropdown__menu");
-  if (!toggle || !menu) return;
-
-  function close() {
-    dropdown.classList.remove("is-open");
-    toggle.setAttribute("aria-expanded", "false");
-    menu.hidden = true;
-  }
-
-  function open() {
-    dropdown.classList.add("is-open");
-    toggle.setAttribute("aria-expanded", "true");
-    menu.hidden = false;
-  }
-
-  toggle.addEventListener("click", (e) => {
-    e.stopPropagation();
-    if (menu.hidden) open();
-    else close();
+// Selector de idioma: cerrar al hacer clic fuera
+document.addEventListener("click", (e) => {
+  document.querySelectorAll("details.lang-dropdown[open]").forEach((dropdown) => {
+    if (!dropdown.contains(e.target)) dropdown.open = false;
   });
-
-  document.addEventListener("click", (e) => {
-    if (!dropdown.contains(e.target)) close();
-  });
-
-  document.addEventListener("keydown", (e) => {
-    if (e.key === "Escape") close();
-  });
-})();
+});
 
 // Sombra sutil del nav al hacer scroll
 const nav = document.querySelector(".nav");

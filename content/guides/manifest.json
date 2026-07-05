@@ -1,6 +1,14 @@
 {
   "guides": [
     {
+      "slug": "ssd-no-mejora-fps",
+      "product": "optimus",
+      "related": ["compraste-gpu-equivocada", "ram-gpu-cpu-disco-juegos", "fps-promedio-vs-fluidez", "optimizar-windows-gaming"],
+      "es": { "title": "El SSD más caro del mundo no te va a hacer mejor jugador", "description": "Por qué NVMe Gen5 casi no sube FPS en combate: cuándo el disco importa, cuándo no, y dónde invertir el presupuesto.", "file": "ssd-no-mejora-fps.es.md" },
+      "en": { "title": "The world's most expensive SSD won't make you a better player", "description": "Why Gen5 NVMe barely raises in-combat FPS: when storage matters, when it doesn't, and where to spend your budget.", "file": "ssd-no-mejora-fps.en.md" },
+      "pt": { "title": "O SSD mais caro do mundo não vai te fazer jogar melhor", "description": "Por que NVMe Gen5 quase não sobe FPS em combate: quando disco importa, quando não, e onde investir o orçamento.", "file": "ssd-no-mejora-fps.pt.md" }
+    },
+    {
       "slug": "fps-promedio-vs-fluidez",
       "product": "optimus",
       "related": ["dlss-fsr-mejor-que-nativo", "ram-no-esta-llena-standby", "compraste-gpu-equivocada", "ram-gpu-cpu-disco-juegos"],
@@ -35,7 +43,7 @@
     {
       "slug": "ram-gpu-cpu-disco-juegos",
       "product": "optimus",
-      "related": ["dlss-fsr-mejor-que-nativo", "compraste-gpu-equivocada", "optimizar-windows-gaming", "liberar-ram-windows"],
+      "related": ["ssd-no-mejora-fps", "compraste-gpu-equivocada", "optimizar-windows-gaming", "liberar-ram-windows"],
       "es": { "title": "Cómo afectan la RAM, GPU, CPU y el disco en los juegos", "description": "Qué componente limita FPS, tiempos de carga y stuttering. Guía clara para entender cuellos de botella y qué mejorar primero.", "file": "ram-gpu-cpu-disco-juegos.es.md" },
       "en": { "title": "How RAM, GPU, CPU and storage affect gaming", "description": "Which part limits FPS, load times and stuttering. A clear guide to bottlenecks and what to upgrade first.", "file": "ram-gpu-cpu-disco-juegos.en.md" },
       "pt": { "title": "Como RAM, GPU, CPU e disco afetam jogos", "description": "Qual peça limita FPS, tempo de carga e stutter. Guia claro sobre gargalos e o que melhorar primeiro.", "file": "ram-gpu-cpu-disco-juegos.pt.md" }

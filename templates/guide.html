@@ -1,0 +1,62 @@
+{% extends "base.html" %}
+{% block og_type %}article{% endblock %}
+{% block head_extra %}
+<script type="application/ld+json">{{ schema_article | safe }}</script>
+<script type="application/ld+json">{{ schema_breadcrumb | safe }}</script>
+{% endblock %}
+{% block content %}
+<section class="page-hero page-hero--compact">
+  <div class="container">
+    <nav class="breadcrumbs" aria-label="Breadcrumb">
+      {% for b in breadcrumbs %}
+      {% if loop.last %}
+      <span>{{ b.name }}</span>
+      {% else %}
+      <a href="{{ b.url }}">{{ b.name }}</a>
+      <span aria-hidden="true">/</span>
+      {% endif %}
+      {% endfor %}
+    </nav>
+    <h1 class="page-hero__title">{{ title }}</h1>
+    <p class="page-hero__meta">{{ t.guide_updated }}: {{ today }}</p>
+  </div>
+</section>
+
+<section class="section section--article">
+  <div class="container article-layout">
+    {% if toc %}
+    <aside class="guide-toc">
+      <h2 class="guide-toc__title">{{ t.guide_toc }}</h2>
+      <ol class="guide-toc__list">
+        {% for h in toc %}
+        <li class="guide-toc__item guide-toc__item--h{{ h.level }}"><a href="#{{ h.id }}">{{ h.title }}</a></li>
+        {% endfor %}
+      </ol>
+    </aside>
+    {% endif %}
+    <article class="prose">
+      {{ body_html | safe }}
+      {% if product_url %}
+      <div class="prose__cta">
+        <a class="btn btn--primary btn--lg" href="{{ product_url }}">{{ t.guide_cta }} {{ product_name }}</a>
+      </div>
+      {% endif %}
+    </article>
+    <aside class="article-sidebar">
+      {% if related_guides %}
+      <div class="sidebar-card">
+        <h4>{{ t.guide_related }}</h4>
+        <ul class="sidebar-links">
+          {% for g in related_guides %}
+          <li><a href="{{ g.url }}">{{ g.title }}</a></li>
+          {% endfor %}
+        </ul>
+      </div>
+      {% endif %}
+      <div class="sidebar-card">
+        <a class="link-arrow" href="{{ faq_url }}">{{ t.product_faq_link }}</a>
+      </div>
+    </aside>
+  </div>
+</section>
+{% endblock %}

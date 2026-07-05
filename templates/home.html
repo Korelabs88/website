@@ -1,0 +1,168 @@
+{% extends "base.html" %}
+{% block head_extra %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Korelabs",
+  "url": "{{ site_url }}",
+  "logo": "{{ site_url }}/assets/img/korelabs-logo.png",
+  "description": "{{ description }}"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "Korelabs",
+  "url": "{{ site_url }}",
+  "inLanguage": ["es", "en", "pt"],
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "{{ site_url }}/{{ lang }}/#productos",
+    "query-input": "required name=search_term_string"
+  }
+}
+</script>
+{% endblock %}
+{% block content %}
+<section class="hero">
+  <div class="container">
+    <p class="eyebrow" data-reveal>{{ t.hero_eyebrow }}</p>
+    <h1 class="hero__title" data-reveal>
+      {{ t.hero_title_1 }}
+      <span class="hero__accent">{{ t.hero_title_accent }}</span>
+      {{ t.hero_title_2 }}
+    </h1>
+    <div class="hero__row">
+      <p class="hero__sub" data-reveal>{{ t.hero_sub }}</p>
+      <div class="hero__cta" data-reveal>
+        <a class="btn btn--primary btn--lg" href="#productos">{{ t.hero_cta_programs }}</a>
+        <a class="link-arrow" href="#principios">{{ t.hero_cta_principles }}</a>
+      </div>
+    </div>
+  </div>
+  <a class="scroll-cue" href="#productos" aria-label="{{ t.scroll_aria }}">
+    <span>Scroll</span>
+    <span class="scroll-cue__line"></span>
+  </a>
+</section>
+
+<div class="marquee" aria-hidden="true">
+  <div class="marquee__track">
+    {% for word in t.marquee %}
+    <span>{{ word }}</span><span class="dot">•</span>
+    {% endfor %}
+    {% for word in t.marquee %}
+    <span>{{ word }}</span><span class="dot">•</span>
+    {% endfor %}
+  </div>
+</div>
+
+<section class="section section--products" id="productos">
+  <div class="container">
+    <div class="section__head section__head--center" data-reveal>
+      <span class="kicker">{{ t.products_kicker }}</span>
+      <h2 class="section__title">{{ t.products_title }}</h2>
+      <p class="section__lead">{{ t.products_lead }}</p>
+    </div>
+    <div class="products-stack">
+      {% for product in products.products %}
+      {% set pdata = product[lang] %}
+      <article class="product-card" id="{{ product.id }}" data-reveal>
+        <header class="product-card__head">
+          <div class="product-card__brand">
+            <div class="product-card__icon" aria-hidden="true">
+              <img src="{{ product.logo }}" alt="" width="32" height="32" class="product-card__logo" />
+            </div>
+            <div class="product-card__intro">
+              <h3 class="product-card__name">{{ product.name }} <span class="pill pill--live">{{ product.version }}</span></h3>
+              <p class="product-card__tag">{{ pdata.card_tag }}</p>
+            </div>
+          </div>
+          <div class="product-card__downloads">
+            <a class="btn btn--primary btn--sm" href="{{ product.downloads.setup }}" rel="noopener">{{ t.btn_installer }}</a>
+            <a class="btn btn--secondary btn--sm" href="{{ product.downloads.portable }}" rel="noopener">{{ t.btn_portable }}</a>
+          </div>
+        </header>
+        <div class="product-card__body">
+          <p class="product-card__desc">{{ pdata.card_desc }}</p>
+          <ul class="product-card__features">
+            {% for f in pdata.features[:3] %}
+            <li>{{ f }}</li>
+            {% endfor %}
+          </ul>
+          <p class="product-card__more"><a class="link-arrow" href="{{ lang | url_for('product', product.id) }}">{{ t.btn_learn_more }}</a></p>
+        </div>
+      </article>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section section--guides" id="guias">
+  <div class="container">
+    <div class="section__head section__head--center" data-reveal>
+      <span class="kicker">{{ t.guides_kicker }}</span>
+      <h2 class="section__title">{{ t.guides_title }}</h2>
+      <p class="section__lead">{{ t.guides_lead }}</p>
+    </div>
+    <div class="guides-grid">
+      {% for guide in guides_list %}
+      <article class="guide-card" data-reveal>
+        <h3 class="guide-card__title"><a href="{{ guide.url }}">{{ guide.title }}</a></h3>
+        <p class="guide-card__desc">{{ guide.description }}</p>
+        <a class="link-arrow" href="{{ guide.url }}">{{ t.guides_read }}</a>
+      </article>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section" id="principios">
+  <div class="container">
+    <div class="section__head">
+      <span class="kicker" data-reveal>{{ t.principles_kicker }}</span>
+      <h2 class="section__title" data-reveal>{{ t.principles_title }}</h2>
+    </div>
+    <ol class="principles">
+      {% for p in t.principles %}
+      <li class="principle" data-reveal>
+        <span class="principle__num">{{ "%02d"|format(loop.index) }}</span>
+        <div class="principle__body">
+          <h3>{{ p.title }}</h3>
+          <p>{{ p.text }}</p>
+        </div>
+      </li>
+      {% endfor %}
+    </ol>
+  </div>
+</section>
+
+<section class="section section--about" id="nosotros">
+  <div class="container about">
+    <div class="about__left">
+      <span class="kicker" data-reveal>{{ t.about_kicker }}</span>
+      <h2 class="about__title" data-reveal>{{ t.about_title }}</h2>
+    </div>
+    <div class="about__right" data-reveal>
+      <p class="about__lead">{{ t.about_lead }}</p>
+      <p class="about__text">{{ t.about_text }}</p>
+      <div class="about__signature">
+        <span class="about__name">Blue</span>
+        <span class="about__role">{{ t.about_role }}</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="cta">
+  <div class="container cta__inner" data-reveal>
+    <h2 class="cta__title">{{ t.cta_title }}</h2>
+    <p class="cta__text">{{ t.cta_text }}</p>
+    <div class="cta__buttons">
+      <a class="btn btn--primary btn--lg" href="#productos">{{ t.cta_btn }}</a>
+    </div>
+  </div>
+</section>
+{% endblock %}

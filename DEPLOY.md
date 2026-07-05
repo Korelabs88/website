@@ -42,11 +42,12 @@ git push -u origin main
 3. Elige el repo `Korelabs88/website`.
 4. Configuración de build:
    - **Framework preset**: None
-   - **Build command**: (déjalo vacío)
-   - **Build output directory**: `/`
+   - **Build command**: `pip install -r requirements.txt && python scripts/generate_guides.py && python scripts/build.py`
+   - **Build output directory**: `dist`
+   - **Environment variable** (opcional): `PYTHON_VERSION=3.12`
 5. Deploy. Te dará una URL tipo `website.pages.dev` para probar.
 
-> Alternativa sin GitHub: en Pages elige **Upload assets** y arrastra los archivos de esta carpeta.
+> El sitio es multilingüe (ES/EN/PT). La raíz `/` redirige a `/es/`. Ver `README.md` para desarrollo local.
 
 ---
 
@@ -92,5 +93,10 @@ En pocos días tu web aparecerá al buscar "Korelabs" o "Optimus" en Google.
 
 ## Actualizar la web más adelante
 
-Si usaste GitHub + Cloudflare Pages, solo haz `git push` y Cloudflare redepliega solo.
-Para añadir un nuevo programa, duplica una tarjeta `card--soon` en `index.html` y ponle su enlace de descarga.
+1. Edita contenido en `content/` o plantillas en `templates/`.
+2. Ejecuta localmente: `python scripts/build.py` (opcional, para previsualizar en `dist/`).
+3. `git push` — Cloudflare reconstruye y despliega desde `dist/`.
+
+Para añadir un programa: actualiza `content/products.json` y las traducciones en `content/i18n/`.
+
+Para SEO off-page y métricas: ver `docs/SEO-OFFPAGE.md` y `docs/SEO-MONITORING.md`.

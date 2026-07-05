@@ -1,0 +1,84 @@
+{
+  "guides": [
+    {
+      "slug": "liberar-ram-windows",
+      "product": "optimus",
+      "related": ["memoria-standby-windows", "optimus-vs-wise-memory-optimizer"],
+      "es": { "title": "Cómo liberar RAM en Windows 10/11 sin programas de pago", "description": "Guía práctica para liberar memoria RAM en Windows de forma segura. Qué funciona, qué evitar y cómo usar Optimus gratis.", "file": "liberar-ram-windows.es.md" },
+      "en": { "title": "How to free up RAM on Windows 10/11 without paid tools", "description": "Practical guide to free RAM on Windows safely. What works, what to avoid, and how to use Optimus for free.", "file": "liberar-ram-windows.en.md" },
+      "pt": { "title": "Como liberar RAM no Windows 10/11 sem programas pagos", "description": "Guia prática para liberar memória RAM no Windows com segurança. O que funciona, o que evitar e como usar Optimus grátis.", "file": "liberar-ram-windows.pt.md" }
+    },
+    {
+      "slug": "memoria-standby-windows",
+      "product": "optimus",
+      "related": ["liberar-ram-windows", "optimizar-windows-gaming"],
+      "es": { "title": "Qué es la memoria standby en Windows y cómo liberarla", "description": "Explicación clara de la lista standby, por qué Windows retiene RAM y cómo recuperarla sin riesgos.", "file": "memoria-standby-windows.es.md" },
+      "en": { "title": "What is Windows standby memory and how to free it", "description": "Clear explanation of the standby list, why Windows keeps RAM cached, and how to reclaim it safely.", "file": "memoria-standby-windows.en.md" },
+      "pt": { "title": "O que é memória standby no Windows e como liberá-la", "description": "Explicação clara da lista standby, por que o Windows retém RAM e como recuperá-la sem riscos.", "file": "memoria-standby-windows.pt.md" }
+    },
+    {
+      "slug": "optimizar-windows-gaming",
+      "product": "optimus",
+      "related": ["liberar-ram-windows", "memoria-standby-windows"],
+      "es": { "title": "Cómo optimizar Windows 11 para gaming (modo gamer)", "description": "Pasos concretos para reducir latencia y liberar recursos antes de jugar. Incluye modo gamer de Optimus.", "file": "optimizar-windows-gaming.es.md" },
+      "en": { "title": "How to optimize Windows 11 for gaming (game mode)", "description": "Concrete steps to reduce latency and free resources before gaming. Includes Optimus game mode.", "file": "optimizar-windows-gaming.en.md" },
+      "pt": { "title": "Como otimizar Windows 11 para jogos (modo gamer)", "description": "Passos concretos para reduzir latência e liberar recursos antes de jogar. Inclui modo gamer do Optimus.", "file": "optimizar-windows-gaming.pt.md" }
+    },
+    {
+      "slug": "optimus-vs-wise-memory-optimizer",
+      "product": "optimus",
+      "related": ["liberar-ram-windows", "memoria-standby-windows"],
+      "es": { "title": "Optimus vs Wise Memory Optimizer: comparativa honesta", "description": "Comparamos Optimus y Wise Memory Optimizer en privacidad, funciones, precio y liberación real de RAM.", "file": "optimus-vs-wise-memory-optimizer.es.md" },
+      "en": { "title": "Optimus vs Wise Memory Optimizer: honest comparison", "description": "We compare Optimus and Wise Memory Optimizer on privacy, features, price and real RAM freeing.", "file": "optimus-vs-wise-memory-optimizer.en.md" },
+      "pt": { "title": "Optimus vs Wise Memory Optimizer: comparativo honesto", "description": "Comparamos Optimus e Wise Memory Optimizer em privacidade, funções, preço e liberação real de RAM.", "file": "optimus-vs-wise-memory-optimizer.pt.md" }
+    },
+    {
+      "slug": "convertir-pdf-word-offline",
+      "product": "coto",
+      "related": ["ocr-pdf-offline", "unir-comprimir-pdf-local"],
+      "es": { "title": "Convertir PDF a Word sin subir el archivo a internet", "description": "Por qué los conversores online son un riesgo y cómo convertir PDF a DOCX en local con Coto.", "file": "convertir-pdf-word-offline.es.md" },
+      "en": { "title": "Convert PDF to Word without uploading files online", "description": "Why online converters are risky and how to convert PDF to DOCX locally with Coto.", "file": "convertir-pdf-word-offline.en.md" },
+      "pt": { "title": "Converter PDF para Word sem enviar o arquivo à internet", "description": "Por que conversores online são risco e como converter PDF para DOCX localmente com Coto.", "file": "convertir-pdf-word-offline.pt.md" }
+    },
+    {
+      "slug": "ocr-pdf-offline",
+      "product": "coto",
+      "related": ["convertir-pdf-word-offline", "unir-comprimir-pdf-local"],
+      "es": { "title": "OCR offline: escanear PDF a texto editable", "description": "Guía de OCR local para digitalizar documentos escaneados sin enviarlos a la nube.", "file": "ocr-pdf-offline.es.md" },
+      "en": { "title": "Offline OCR: scan PDF to editable text", "description": "Local OCR guide to digitize scanned documents without sending them to the cloud.", "file": "ocr-pdf-offline.en.md" },
+      "pt": { "title": "OCR offline: digitalizar PDF para texto editável", "description": "Guia de OCR local para digitalizar documentos escaneados sem enviá-los à nuvem.", "file": "ocr-pdf-offline.pt.md" }
+    },
+    {
+      "slug": "unir-comprimir-pdf-local",
+      "product": "coto",
+      "related": ["convertir-pdf-word-offline", "ocr-pdf-offline"],
+      "es": { "title": "Unir y comprimir PDF en local (privacidad)", "description": "Cómo combinar varios PDF y reducir tamaño sin servicios online ni marcas de agua.", "file": "unir-comprimir-pdf-local.es.md" },
+      "en": { "title": "Merge and compress PDF locally (privacy)", "description": "How to combine PDFs and reduce file size without online services or watermarks.", "file": "unir-comprimir-pdf-local.en.md" },
+      "pt": { "title": "Unir e comprimir PDF localmente (privacidade)", "description": "Como combinar PDFs e reduzir tamanho sem serviços online ou marcas d'água.", "file": "unir-comprimir-pdf-local.pt.md" }
+    },
+    {
+      "slug": "transcribir-audio-whisper-local",
+      "product": "dicto",
+      "related": ["generar-srt-video-offline", "alternativa-local-otter-rev"],
+      "es": { "title": "Transcribir audio a texto con Whisper en tu PC", "description": "Tutorial para transcribir MP3, WAV y más con Whisper offline usando Dicto.", "file": "transcribir-audio-whisper-local.es.md" },
+      "en": { "title": "Transcribe audio to text with Whisper on your PC", "description": "Tutorial to transcribe MP3, WAV and more with offline Whisper using Dicto.", "file": "transcribir-audio-whisper-local.en.md" },
+      "pt": { "title": "Transcrever áudio para texto com Whisper no seu PC", "description": "Tutorial para transcrever MP3, WAV e mais com Whisper offline usando Dicto.", "file": "transcribir-audio-whisper-local.pt.md" }
+    },
+    {
+      "slug": "generar-srt-video-offline",
+      "product": "dicto",
+      "related": ["transcribir-audio-whisper-local", "alternativa-local-otter-rev"],
+      "es": { "title": "Generar subtítulos SRT de un video sin cloud", "description": "Pasa de MP4/MKV a SRT o VTT en local. Ideal para YouTube, aulas y podcasts.", "file": "generar-srt-video-offline.es.md" },
+      "en": { "title": "Generate SRT subtitles from video offline", "description": "Go from MP4/MKV to SRT or VTT locally. Ideal for YouTube, lectures and podcasts.", "file": "generar-srt-video-offline.en.md" },
+      "pt": { "title": "Gerar legendas SRT de vídeo sem nuvem", "description": "De MP4/MKV para SRT ou VTT localmente. Ideal para YouTube, aulas e podcasts.", "file": "generar-srt-video-offline.pt.md" }
+    },
+    {
+      "slug": "alternativa-local-otter-rev",
+      "product": "dicto",
+      "related": ["transcribir-audio-whisper-local", "generar-srt-video-offline"],
+      "es": { "title": "Alternativa local a Otter.ai y Rev (transcripción)", "description": "Compara transcripción por suscripción vs Whisper local. Cuándo Dicto es mejor opción.", "file": "alternativa-local-otter-rev.es.md" },
+      "en": { "title": "Local alternative to Otter.ai and Rev (transcription)", "description": "Compare subscription transcription vs local Whisper. When Dicto is the better choice.", "file": "alternativa-local-otter-rev.en.md" },
+      "pt": { "title": "Alternativa local ao Otter.ai e Rev (transcrição)", "description": "Compare transcrição por assinatura vs Whisper local. Quando Dicto é a melhor opção.", "file": "alternativa-local-otter-rev.pt.md" }
+    }
+  ]
+}

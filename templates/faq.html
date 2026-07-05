@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+{% block head_extra %}
+<script type="application/ld+json">{{ schema_json | safe }}</script>
+{% endblock %}
+{% block content %}
+<section class="page-hero page-hero--compact">
+  <div class="container">
+    <nav class="breadcrumbs" aria-label="Breadcrumb">
+      <a href="{{ lang | url_for('home') }}">{{ t.breadcrumb_home }}</a>
+      <span aria-hidden="true">/</span>
+      <span>{{ fdata.title }}</span>
+    </nav>
+    <h1 class="page-hero__title">{{ fdata.title }}</h1>
+    <p class="page-hero__tagline">{{ fdata.lead }}</p>
+  </div>
+</section>
+
+<section class="section section--faq">
+  <div class="container">
+    {% for section in fdata.sections %}
+    <div class="faq-section" data-reveal>
+      <h2 class="faq-section__title">{{ section.title }}</h2>
+      <dl class="faq-list">
+        {% for item in section["items"] %}
+        <div class="faq-item">
+          <dt class="faq-item__q">{{ item.q }}</dt>
+          <dd class="faq-item__a">{{ item.a }}</dd>
+        </div>
+        {% endfor %}
+      </dl>
+    </div>
+    {% endfor %}
+  </div>
+</section>
+{% endblock %}

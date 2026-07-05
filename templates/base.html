@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="{{ lang }}">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <script>
+    (function () {
+      try {
+        var t = localStorage.getItem("theme") ||
+          (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+        document.documentElement.setAttribute("data-theme", t);
+      } catch (e) {}
+    })();
+  </script>
+
+  <title>{{ title }}</title>
+  <meta name="description" content="{{ description }}" />
+  <meta name="author" content="Korelabs" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="{{ canonical }}" />
+
+  {% for hreflang, href in alternates.items() %}
+  <link rel="alternate" hreflang="{{ hreflang }}" href="{{ site_url }}{{ href }}" />
+  {% endfor %}
+  <link rel="alternate" hreflang="x-default" href="{{ site_url }}{{ alternates.get('es', '/') }}" />
+
+  <meta property="og:type" content="{% block og_type %}website{% endblock %}" />
+  <meta property="og:site_name" content="Korelabs" />
+  <meta property="og:title" content="{{ title }}" />
+  <meta property="og:description" content="{{ description }}" />
+  <meta property="og:url" content="{{ canonical }}" />
+  <meta property="og:image" content="{{ site_url }}/assets/img/korelabs-logo.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="{{ title }}" />
+  <meta name="twitter:description" content="{{ description }}" />
+  <meta name="twitter:image" content="{{ site_url }}/assets/img/korelabs-logo.png" />
+
+  <meta name="theme-color" content="#FBFAF8" />
+  <link rel="icon" type="image/png" href="/favicon.png" />
+  <link rel="apple-touch-icon" href="/assets/img/korelabs-logo.png" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/assets/css/styles.css?v=3" />
+
+  {% block head_extra %}{% endblock %}
+</head>
+<body>
+  <canvas id="matrix" class="matrix" aria-hidden="true"></canvas>
+  <div class="veil" aria-hidden="true"></div>
+
+  <header class="nav" id="top">
+    <div class="container nav__inner">
+      <a class="brand" href="{{ lang | url_for('home') }}" aria-label="{{ t.brand_aria }}">
+        <img class="brand__logo" src="/assets/img/korelabs-logo.png" alt="Korelabs" width="25" height="30" />
+        <span class="brand__name">Korelabs</span>
+      </a>
+      <nav class="nav__links" aria-label="{{ t.nav_aria }}">
+        <a href="{{ lang | url_for('home') }}#productos">{{ t.nav_programs }}</a>
+        <a href="{{ lang | url_for('home') }}#guias">{{ t.nav_guides }}</a>
+        <a href="{{ lang | url_for('home') }}#principios">{{ t.nav_principles }}</a>
+        <a href="{{ lang | url_for('home') }}#nosotros">{{ t.nav_about }}</a>
+      </nav>
+      <div class="nav__actions">
+        <div class="lang-switch" role="navigation" aria-label="{{ t.lang_aria }}">
+          {% for code, label in t.langs.items() %}
+          <a class="lang-switch__item{% if code == lang %} is-active{% endif %}"
+             href="{{ alternates.get(code, lang | url_for('home')) }}"
+             hreflang="{{ code }}"
+             {% if code == lang %}aria-current="page"{% endif %}>{{ label }}</a>
+          {% endfor %}
+        </div>
+        <button class="theme-toggle" id="themeToggle" type="button" aria-label="{{ t.theme_aria }}" title="{{ t.theme_aria }}">
+          <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+          <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"></path></svg>
+        </button>
+        <a class="btn btn--primary btn--sm" href="{{ lang | url_for('home') }}#productos">{{ t.nav_download }}</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    {% block content %}{% endblock %}
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div class="footer__col footer__col--brand">
+        <a class="brand" href="{{ lang | url_for('home') }}">
+          <img class="brand__logo" src="/assets/img/korelabs-logo.png" alt="Korelabs" width="23" height="28" />
+          <span class="brand__name">Korelabs</span>
+        </a>
+        <p class="footer__tag">{{ t.footer_tag }}</p>
+      </div>
+      <div class="footer__col">
+        <h4>{{ t.footer_programs }}</h4>
+        <a href="{{ lang | url_for('home') }}#productos">{{ t.footer_all }}</a>
+        <a href="{{ lang | url_for('product', 'optimus') }}">Optimus</a>
+        <a href="{{ lang | url_for('product', 'coto') }}">Coto</a>
+        <a href="{{ lang | url_for('product', 'dicto') }}">Dicto</a>
+      </div>
+      <div class="footer__col">
+        <h4>{{ t.footer_resources }}</h4>
+        <a href="{{ lang | url_for('home') }}#guias">{{ t.nav_guides }}</a>
+        <a href="{{ lang | url_for('faq') }}">{{ t.nav_faq }}</a>
+        <a href="https://github.com/Korelabs88" rel="noopener">GitHub</a>
+      </div>
+      <div class="footer__col">
+        <h4>Korelabs</h4>
+        <a href="{{ lang | url_for('home') }}#nosotros">{{ t.nav_about }}</a>
+        <a href="{{ lang | url_for('home') }}#principios">{{ t.nav_principles }}</a>
+      </div>
+    </div>
+    <div class="container footer__bottom">
+      <p>© <span id="year"></span> Korelabs. {{ t.footer_rights }}</p>
+      <p>{{ t.footer_made }}</p>
+    </div>
+  </footer>
+
+  <script src="/assets/js/main.js" defer></script>
+</body>
+</html>

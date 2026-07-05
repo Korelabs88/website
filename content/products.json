@@ -1,0 +1,262 @@
+{
+  "products": [
+    {
+      "id": "optimus",
+      "name": "Optimus",
+      "version": "v0.2.0",
+      "logo": "/assets/img/optimus-logo.png",
+      "downloads": {
+        "setup": "https://github.com/Korelabs88/optimus-releases/releases/download/v0.2.0/OPTIMUS-0.2.0-Setup.exe",
+        "portable": "https://github.com/Korelabs88/optimus-releases/releases/download/v0.2.0/OPTIMUS-0.2.0-Portable.exe"
+      },
+      "es": {
+        "meta_title": "Liberar RAM en Windows gratis — Optimus | Korelabs",
+        "meta_description": "Optimus: optimizador Windows gratuito. Libera RAM, limpia disco, monitoriza CPU y activa modo gamer. 100% local, sin suscripción.",
+        "h1": "Optimus — Optimizador Windows gratuito",
+        "tagline": "Libera RAM, limpia tu PC y optimiza el rendimiento sin pagar suscripciones",
+        "intro": "Optimus es un optimizador profesional para Windows 10 y 11 que reemplaza herramientas de pago como optimizadores de RAM y limpiadores de sistema. Todo el procesamiento ocurre en tu equipo: sin cuentas, sin nube y sin telemetría oculta.",
+        "sections": [
+          {
+            "title": "Libera RAM de forma real y segura",
+            "text": "A diferencia de los falsos \"aceleradores de RAM\", Optimus usa operaciones nativas de Windows: vaciar working sets, purgar la lista standby, volcar páginas modified y vaciar caché del sistema. Mides el antes y después con desglose de memoria (total, usada, standby, modified y compresión)."
+          },
+          {
+            "title": "Monitor de hardware en vivo",
+            "text": "Consulta RAM, CPU y disco en tiempo real. Identifica procesos que consumen recursos, gestiona el inicio de Windows y revisa servicios sin abrir cinco programas distintos."
+          },
+          {
+            "title": "Limpieza profunda de disco",
+            "text": "Elimina archivos temporales, cachés y restos de desinstalaciones de forma reversible. Siempre con confirmación antes de borrar."
+          },
+          {
+            "title": "Modo Gamer",
+            "text": "Prioriza recursos para juegos: reduce procesos en segundo plano y optimiza la respuesta del sistema cuando lo necesitas."
+          }
+        ],
+        "features": ["RAM, CPU y disco en vivo", "Liberación real de memoria standby", "Limpieza profunda reversible", "Modo Gamer", "Sin telemetría"],
+        "card_desc": "Monitor de hardware, procesos, inicio, modo gamer y limpieza profunda de disco. Seguro y reversible.",
+        "card_tag": "Optimizador inteligente para Windows"
+      },
+      "en": {
+        "meta_title": "Free RAM Cleaner for Windows — Optimus | Korelabs",
+        "meta_description": "Optimus: free Windows optimizer. Free up RAM, clean disk, monitor CPU and enable game mode. 100% local, no subscription.",
+        "h1": "Optimus — Free Windows optimizer",
+        "tagline": "Free up RAM, clean your PC and boost performance without subscriptions",
+        "intro": "Optimus is a professional optimizer for Windows 10 and 11 that replaces paid RAM boosters and system cleaners. All processing happens on your machine: no accounts, no cloud, no hidden telemetry.",
+        "sections": [
+          {
+            "title": "Free RAM safely and for real",
+            "text": "Unlike fake RAM boosters, Optimus uses native Windows operations: empty working sets, purge standby list, flush modified pages and clear system file cache. Measure before and after with detailed memory breakdown."
+          },
+          {
+            "title": "Live hardware monitor",
+            "text": "Track RAM, CPU and disk in real time. Find resource-heavy processes, manage startup items and review services without juggling multiple apps."
+          },
+          {
+            "title": "Deep disk cleanup",
+            "text": "Remove temp files, caches and uninstall leftovers reversibly. Always with confirmation before deletion."
+          },
+          {
+            "title": "Game Mode",
+            "text": "Prioritize resources for gaming: reduce background processes and improve system responsiveness when you need it."
+          }
+        ],
+        "features": ["Live RAM, CPU and disk", "Real standby memory purge", "Reversible deep cleanup", "Game Mode", "No telemetry"],
+        "card_desc": "Hardware monitor, processes, startup, game mode and deep disk cleanup. Safe and reversible.",
+        "card_tag": "Smart Windows optimizer"
+      },
+      "pt": {
+        "meta_title": "Liberar RAM no Windows grátis — Optimus | Korelabs",
+        "meta_description": "Optimus: otimizador Windows gratuito. Libere RAM, limpe disco, monitore CPU e ative modo gamer. 100% local, sem assinatura.",
+        "h1": "Optimus — Otimizador Windows gratuito",
+        "tagline": "Libere RAM, limpe o PC e otimize o desempenho sem pagar assinaturas",
+        "intro": "Optimus é um otimizador profissional para Windows 10 e 11 que substitui ferramentas pagas de RAM e limpeza de sistema. Todo o processamento ocorre no seu equipamento: sem contas, sem nuvem e sem telemetria oculta.",
+        "sections": [
+          {
+            "title": "Libere RAM de forma real e segura",
+            "text": "Diferente de falsos aceleradores de RAM, Optimus usa operações nativas do Windows: esvaziar working sets, purgar standby, descarregar modified e limpar cache do sistema. Meça antes e depois com detalhamento de memória."
+          },
+          {
+            "title": "Monitor de hardware ao vivo",
+            "text": "Consulte RAM, CPU e disco em tempo real. Identifique processos pesados, gerencie inicialização e revise serviços sem abrir vários programas."
+          },
+          {
+            "title": "Limpeza profunda de disco",
+            "text": "Remova temporários, caches e restos de desinstalações de forma reversível. Sempre com confirmação antes de apagar."
+          },
+          {
+            "title": "Modo Gamer",
+            "text": "Priorize recursos para jogos: reduza processos em segundo plano e melhore a resposta do sistema quando precisar."
+          }
+        ],
+        "features": ["RAM, CPU e disco ao vivo", "Liberação real de standby", "Limpeza profunda reversível", "Modo Gamer", "Sem telemetria"],
+        "card_desc": "Monitor de hardware, processos, inicialização, modo gamer e limpeza profunda. Seguro e reversível.",
+        "card_tag": "Otimizador inteligente para Windows"
+      }
+    },
+    {
+      "id": "coto",
+      "name": "Coto",
+      "version": "v0.1.1",
+      "logo": "/assets/img/coto-logo.png",
+      "downloads": {
+        "setup": "https://github.com/Korelabs88/coto-releases/releases/download/v0.1.1/COTO-0.1.1-Setup.exe",
+        "portable": "https://github.com/Korelabs88/coto-releases/releases/download/v0.1.1/COTO-0.1.1-Portable.zip"
+      },
+      "es": {
+        "meta_title": "Conversor PDF offline gratis — Coto | Korelabs",
+        "meta_description": "Coto: convierte PDF, imágenes y Office en local. OCR multiidioma, unir PDF y lotes. Sin subir archivos a internet.",
+        "h1": "Coto — Conversor de archivos 100% local",
+        "tagline": "PDF, imágenes y Office sin subir nada a la nube",
+        "intro": "Coto reemplaza servicios de conversión online que cobran por privacidad. Convierte, une, divide y comprime archivos en tu PC. Ideal para documentos sensibles, facturas y trabajo offline.",
+        "sections": [
+          {
+            "title": "Conversión por lotes",
+            "text": "Arrastra carpetas enteras: PNG a JPG, PDF a Word, Excel a PDF y más. Cola de trabajos con progreso visible."
+          },
+          {
+            "title": "Herramientas PDF integradas",
+            "text": "Une, divide, comprime y protege PDF sin herramientas externas. Todo en una interfaz coherente."
+          },
+          {
+            "title": "OCR offline multiidioma",
+            "text": "Escanea PDF e imágenes a texto editable sin enviar datos a servidores. Soporte para múltiples idiomas."
+          }
+        ],
+        "features": ["Conversión por lotes", "PDF ↔ Office", "OCR incluido", "Unir y dividir PDF", "100% offline"],
+        "card_desc": "Imágenes, PDF, Office y OCR multiidioma. Unir, dividir, comprimir y proteger PDF sin subir nada a internet.",
+        "card_tag": "Conversor de archivos local"
+      },
+      "en": {
+        "meta_title": "Free Offline PDF Converter — Coto | Korelabs",
+        "meta_description": "Coto: convert PDF, images and Office locally. Multilingual OCR, merge PDF and batch jobs. No file uploads.",
+        "h1": "Coto — 100% local file converter",
+        "tagline": "PDF, images and Office without uploading to the cloud",
+        "intro": "Coto replaces online converters that charge for privacy. Convert, merge, split and compress files on your PC. Ideal for sensitive documents and offline work.",
+        "sections": [
+          {
+            "title": "Batch conversion",
+            "text": "Drop entire folders: PNG to JPG, PDF to Word, Excel to PDF and more. Job queue with visible progress."
+          },
+          {
+            "title": "Built-in PDF tools",
+            "text": "Merge, split, compress and protect PDF without external tools. One consistent interface."
+          },
+          {
+            "title": "Offline multilingual OCR",
+            "text": "Scan PDFs and images to editable text without sending data to servers. Multiple language support."
+          }
+        ],
+        "features": ["Batch conversion", "PDF ↔ Office", "OCR included", "Merge & split PDF", "100% offline"],
+        "card_desc": "Images, PDF, Office and multilingual OCR. Merge, split, compress and protect PDF without uploads.",
+        "card_tag": "Local file converter"
+      },
+      "pt": {
+        "meta_title": "Conversor PDF offline grátis — Coto | Korelabs",
+        "meta_description": "Coto: converta PDF, imagens e Office localmente. OCR multilíngue, unir PDF e lotes. Sem enviar arquivos à internet.",
+        "h1": "Coto — Conversor de arquivos 100% local",
+        "tagline": "PDF, imagens e Office sem enviar nada para a nuvem",
+        "intro": "Coto substitui serviços online que cobram por privacidade. Converta, una, divida e comprima arquivos no seu PC. Ideal para documentos sensíveis e trabalho offline.",
+        "sections": [
+          {
+            "title": "Conversão em lote",
+            "text": "Arraste pastas inteiras: PNG para JPG, PDF para Word, Excel para PDF e mais. Fila de trabalhos com progresso visível."
+          },
+          {
+            "title": "Ferramentas PDF integradas",
+            "text": "Una, divida, comprima e proteja PDF sem ferramentas externas. Tudo numa interface coerente."
+          },
+          {
+            "title": "OCR offline multilíngue",
+            "text": "Digitalize PDF e imagens para texto editável sem enviar dados a servidores. Suporte a vários idiomas."
+          }
+        ],
+        "features": ["Conversão em lote", "PDF ↔ Office", "OCR incluído", "Unir e dividir PDF", "100% offline"],
+        "card_desc": "Imagens, PDF, Office e OCR multilíngue. Unir, dividir, comprimir e proteger PDF sem enviar nada à internet.",
+        "card_tag": "Conversor de arquivos local"
+      }
+    },
+    {
+      "id": "dicto",
+      "name": "Dicto",
+      "version": "v0.1.0",
+      "logo": "/assets/img/dicto-logo.png",
+      "downloads": {
+        "setup": "https://github.com/Korelabs88/dicto-releases/releases/download/v0.1.0/DICTO-0.1.0-Setup.exe",
+        "portable": "https://github.com/Korelabs88/dicto-releases/releases/download/v0.1.0/DICTO-0.1.0-Portable.zip"
+      },
+      "es": {
+        "meta_title": "Transcripción audio local Whisper — Dicto | Korelabs",
+        "meta_description": "Dicto: transcribe audio y video a texto con Whisper en tu PC. Exporta TXT, SRT, VTT y DOCX. Sin subir archivos a la nube.",
+        "h1": "Dicto — Transcripción local de audio y video",
+        "tagline": "Whisper offline: de audio y video a texto en tu equipo",
+        "intro": "Dicto reemplaza servicios de transcripción por suscripción. Procesa reuniones, clases y podcasts en local con faster-whisper. FFmpeg incluido para video. Nada sale de tu PC.",
+        "sections": [
+          {
+            "title": "Whisper local",
+            "text": "Modelos de tiny a medium según tu hardware. Detección automática de idioma y cola por lotes."
+          },
+          {
+            "title": "Exportación flexible",
+            "text": "TXT plano, subtítulos SRT/VTT o documento DOCX listo para editar."
+          },
+          {
+            "title": "Privacidad total",
+            "text": "Ideal para entrevistas, medicina, legal y contenido confidencial. Sin cuota mensual ni límites de minutos en la nube."
+          }
+        ],
+        "features": ["Whisper local", "Multiidioma", "FFmpeg incluido", "SRT, VTT, DOCX", "Cola por lotes"],
+        "card_desc": "Audio y video a texto con Whisper en tu equipo. Exporta TXT, SRT, VTT o DOCX. Nada se sube a la nube.",
+        "card_tag": "Transcripción local de audio y video"
+      },
+      "en": {
+        "meta_title": "Offline Audio Transcription Whisper — Dicto | Korelabs",
+        "meta_description": "Dicto: transcribe audio and video to text with Whisper on your PC. Export TXT, SRT, VTT and DOCX. No cloud uploads.",
+        "h1": "Dicto — Local audio and video transcription",
+        "tagline": "Offline Whisper: audio and video to text on your machine",
+        "intro": "Dicto replaces subscription transcription services. Process meetings, lectures and podcasts locally with faster-whisper. FFmpeg included for video. Nothing leaves your PC.",
+        "sections": [
+          {
+            "title": "Local Whisper",
+            "text": "Models from tiny to medium depending on your hardware. Automatic language detection and batch queue."
+          },
+          {
+            "title": "Flexible export",
+            "text": "Plain TXT, SRT/VTT subtitles or editable DOCX."
+          },
+          {
+            "title": "Full privacy",
+            "text": "Ideal for interviews, medical, legal and confidential content. No monthly quota or cloud minute limits."
+          }
+        ],
+        "features": ["Local Whisper", "Multilingual", "FFmpeg included", "SRT, VTT, DOCX", "Batch queue"],
+        "card_desc": "Audio and video to text with Whisper on your PC. Export TXT, SRT, VTT or DOCX. Nothing uploaded.",
+        "card_tag": "Local audio and video transcription"
+      },
+      "pt": {
+        "meta_title": "Transcrição áudio local Whisper — Dicto | Korelabs",
+        "meta_description": "Dicto: transcreva áudio e vídeo para texto com Whisper no seu PC. Exporte TXT, SRT, VTT e DOCX. Sem enviar arquivos à nuvem.",
+        "h1": "Dicto — Transcrição local de áudio e vídeo",
+        "tagline": "Whisper offline: de áudio e vídeo para texto no seu equipamento",
+        "intro": "Dicto substitui serviços de transcrição por assinatura. Processe reuniões, aulas e podcasts localmente com faster-whisper. FFmpeg incluído para vídeo. Nada sai do seu PC.",
+        "sections": [
+          {
+            "title": "Whisper local",
+            "text": "Modelos de tiny a medium conforme seu hardware. Detecção automática de idioma e fila em lote."
+          },
+          {
+            "title": "Exportação flexível",
+            "text": "TXT simples, legendas SRT/VTT ou documento DOCX pronto para editar."
+          },
+          {
+            "title": "Privacidade total",
+            "text": "Ideal para entrevistas, medicina, jurídico e conteúdo confidencial. Sem cota mensal nem limites de minutos na nuvem."
+          }
+        ],
+        "features": ["Whisper local", "Multilíngue", "FFmpeg incluído", "SRT, VTT, DOCX", "Fila em lote"],
+        "card_desc": "Áudio e vídeo para texto com Whisper no seu PC. Exporte TXT, SRT, VTT ou DOCX. Nada vai para a nuvem.",
+        "card_tag": "Transcrição local de áudio e vídeo"
+      }
+    }
+  ]
+}

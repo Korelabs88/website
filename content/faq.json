@@ -1,0 +1,125 @@
+{
+  "es": {
+    "meta_title": "Preguntas frecuentes — Korelabs",
+    "meta_description": "Respuestas sobre Optimus, Coto y Dicto: precio, privacidad, requisitos de Windows, RAM, OCR y transcripción local.",
+    "title": "Preguntas frecuentes",
+    "lead": "Todo lo que necesitas saber sobre los programas Korelabs antes de descargar.",
+    "sections": [
+      {
+        "title": "General",
+        "items": [
+          { "q": "¿Los programas de Korelabs son gratis?", "a": "Sí. Optimus, Coto y Dicto son gratuitos, sin suscripción, sin anuncios y sin límites artificiales de uso." },
+          { "q": "¿Necesito crear una cuenta?", "a": "No. Descargas el instalador o la versión portable y listo. No hay registro ni login." },
+          { "q": "¿Funcionan sin internet?", "a": "Sí, una vez instalados. Todo el procesamiento es local en tu PC. Solo necesitas internet para descargar." },
+          { "q": "¿Qué versiones de Windows son compatibles?", "a": "Windows 10 (64-bit) y Windows 11 (64-bit)." }
+        ]
+      },
+      {
+        "title": "Optimus",
+        "items": [
+          { "q": "¿Es seguro liberar RAM con Optimus?", "a": "Optimus usa operaciones nativas de Windows (working sets, standby, modified). Es reversible y muestra el antes/después. Algunas funciones requieren ejecutar como administrador." },
+          { "q": "¿Optimus acelera la RAM de verdad?", "a": "Libera memoria standby y caché retenida en RAM, no simula un porcentaje falso. El efecto depende de cuánta memoria recuperable tenga tu sistema en ese momento." },
+          { "q": "¿Optimus envía datos a servidores?", "a": "No. No hay telemetría oculta ni analítica en la nube." }
+        ]
+      },
+      {
+        "title": "Coto",
+        "items": [
+          { "q": "¿Coto sube mis PDFs a internet?", "a": "No. Toda conversión y OCR ocurre en tu equipo. Tus documentos no salen de tu PC." },
+          { "q": "¿Qué formatos soporta Coto?", "a": "Imágenes (PNG, JPG, WebP…), PDF, documentos Office y OCR multiidioma. Consulta la landing de Coto para la lista actualizada." },
+          { "q": "¿Puedo convertir archivos por lotes?", "a": "Sí. Coto incluye cola de trabajos para procesar múltiples archivos." }
+        ]
+      },
+      {
+        "title": "Dicto",
+        "items": [
+          { "q": "¿Dicto funciona sin GPU?", "a": "Sí, con modelos Whisper más pequeños (tiny, base). Modelos medium rinden mejor con GPU, pero no es obligatorio." },
+          { "q": "¿Qué idiomas transcribe Dicto?", "a": "Whisper detecta idioma automáticamente y soporta decenas de idiomas según el modelo elegido." },
+          { "q": "¿Puedo exportar subtítulos?", "a": "Sí: TXT, SRT, VTT y DOCX." }
+        ]
+      }
+    ]
+  },
+  "en": {
+    "meta_title": "FAQ — Korelabs",
+    "meta_description": "Answers about Optimus, Coto and Dicto: pricing, privacy, Windows requirements, RAM, OCR and local transcription.",
+    "title": "Frequently asked questions",
+    "lead": "Everything you need to know about Korelabs programs before downloading.",
+    "sections": [
+      {
+        "title": "General",
+        "items": [
+          { "q": "Are Korelabs programs free?", "a": "Yes. Optimus, Coto and Dicto are free with no subscription, ads or artificial usage limits." },
+          { "q": "Do I need an account?", "a": "No. Download the installer or portable build and you're done. No registration or login." },
+          { "q": "Do they work offline?", "a": "Yes, once installed. All processing is local on your PC. You only need internet to download." },
+          { "q": "Which Windows versions are supported?", "a": "Windows 10 (64-bit) and Windows 11 (64-bit)." }
+        ]
+      },
+      {
+        "title": "Optimus",
+        "items": [
+          { "q": "Is it safe to free RAM with Optimus?", "a": "Optimus uses native Windows operations (working sets, standby, modified). It's reversible and shows before/after. Some features require running as administrator." },
+          { "q": "Does Optimus really speed up RAM?", "a": "It frees standby memory and cached RAM — it doesn't fake a percentage. Results depend on how much recoverable memory your system has at that moment." },
+          { "q": "Does Optimus send data to servers?", "a": "No. No hidden telemetry or cloud analytics." }
+        ]
+      },
+      {
+        "title": "Coto",
+        "items": [
+          { "q": "Does Coto upload my PDFs?", "a": "No. All conversion and OCR happens on your machine. Your files never leave your PC." },
+          { "q": "What formats does Coto support?", "a": "Images (PNG, JPG, WebP…), PDF, Office documents and multilingual OCR. See the Coto landing for the latest list." },
+          { "q": "Can I batch convert files?", "a": "Yes. Coto includes a job queue for multiple files." }
+        ]
+      },
+      {
+        "title": "Dicto",
+        "items": [
+          { "q": "Does Dicto work without a GPU?", "a": "Yes, with smaller Whisper models (tiny, base). Medium models perform better with GPU but it's not required." },
+          { "q": "What languages does Dicto transcribe?", "a": "Whisper auto-detects language and supports dozens of languages depending on the model." },
+          { "q": "Can I export subtitles?", "a": "Yes: TXT, SRT, VTT and DOCX." }
+        ]
+      }
+    ]
+  },
+  "pt": {
+    "meta_title": "Perguntas frequentes — Korelabs",
+    "meta_description": "Respostas sobre Optimus, Coto e Dicto: preço, privacidade, requisitos Windows, RAM, OCR e transcrição local.",
+    "title": "Perguntas frequentes",
+    "lead": "Tudo o que você precisa saber sobre os programas Korelabs antes de baixar.",
+    "sections": [
+      {
+        "title": "Geral",
+        "items": [
+          { "q": "Os programas Korelabs são grátis?", "a": "Sim. Optimus, Coto e Dicto são gratuitos, sem assinatura, anúncios ou limites artificiais." },
+          { "q": "Preciso criar uma conta?", "a": "Não. Baixe o instalador ou a versão portátil e pronto. Sem registro ou login." },
+          { "q": "Funcionam sem internet?", "a": "Sim, após instalados. Todo o processamento é local no seu PC. Só precisa de internet para baixar." },
+          { "q": "Quais versões do Windows são compatíveis?", "a": "Windows 10 (64-bit) e Windows 11 (64-bit)." }
+        ]
+      },
+      {
+        "title": "Optimus",
+        "items": [
+          { "q": "É seguro liberar RAM com Optimus?", "a": "Optimus usa operações nativas do Windows (working sets, standby, modified). É reversível e mostra antes/depois. Algumas funções exigem executar como administrador." },
+          { "q": "Optimus acelera a RAM de verdade?", "a": "Libera memória standby e cache retida na RAM — não simula porcentagem falsa. O efeito depende da memória recuperável no momento." },
+          { "q": "Optimus envia dados a servidores?", "a": "Não. Sem telemetria oculta ou analytics na nuvem." }
+        ]
+      },
+      {
+        "title": "Coto",
+        "items": [
+          { "q": "Coto envia meus PDFs para a internet?", "a": "Não. Toda conversão e OCR ocorre no seu equipamento. Seus arquivos não saem do PC." },
+          { "q": "Quais formatos o Coto suporta?", "a": "Imagens (PNG, JPG, WebP…), PDF, Office e OCR multilíngue. Veja a landing do Coto para a lista atualizada." },
+          { "q": "Posso converter arquivos em lote?", "a": "Sim. Coto inclui fila de trabalhos para vários arquivos." }
+        ]
+      },
+      {
+        "title": "Dicto",
+        "items": [
+          { "q": "Dicto funciona sem GPU?", "a": "Sim, com modelos Whisper menores (tiny, base). Modelos medium rendem melhor com GPU, mas não é obrigatório." },
+          { "q": "Quais idiomas o Dicto transcreve?", "a": "Whisper detecta idioma automaticamente e suporta dezenas de idiomas conforme o modelo." },
+          { "q": "Posso exportar legendas?", "a": "Sim: TXT, SRT, VTT e DOCX." }
+        ]
+      }
+    ]
+  }
+}

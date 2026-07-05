@@ -1,0 +1,68 @@
+{% extends "base.html" %}
+{% block head_extra %}
+<script type="application/ld+json">{{ schema_json | safe }}</script>
+{% endblock %}
+{% block content %}
+<section class="page-hero">
+  <div class="container">
+    <nav class="breadcrumbs" aria-label="Breadcrumb">
+      <a href="{{ lang | url_for('home') }}">{{ t.breadcrumb_home }}</a>
+      <span aria-hidden="true">/</span>
+      <span>{{ product.name }}</span>
+    </nav>
+    <div class="page-hero__row">
+      <div class="page-hero__brand">
+        <div class="product-card__icon product-card__icon--lg">
+          <img src="{{ product.logo }}" alt="" width="40" height="40" class="product-card__logo" />
+        </div>
+        <div>
+          <h1 class="page-hero__title">{{ pdata.h1 }}</h1>
+          <p class="page-hero__tagline">{{ pdata.tagline }}</p>
+        </div>
+      </div>
+      <div class="page-hero__actions">
+        <a class="btn btn--primary btn--lg" href="{{ product.downloads.setup }}" rel="noopener">{{ t.btn_installer }}</a>
+        <a class="btn btn--secondary btn--lg" href="{{ product.downloads.portable }}" rel="noopener">{{ t.btn_portable }}</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section--article">
+  <div class="container article-layout">
+    <article class="prose">
+      <p class="prose__lead">{{ pdata.intro }}</p>
+      {% for section in pdata.sections %}
+      <h2>{{ section.title }}</h2>
+      <p>{{ section.text }}</p>
+      {% endfor %}
+      <ul class="prose__features">
+        {% for f in pdata.features %}
+        <li>{{ f }}</li>
+        {% endfor %}
+      </ul>
+    </article>
+    <aside class="article-sidebar">
+      <div class="sidebar-card">
+        <h3>{{ product.name }} {{ product.version }}</h3>
+        <p>{{ pdata.card_tag }}</p>
+        <a class="btn btn--primary" href="{{ product.downloads.setup }}" rel="noopener">{{ t.btn_installer }}</a>
+        <a class="btn btn--secondary" href="{{ product.downloads.portable }}" rel="noopener">{{ t.btn_portable }}</a>
+      </div>
+      {% if related_guides %}
+      <div class="sidebar-card">
+        <h4>{{ t.product_related_guides }}</h4>
+        <ul class="sidebar-links">
+          {% for g in related_guides %}
+          <li><a href="{{ g.url }}">{{ g.title }}</a></li>
+          {% endfor %}
+        </ul>
+      </div>
+      {% endif %}
+      <div class="sidebar-card">
+        <a class="link-arrow" href="{{ faq_url }}">{{ t.product_faq_link }}</a>
+      </div>
+    </aside>
+  </div>
+</section>
+{% endblock %}

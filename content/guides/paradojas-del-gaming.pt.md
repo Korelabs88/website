@@ -1,6 +1,6 @@
 PC gaming tem um problema de narrativa: todo mundo vende a mesma história — mais GPU, mais RAM, mais tweaks, mais FPS na tela. Mas quando você mede de verdade, a experiência não melhora como prometeram. Não porque o PC está quebrado. Porque **o gargalo quase nunca está onde o marketing disse**.
 
-Esta série reúne **14 paradojas do gaming**: contradições reais entre o que acreditamos, o que medimos e o que sentimos jogando. Hardware, software, Windows, métricas e até biblioteca Steam. Mesmo fio condutor: **diagnostique antes de gastar**.
+Esta série reúne **15 paradojas do gaming**: contradições reais entre o que acreditamos, o que medimos e o que sentimos jogando. Hardware, software, Windows, métricas e até biblioteca Steam. Mesmo fio condutor: **diagnostique antes de gastar**.
 
 ## A ideia central
 
@@ -20,8 +20,9 @@ Esta série reúne **14 paradojas do gaming**: contradições reais entre o que 
 | Antivírus off = FPS | Segurança real por sensação falsa |
 | Mais jogos = mais jogar | Backlog é o limite |
 | Reservar às 00:00 = escassez | Arquivo digital nunca esgota |
+| PC streamer caro = melhor stream | Duas PCs modestas dividem o trabalho |
 
-## Os 14 artigos (ordem sugerida)
+## Os 15 artigos (ordem sugerida)
 
 ### Hardware: onde está o limite?
 
@@ -59,12 +60,16 @@ Esta série reúne **14 paradojas do gaming**: contradições reais entre o que 
 
 14. **[Comprar o jogo no dia 1 é a pior decisão que você toma como fã](/pt/blog/comprar-juego-dia-1-paradoja/)** — Não há estoque digital que esgote; você paga preço cheio pela versão menos polida e o hype da meia-noite.
 
+### Streaming (arquitetura do setup)
+
+15. **[PC médio + capturadora vence seu PC "de streamer"](/pt/blog/pc-streamer-vs-capturadora-paradoja/)** — Streamar é segundo trabalho. Dividir tarefas em dois sistemas costuma vencer uma máquina caríssima.
+
 ## Checklist antes do próximo upgrade
 
 1. **Qual componente está no limite?** GPU, CPU, RAM, disco — meça em combate real, não menu.
 2. **1% low ou média?** Só FPS médio engana.
 3. **Otimização software primeiro?** Drivers, fechar pesado, modo gamer — antes de comprar hardware.
-4. **Esse gasto ataca meu limite real?** RT premium não conserta ranked; 144Hz não conserta mira; GPU nova não conserta backlog.
+4. **Esse gasto ataca meu limite real?** PC streamer monolítico não conserta arquitetura; RT premium não conserta ranked; GPU nova não conserta backlog.
 
 ## Optimus: otimize a sessão, não a obsessão
 
@@ -82,7 +87,7 @@ Grátis, local, Windows 10/11. Passos concretos: [otimizar Windows 11 para jogos
 
 **Paradojas dizem pra nunca fazer upgrade?** Não. Dizem **upgrade com diagnóstico**, não FOMO.
 
-**Vão sair mais artigos?** Série fecha em 14; blog continua com guias Optimus e hardware.
+**Vão sair mais artigos?** Série fecha em 15; blog continua com guias Optimus e hardware.
 
 **Posso compartilhar a série?** Sim. Índice: `/pt/blog/paradojas-del-gaming/`.
 

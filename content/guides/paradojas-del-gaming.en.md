@@ -1,6 +1,6 @@
 PC gaming has a narrative problem: everyone sells the same story — more GPU, more RAM, more tweaks, more FPS on screen. But when you actually measure, the experience doesn't improve as promised. Not because your PC is broken. Because **the bottleneck is almost never where marketing said it was**.
 
-This series collects **14 gaming paradoxes**: real contradictions between what we believe, what we measure, and what we feel while playing. Hardware, software, Windows, metrics, even your Steam library. Same thread throughout: **diagnose before you spend**.
+This series collects **15 gaming paradoxes**: real contradictions between what we believe, what we measure, and what we feel while playing. Hardware, software, Windows, metrics, even your Steam library. Same thread throughout: **diagnose before you spend**.
 
 ## The core idea
 
@@ -20,8 +20,9 @@ This series collects **14 gaming paradoxes**: real contradictions between what w
 | Antivirus off = FPS | Real security traded for fake feel |
 | More games = more playing | Backlog is the limit |
 | Pre-order at midnight = scarcity | Digital files never run out |
+| Expensive streamer PC = better stream | Two modest PCs split the work |
 
-## All 14 articles (suggested order)
+## All 15 articles (suggested order)
 
 ### Hardware: where is the limit?
 
@@ -59,12 +60,16 @@ This series collects **14 gaming paradoxes**: real contradictions between what w
 
 14. **[Buying a game on day one is the worst decision you make as a fan](/en/blog/comprar-juego-dia-1-paradoja/)** — No digital stock runs out; you pay full price for the least polished version and midnight hype.
 
+### Streaming (setup architecture)
+
+15. **[A mid-range PC + capture card beats your "streamer" PC](/en/blog/pc-streamer-vs-capturadora-paradoja/)** — Streaming is a second job. Splitting tasks across two systems usually beats one expensive machine.
+
 ## Checklist before your next upgrade
 
 1. **Which component is maxed?** GPU, CPU, RAM, drive — measure in real combat, not menus.
 2. **1% low or average?** Average FPS alone misleads.
 3. **Software optimization first?** Drivers, close heavy apps, game mode — before buying hardware.
-4. **Does this spending hit my real limit?** RT premium won't fix ranked; 144Hz won't fix aim; new GPU won't fix backlog.
+4. **Does this spending hit my real limit?** Monolithic streamer PC won't fix architecture; RT premium won't fix ranked; new GPU won't fix backlog.
 
 ## Optimus: optimize the session, not the obsession
 
@@ -82,7 +87,7 @@ Free, local, Windows 10/11. Concrete steps: [optimize Windows 11 for gaming](/en
 
 **Do these paradoxes mean never upgrade?** No. They mean **upgrade with diagnosis**, not FOMO.
 
-**More articles coming?** This series closes at 14; the blog continues with Optimus and hardware guides.
+**More articles coming?** This series closes at 15; the blog continues with Optimus and hardware guides.
 
 **Can I share the series?** Yes. This index: `/en/blog/paradojas-del-gaming/`.
 

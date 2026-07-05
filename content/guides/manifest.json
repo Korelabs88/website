@@ -3,10 +3,18 @@
     {
       "slug": "paradojas-del-gaming",
       "product": "optimus",
-      "related": ["compraste-gpu-equivocada", "fps-promedio-vs-fluidez", "ray-tracing-foto-vs-jugar-paradoja", "144hz-percepcion-vs-habilidad-paradoja"],
-      "es": { "title": "Paradojas del gaming en PC: 14 mitos que te hacen gastar mal", "description": "Índice de la serie: GPU, RAM, DLSS, RT, FPS, Hz, SSD, Windows, backlog, preventas y más. Diagnostica antes de comprar hardware.", "file": "paradojas-del-gaming.es.md" },
-      "en": { "title": "PC gaming paradoxes: 14 myths that make you overspend", "description": "Series index: GPU, RAM, DLSS, RT, FPS, Hz, SSD, Windows, backlog, pre-orders and more. Diagnose before buying hardware.", "file": "paradojas-del-gaming.en.md" },
-      "pt": { "title": "Paradoxos do gaming no PC: 14 mitos que fazem gastar mal", "description": "Índice da série: GPU, RAM, DLSS, RT, FPS, Hz, SSD, Windows, backlog, pré-vendas e mais. Diagnostique antes de comprar hardware.", "file": "paradojas-del-gaming.pt.md" }
+      "related": ["compraste-gpu-equivocada", "pc-streamer-vs-capturadora-paradoja", "fps-promedio-vs-fluidez", "ray-tracing-foto-vs-jugar-paradoja"],
+      "es": { "title": "Paradojas del gaming en PC: 15 mitos que te hacen gastar mal", "description": "Índice de la serie: GPU, RAM, DLSS, RT, FPS, streaming, Hz, SSD, Windows, backlog y más. Diagnostica antes de comprar hardware.", "file": "paradojas-del-gaming.es.md" },
+      "en": { "title": "PC gaming paradoxes: 15 myths that make you overspend", "description": "Series index: GPU, RAM, DLSS, RT, FPS, streaming, Hz, SSD, Windows, backlog and more. Diagnose before buying hardware.", "file": "paradojas-del-gaming.en.md" },
+      "pt": { "title": "Paradoxos do gaming no PC: 15 mitos que fazem gastar mal", "description": "Índice da série: GPU, RAM, DLSS, RT, FPS, streaming, Hz, SSD, Windows, backlog e mais. Diagnostique antes de comprar hardware.", "file": "paradojas-del-gaming.pt.md" }
+    },
+    {
+      "slug": "pc-streamer-vs-capturadora-paradoja",
+      "product": "optimus",
+      "related": ["paradojas-del-gaming", "compraste-gpu-equivocada", "fps-promedio-vs-fluidez", "pc-limpio-multitarea-gaming"],
+      "es": { "title": "Un PC de gama media + capturadora le gana a tu PC \"de streamer\"", "description": "Por qué una sola máquina potente rinde peor que dividir juego y stream: NVENC, capturadoras y arquitectura del setup.", "file": "pc-streamer-vs-capturadora-paradoja.es.md" },
+      "en": { "title": "A mid-range PC + capture card beats your \"streamer\" PC", "description": "Why one powerful machine performs worse than splitting game and stream: NVENC, capture cards, and setup architecture.", "file": "pc-streamer-vs-capturadora-paradoja.en.md" },
+      "pt": { "title": "PC médio + capturadora vence seu PC \"de streamer\"", "description": "Por que uma máquina potente rende pior que dividir jogo e stream: NVENC, capturadoras e arquitetura do setup.", "file": "pc-streamer-vs-capturadora-paradoja.pt.md" }
     },
     {
       "slug": "ray-tracing-foto-vs-jugar-paradoja",

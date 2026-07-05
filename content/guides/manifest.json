@@ -1,9 +1,17 @@
 {
   "guides": [
     {
+      "slug": "pc-limpio-multitarea-gaming",
+      "product": "optimus",
+      "related": ["sobreoptimizar-windows-fps", "optimizar-windows-gaming", "ram-no-esta-llena-standby", "liberar-ram-windows"],
+      "es": { "title": "Querés un PC \"limpio\" para jugar pero tenés 8 programas abiertos: bienvenido a la contradicción", "description": "Discord, Spotify, RGB y overlays: por qué el gaming moderno es multitarea y cómo gestionar recursos sin cerrar todo.", "file": "pc-limpio-multitarea-gaming.es.md" },
+      "en": { "title": "You want a \"clean\" PC to game but have 8 programs open: welcome to the contradiction", "description": "Discord, Spotify, RGB and overlays: why modern gaming is multitasking and how to manage resources without closing everything.", "file": "pc-limpio-multitarea-gaming.en.md" },
+      "pt": { "title": "Quer PC \"limpo\" para jogar mas tem 8 programas abertos: bem-vindo à contradição", "description": "Discord, Spotify, RGB e overlays: por que gaming moderno é multitarefa e como gerenciar recursos sem fechar tudo.", "file": "pc-limpio-multitarea-gaming.pt.md" }
+    },
+    {
       "slug": "sobreoptimizar-windows-fps",
       "product": "optimus",
-      "related": ["optimizar-windows-gaming", "fps-promedio-vs-fluidez", "ram-no-esta-llena-standby", "liberar-ram-windows"],
+      "related": ["pc-limpio-multitarea-gaming", "optimizar-windows-gaming", "fps-promedio-vs-fluidez", "ram-no-esta-llena-standby"],
       "es": { "title": "Tuneaste Windows durante 3 horas para ganar 3 FPS: felicidades", "description": "Por qué el debloat y tweaks de registro casi no suben FPS, cuándo sí optimizar Windows, y qué evitar para no romper el sistema.", "file": "sobreoptimizar-windows-fps.es.md" },
       "en": { "title": "You tuned Windows for 3 hours to gain 3 FPS: congratulations", "description": "Why debloat and registry tweaks barely raise FPS, when Windows optimization actually helps, and what to avoid breaking your system.", "file": "sobreoptimizar-windows-fps.en.md" },
       "pt": { "title": "Você tunou o Windows por 3 horas para ganhar 3 FPS: parabéns", "description": "Por que debloat e tweaks de registro quase não sobem FPS, quando otimizar Windows ajuda de verdade, e o que evitar para não quebrar o sistema.", "file": "sobreoptimizar-windows-fps.pt.md" }
@@ -99,7 +107,7 @@
     {
       "slug": "optimizar-windows-gaming",
       "product": "optimus",
-      "related": ["sobreoptimizar-windows-fps", "bajar-graficos-minimo-paradoja", "liberar-ram-windows", "ram-no-esta-llena-standby"],
+      "related": ["pc-limpio-multitarea-gaming", "sobreoptimizar-windows-fps", "bajar-graficos-minimo-paradoja", "liberar-ram-windows"],
       "es": { "title": "Cómo optimizar Windows 11 para gaming (modo gamer)", "description": "Pasos concretos para reducir latencia y liberar recursos antes de jugar. Incluye modo gamer de Optimus.", "file": "optimizar-windows-gaming.es.md" },
       "en": { "title": "How to optimize Windows 11 for gaming (game mode)", "description": "Concrete steps to reduce latency and free resources before gaming. Includes Optimus game mode.", "file": "optimizar-windows-gaming.en.md" },
       "pt": { "title": "Como otimizar Windows 11 para jogos (modo gamer)", "description": "Passos concretos para reduzir latência e liberar recursos antes de jogar. Inclui modo gamer do Optimus.", "file": "optimizar-windows-gaming.pt.md" }

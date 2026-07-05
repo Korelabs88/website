@@ -1,5 +1,5 @@
-# Build output
-dist/
+# NO ignorar dist/ — Cloudflare Pages excluye del deploy cualquier ruta
+# que coincida con .gitignore (ver DEPLOY.md). No commitees dist/ manualmente.
 
 # Sistema
 .DS_Store

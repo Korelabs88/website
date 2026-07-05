@@ -47,7 +47,11 @@ git push -u origin main
    - **Environment variable** (opcional): `PYTHON_VERSION=3.12`
 5. Deploy. Te dará una URL tipo `website.pages.dev` para probar.
 
-> El sitio es multilingüe (ES/EN/PT). La raíz `/` redirige a `/es/`. Ver `README.md` para desarrollo local.
+> **Importante:** el directorio de salida (`dist`) **no debe estar en `.gitignore`**. Cloudflare Pages omite del deploy los archivos que coinciden con `.gitignore`, aunque el build sea exitoso. Si ves deploy "Success" pero todas las URLs dan 404, revisá esto primero.
+
+> **Python:** añade variable de entorno `PYTHON_VERSION=3.12` en Settings → Environment variables.
+
+> **Indexación:** en Settings → disable "Managed robots.txt" si sustituye tu `robots.txt`; activa "Allow search engine indexing" (sin `X-Robots-Tag: noindex`).
 
 ---
 
@@ -88,6 +92,22 @@ El HTTPS se activa solo en unos minutos.
 4. Usa **Inspección de URLs → Solicitar indexación** para acelerar.
 
 En pocos días tu web aparecerá al buscar "Korelabs" o "Optimus" en Google.
+
+---
+
+## Solución de problemas
+
+### Deploy "Success" pero URLs dan 404
+
+1. **`.gitignore` no debe listar `dist/`** — Pages no sube archivos ignorados.
+2. Tras corregir, **Retry deployment** en Cloudflare.
+3. Verificá: `https://tu-proyecto.pages.dev/es/` debe dar **200** (no 404).
+4. `https://tu-proyecto.pages.dev/robots.txt` debe contener `Sitemap: https://alexkore.com/sitemap.xml` (no el robots genérico de Cloudflare).
+
+### Search Console rechaza indexación
+
+- Casi siempre porque la URL devuelve **404** en la prueba en vivo.
+- Arreglá el deploy primero; después reenviá el sitemap.
 
 ---
 

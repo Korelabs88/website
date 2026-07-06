@@ -758,7 +758,7 @@ main, .footer { position: relative; z-index: 1; }
 .footer__col a:hover { color: var(--accent); }
 .footer__col--brand .brand__name { font-size: 18px; }
 .footer__tag { color: var(--muted); font-size: 15px; max-width: 30ch; }
-.bmc-btn {
+.kofi-btn {
   display: inline-flex;
   align-items: center;
   gap: 8px;
@@ -767,26 +767,23 @@ main, .footer { position: relative; z-index: 1; }
   border-radius: 10px;
   font-size: 14px;
   font-weight: 600;
-  color: #1a1a1a;
-  background: #ffdd00;
-  border: 1px solid #e5c700;
-  box-shadow: 0 4px 14px rgba(255, 221, 0, 0.35);
+  color: #fff;
+  background: #29abe2;
+  border: 1px solid #2299cc;
+  box-shadow: 0 4px 14px rgba(41, 171, 226, 0.35);
   transition: transform 0.15s var(--ease), box-shadow 0.2s ease, background 0.2s ease;
   width: fit-content;
 }
-.bmc-btn:hover {
-  background: #ffe566;
-  box-shadow: 0 6px 20px rgba(255, 221, 0, 0.45);
+.kofi-btn:hover {
+  background: #1f9fd4;
+  box-shadow: 0 6px 20px rgba(41, 171, 226, 0.45);
   transform: translateY(-1px);
-  color: #1a1a1a;
+  color: #fff;
 }
-.bmc-btn__icon {
+.kofi-btn__icon {
   width: 18px;
   height: 18px;
   flex-shrink: 0;
-}
-:root[data-theme="dark"] .bmc-btn {
-  color: #1a1a1a;
 }
 .footer__bottom { display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap; margin-top: 52px; padding-top: 26px; border-top: 1px solid var(--line); color: var(--muted-2); font-size: 14px; }
 

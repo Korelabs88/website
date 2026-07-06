@@ -154,3 +154,117 @@ if (reduceMotion || !("IntersectionObserver" in window)) {
     io.observe(el);
   });
 }
+
+// Botón flotante Ko-fi: aparece al hacer scroll y anima la taza
+const kofiFloat = document.getElementById("kofiFloat");
+if (kofiFloat && !reduceMotion) {
+  let scrollTimer;
+  let lastY = window.scrollY;
+  const showAfter = 180;
+
+  const onKofiScroll = () => {
+    const y = window.scrollY;
+    kofiFloat.classList.toggle("is-visible", y > showAfter);
+
+    if (Math.abs(y - lastY) > 2) {
+      kofiFloat.classList.add("is-scrolling");
+      clearTimeout(scrollTimer);
+      scrollTimer = setTimeout(() => kofiFloat.classList.remove("is-scrolling"), 200);
+    }
+    lastY = y;
+  };
+
+  onKofiScroll();
+  window.addEventListener("scroll", onKofiScroll, { passive: true });
+} else if (kofiFloat) {
+  kofiFloat.classList.add("is-visible");
+}
+
+// Modal de contacto
+const contactModal = document.getElementById("contactModal");
+const contactForm = document.getElementById("contactForm");
+const contactStatus = document.getElementById("contactStatus");
+let contactTrigger = null;
+
+function openContactModal(trigger) {
+  if (!contactModal) return;
+  contactTrigger = trigger || null;
+  contactModal.hidden = false;
+  contactModal.setAttribute("aria-hidden", "false");
+  requestAnimationFrame(() => contactModal.classList.add("is-open"));
+  document.body.style.overflow = "hidden";
+  const first = contactForm?.querySelector("input:not(.contact-form__hp)");
+  first?.focus();
+}
+
+function closeContactModal() {
+  if (!contactModal) return;
+  contactModal.classList.remove("is-open");
+  contactModal.setAttribute("aria-hidden", "true");
+  document.body.style.overflow = "";
+  window.setTimeout(() => {
+    if (!contactModal.classList.contains("is-open")) contactModal.hidden = true;
+  }, 280);
+  contactTrigger?.focus();
+  contactTrigger = null;
+}
+
+document.querySelectorAll("[data-contact-open]").forEach((btn) => {
+  btn.addEventListener("click", () => openContactModal(btn));
+});
+
+contactModal?.querySelectorAll("[data-contact-close]").forEach((el) => {
+  el.addEventListener("click", closeContactModal);
+});
+
+document.addEventListener("keydown", (e) => {
+  if (e.key === "Escape" && contactModal?.classList.contains("is-open")) {
+    e.preventDefault();
+    closeContactModal();
+  }
+});
+
+if (contactForm) {
+  const msgSending = contactForm.dataset.msgSending || "Sending…";
+  const msgSuccess = contactForm.dataset.msgSuccess || "Sent!";
+  const msgError = contactForm.dataset.msgError || "Error sending.";
+
+  contactForm.addEventListener("submit", async (e) => {
+    e.preventDefault();
+    const submitBtn = contactForm.querySelector(".contact-form__submit");
+    const payload = {
+      name: contactForm.querySelector("#contactName").value.trim(),
+      email: contactForm.querySelector("#contactEmail").value.trim(),
+      message: contactForm.querySelector("#contactMessage").value.trim(),
+      website: contactForm.website.value,
+    };
+
+    if (!payload.name || !payload.email || !payload.message) {
+      contactStatus.textContent = msgError;
+      contactStatus.className = "contact-form__status is-error";
+      return;
+    }
+
+    submitBtn.disabled = true;
+    contactStatus.textContent = msgSending;
+    contactStatus.className = "contact-form__status";
+
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(payload),
+      });
+      if (!res.ok) throw new Error("fail");
+      contactStatus.textContent = msgSuccess;
+      contactStatus.className = "contact-form__status is-success";
+      contactForm.reset();
+      window.setTimeout(closeContactModal, 2200);
+    } catch {
+      contactStatus.textContent = msgError;
+      contactStatus.className = "contact-form__status is-error";
+    } finally {
+      submitBtn.disabled = false;
+    }
+  });
+}

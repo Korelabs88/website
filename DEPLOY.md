@@ -145,3 +145,32 @@ Si `https://alexkore.com/` responde 200 pero `https://alexkore.com/es/blog/...` 
 Para añadir un programa: actualiza `content/products.json` y las traducciones en `content/i18n/`.
 
 Para SEO off-page y métricas: ver `docs/SEO-OFFPAGE.md` y `docs/SEO-MONITORING.md`.
+
+---
+
+## Formulario de contacto
+
+El botón **Contáctanos** abre un modal que envía a `consultas@alexkore.com` vía **Cloudflare Pages Function** (`functions/api/contact.js`).
+
+### Configurar el envío (elige una opción)
+
+**Opción A — Web3Forms (más rápida, ~2 min)**
+
+1. Entrá a https://web3forms.com y creá un access key con destino `consultas@alexkore.com`.
+2. En Cloudflare Pages → tu proyecto → **Settings → Environment variables** (Production):
+   - `WEB3FORMS_ACCESS_KEY` = tu clave
+3. Redeploy.
+
+**Opción B — Cloudflare Email (Send binding)**
+
+1. Email Routing → habilitá envío desde `consultas@alexkore.com`.
+2. Pages → **Settings → Functions → Bindings → Send email** → nombre `EMAIL`.
+3. Redeploy.
+
+**Opción C — Resend**
+
+1. Creá cuenta en https://resend.com, verificá el dominio `alexkore.com`.
+2. Variable de entorno: `RESEND_API_KEY`.
+3. Opcional: `CONTACT_TO` y `CONTACT_FROM` (default `consultas@alexkore.com`).
+
+Sin ninguna de estas variables, el formulario responde error 503 hasta que configures una.

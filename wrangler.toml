@@ -1,3 +1,8 @@
 name = "website"
 compatibility_date = "2024-01-01"
 pages_build_output_dir = "public"
+
+# Binding para enviar correo (Pages → Settings → Functions → Send email → EMAIL)
+# Alternativa: variables RESEND_API_KEY o WEB3FORMS_ACCESS_KEY
+# [[send_email]]
+# name = "EMAIL"

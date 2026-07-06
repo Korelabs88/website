@@ -136,7 +136,7 @@
       <p class="services-cta__text">{{ t.services_cta_text }}</p>
       <div class="services-cta__actions">
         {% if site.contact_email %}
-        <a class="btn btn--primary btn--lg" href="mailto:{{ site.contact_email }}">{{ t.services_cta_btn }}</a>
+        <button type="button" class="btn btn--primary btn--lg" data-contact-open>{{ t.services_cta_btn }}</button>
         {% endif %}
         {% if site.ko_fi_url %}
         <p class="services-cta__alt">

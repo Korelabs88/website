@@ -32,6 +32,16 @@
   <div class="container article-layout">
     <article class="prose">
       <p class="prose__lead">{{ pdata.intro }}</p>
+      {% if pdata.screenshots %}
+      <div class="product-gallery" aria-label="{{ product.name }} screenshots">
+        {% for shot in pdata.screenshots %}
+        <figure class="product-gallery__item">
+          <img src="{{ shot.src }}" alt="{{ shot.caption }}" loading="lazy" width="960" height="540" />
+          <figcaption>{{ shot.caption }}</figcaption>
+        </figure>
+        {% endfor %}
+      </div>
+      {% endif %}
       {% for section in pdata.sections %}
       <h2>{{ section.title }}</h2>
       <p>{{ section.text }}</p>

@@ -311,7 +311,12 @@
         ],
         "features": ["Modo inteligente", "Vista previa con selección", "ZIP / 7z + cifrado", "Versionado", "100% offline"],
         "card_desc": "Respaldos inteligentes con análisis previo, compresión, cifrado, versionado y restauración local.",
-        "card_tag": "Copias de seguridad offline para Windows"
+        "card_tag": "Copias de seguridad offline para Windows",
+        "screenshots": [
+          {"src": "/assets/img/echo/echo-home.png", "caption": "Pantalla de inicio"},
+          {"src": "/assets/img/echo/echo-new-backup.png", "caption": "Configurar respaldo"},
+          {"src": "/assets/img/echo/echo-preview.png", "caption": "Vista previa con selección parcial"}
+        ]
       },
       "en": {
         "meta_title": "Offline Windows Backup — Echo | Korelabs",
@@ -339,7 +344,12 @@
         ],
         "features": ["Smart mode", "Preview with selection", "ZIP / 7z + encryption", "Versioning", "100% offline"],
         "card_desc": "Smart backups with preview analysis, compression, encryption, versioning and local restore.",
-        "card_tag": "Offline backup for Windows"
+        "card_tag": "Offline backup for Windows",
+        "screenshots": [
+          {"src": "/assets/img/echo/echo-home.png", "caption": "Home screen"},
+          {"src": "/assets/img/echo/echo-new-backup.png", "caption": "Configure backup"},
+          {"src": "/assets/img/echo/echo-preview.png", "caption": "Preview with partial selection"}
+        ]
       },
       "pt": {
         "meta_title": "Backup offline Windows — Echo | Korelabs",
@@ -367,7 +377,12 @@
         ],
         "features": ["Modo inteligente", "Pré-visualização com seleção", "ZIP / 7z + criptografia", "Versionamento", "100% offline"],
         "card_desc": "Backups inteligentes com análise prévia, compressão, criptografia, versionamento e restauração local.",
-        "card_tag": "Backup offline para Windows"
+        "card_tag": "Backup offline para Windows",
+        "screenshots": [
+          {"src": "/assets/img/echo/echo-home.png", "caption": "Tela inicial"},
+          {"src": "/assets/img/echo/echo-new-backup.png", "caption": "Configurar backup"},
+          {"src": "/assets/img/echo/echo-preview.png", "caption": "Pré-visualização com seleção parcial"}
+        ]
       }
     }
   ]

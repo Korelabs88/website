@@ -29,16 +29,17 @@ jobs:
           python scripts/build.py
 
       - name: Publish to Cloudflare Pages
+        id: cf_deploy
         uses: cloudflare/wrangler-action@v3
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
           command: pages deploy public --project-name=website --commit-dirty=true
-        continue-on-error: true
 
-      - name: Deploy note
-        if: always()
+      - name: Deploy falló — instrucciones
+        if: failure() && steps.cf_deploy.outcome == 'failure'
         run: |
-          if [ -z "${{ secrets.CLOUDFLARE_API_TOKEN }}" ]; then
-            echo "::warning::Sin CLOUDFLARE_API_TOKEN — redeploy manual en Cloudflare Pages → Deployments → Retry."
-          fi
+          echo "::error::No se pudo publicar en Cloudflare Pages."
+          echo "1) Agregá CLOUDFLARE_API_TOKEN y CLOUDFLARE_ACCOUNT_ID en GitHub → Settings → Secrets"
+          echo "2) O en Cloudflare → Workers & Pages → website → Deployments → Retry deployment"
+          exit 1

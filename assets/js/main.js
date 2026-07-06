@@ -2,6 +2,42 @@
 const yearEl = document.getElementById("year");
 if (yearEl) yearEl.textContent = new Date().getFullYear();
 
+// Marquee — JS en desktop (Chrome bloquea CSS animation con backdrop-filter en la página)
+(function initMarquee() {
+  const track = document.querySelector(".marquee__track");
+  if (!track || window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+
+  track.classList.add("is-js");
+  track.style.animation = "none";
+
+  let offset = 0;
+  let half = 0;
+  let last = performance.now();
+  const speed = 55; // px/s
+
+  const measure = () => {
+    half = track.scrollWidth / 2;
+  };
+  measure();
+  if ("ResizeObserver" in window) {
+    new ResizeObserver(measure).observe(track);
+  } else {
+    window.addEventListener("resize", measure, { passive: true });
+  }
+
+  function tick(now) {
+    const dt = Math.min((now - last) / 1000, 0.05);
+    last = now;
+    if (half > 0) {
+      offset += speed * dt;
+      if (offset >= half) offset -= half;
+      track.style.transform = `translate3d(${-offset}px, 0, 0)`;
+    }
+    requestAnimationFrame(tick);
+  }
+  requestAnimationFrame(tick);
+})();
+
 // Modo oscuro / claro
 const root = document.documentElement;
 const themeToggle = document.getElementById("themeToggle");

@@ -207,10 +207,33 @@ main, .footer { position: relative; z-index: 1; }
 @keyframes cue { 0% { top: -50%; } 100% { top: 100%; } }
 
 /* ===================== Marquee ===================== */
-.marquee { border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); overflow: hidden; padding: 18px 0; background: var(--glass); backdrop-filter: blur(6px); }
-.marquee__track { display: inline-flex; align-items: center; gap: 26px; white-space: nowrap; animation: marquee 30s linear infinite; font-family: 'Fraunces', Georgia, serif; font-size: 1.5rem; color: var(--ink); }
-.marquee__track .dot { color: var(--accent); }
-@keyframes marquee { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+.marquee {
+  width: 100%;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  overflow: hidden;
+  padding: 18px 0;
+  background: var(--glass);
+  /* Sin backdrop-filter: en Chrome desktop rompe transform en hijos animados */
+}
+.marquee__track {
+  display: flex;
+  width: max-content;
+  flex-shrink: 0;
+  align-items: center;
+  gap: 26px;
+  white-space: nowrap;
+  will-change: transform;
+  animation: marquee 28s linear infinite;
+  font-family: 'Fraunces', Georgia, serif;
+  font-size: 1.5rem;
+  color: var(--ink);
+}
+.marquee__track .dot { color: var(--accent); flex-shrink: 0; }
+@keyframes marquee {
+  from { transform: translate3d(0, 0, 0); }
+  to { transform: translate3d(-50%, 0, 0); }
+}
 
 /* ===================== Programas (tarjetas) ===================== */
 .section--products {

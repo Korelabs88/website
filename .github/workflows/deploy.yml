@@ -18,6 +18,17 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      - name: Verificar secrets de Cloudflare
+        run: |
+          if [ -z "${{ secrets.CLOUDFLARE_API_TOKEN }}" ] || [ -z "${{ secrets.CLOUDFLARE_ACCOUNT_ID }}" ]; then
+            echo "::error::Faltan secrets en GitHub → Settings → Secrets → Actions"
+            echo "  CLOUDFLARE_API_TOKEN  (permiso: Cloudflare Pages Edit)"
+            echo "  CLOUDFLARE_ACCOUNT_ID (Dashboard → Account ID)"
+            echo ""
+            echo "Crear token: https://developers.cloudflare.com/fundamentals/api/get-started/create-token/"
+            exit 1
+          fi
+
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"

@@ -36,6 +36,17 @@ public/           Output desplegado (no commitear)
 | Build output | `public` |
 | Python version | 3.12 |
 
+### Deploy automático (GitHub Actions)
+
+El workflow `.github/workflows/deploy.yml` publica en cada push a `main`. Requiere estos **secrets** en GitHub → Settings → Secrets and variables → Actions:
+
+| Secret | Dónde obtenerlo |
+|--------|-----------------|
+| `CLOUDFLARE_API_TOKEN` | [Crear token](https://developers.cloudflare.com/fundamentals/api/get-started/create-token/) con permiso **Cloudflare Pages → Edit** |
+| `CLOUDFLARE_ACCOUNT_ID` | Cloudflare Dashboard → sidebar derecho → **Account ID** |
+
+Sin estos secrets el build local funciona pero el deploy falla. Alternativa: en Cloudflare → Workers & Pages → **website** → Deployments → conectar el repo y dejar que Cloudflare haga el build.
+
 ## Añadir contenido
 
 - **Producto:** editar `content/products.json` y rebuild

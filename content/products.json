@@ -275,6 +275,100 @@
         "card_desc": "Áudio e vídeo para texto com Whisper no seu PC. Exporte TXT, SRT, VTT ou DOCX. Nada vai para a nuvem.",
         "card_tag": "Transcrição local de áudio e vídeo"
       }
+    },
+    {
+      "id": "echo",
+      "name": "Echo",
+      "version": "v0.1.0",
+      "logo": "/assets/img/echo-logo.png",
+      "downloads": {
+        "setup": "https://github.com/Korelabs88/echo-releases/releases/download/v0.1.0/ECHO-0.1.0-Setup.exe",
+        "portable": "https://github.com/Korelabs88/echo-releases/releases/download/v0.1.0/ECHO-0.1.0-Portable.zip"
+      },
+      "es": {
+        "meta_title": "Copias de seguridad offline Windows — Echo | Korelabs",
+        "meta_description": "Echo: respaldos inteligentes 100% locales. Modo inteligente, compresión ZIP/7z, cifrado, versionado y restauración por fecha. Sin nube.",
+        "h1": "Echo — Respaldos inteligentes offline",
+        "tagline": "Protege tus archivos personales sin subir nada a internet",
+        "intro": "Echo reemplaza servicios de backup en la nube para quienes quieren control total. Analiza, previsualiza y copia Documentos, fotos, proyectos y más. Compresión, cifrado y versionado integrados — todo en tu PC.",
+        "sections": [
+          {
+            "title": "Modo inteligente",
+            "text": "Detecta automáticamente carpetas personales (Documentos, Escritorio, Descargas, Imágenes…) y excluye Windows y temporales. Vista previa con tamaños antes de copiar."
+          },
+          {
+            "title": "Compresión y cifrado",
+            "text": "Comprime en ZIP o 7z y cifra con contraseña. Restaura descifrando y extrayendo en un solo paso."
+          },
+          {
+            "title": "Versionado e integridad",
+            "text": "Conserva versiones anteriores de archivos modificados. Verifica integridad y restaura por fecha o archivo concreto."
+          },
+          {
+            "title": "Sync y perfiles",
+            "text": "Sincronización bidireccional entre dos carpetas. Perfiles reutilizables para trabajo, fotos o USB programado."
+          }
+        ],
+        "features": ["Modo inteligente", "Vista previa con selección", "ZIP / 7z + cifrado", "Versionado", "100% offline"],
+        "card_desc": "Respaldos inteligentes con análisis previo, compresión, cifrado, versionado y restauración local.",
+        "card_tag": "Copias de seguridad offline para Windows"
+      },
+      "en": {
+        "meta_title": "Offline Windows Backup — Echo | Korelabs",
+        "meta_description": "Echo: 100% local smart backups. Smart mode, ZIP/7z compression, encryption, versioning and date restore. No cloud.",
+        "h1": "Echo — Smart offline backups",
+        "tagline": "Protect your personal files without uploading anything",
+        "intro": "Echo replaces cloud backup services for users who want full control. Analyze, preview and copy Documents, photos, projects and more. Built-in compression, encryption and versioning — all on your PC.",
+        "sections": [
+          {
+            "title": "Smart mode",
+            "text": "Automatically finds personal folders (Documents, Desktop, Downloads, Pictures…) and excludes Windows and temp paths. Preview with sizes before copying."
+          },
+          {
+            "title": "Compression and encryption",
+            "text": "Compress to ZIP or 7z and encrypt with a password. Restore by decrypting and extracting in one step."
+          },
+          {
+            "title": "Versioning and integrity",
+            "text": "Keep previous versions of changed files. Verify integrity and restore by date or specific file."
+          },
+          {
+            "title": "Sync and profiles",
+            "text": "Bidirectional sync between two folders. Reusable profiles for work, photos or scheduled USB backups."
+          }
+        ],
+        "features": ["Smart mode", "Preview with selection", "ZIP / 7z + encryption", "Versioning", "100% offline"],
+        "card_desc": "Smart backups with preview analysis, compression, encryption, versioning and local restore.",
+        "card_tag": "Offline backup for Windows"
+      },
+      "pt": {
+        "meta_title": "Backup offline Windows — Echo | Korelabs",
+        "meta_description": "Echo: backups inteligentes 100% locais. Modo inteligente, compressão ZIP/7z, criptografia, versionamento e restauração por data. Sem nuvem.",
+        "h1": "Echo — Backups inteligentes offline",
+        "tagline": "Proteja seus arquivos pessoais sem enviar nada para a internet",
+        "intro": "Echo substitui serviços de backup na nuvem para quem quer controle total. Analisa, pré-visualiza e copia Documentos, fotos, projetos e mais. Compressão, criptografia e versionamento integrados — tudo no seu PC.",
+        "sections": [
+          {
+            "title": "Modo inteligente",
+            "text": "Detecta automaticamente pastas pessoais (Documentos, Área de trabalho, Downloads, Imagens…) e exclui Windows e temporários. Pré-visualização com tamanhos antes de copiar."
+          },
+          {
+            "title": "Compressão e criptografia",
+            "text": "Comprime em ZIP ou 7z e criptografa com senha. Restaure descriptografando e extraindo em um passo."
+          },
+          {
+            "title": "Versionamento e integridade",
+            "text": "Mantém versões anteriores de arquivos modificados. Verifica integridade e restaura por data ou arquivo específico."
+          },
+          {
+            "title": "Sync e perfis",
+            "text": "Sincronização bidirecional entre duas pastas. Perfis reutilizáveis para trabalho, fotos ou USB programado."
+          }
+        ],
+        "features": ["Modo inteligente", "Pré-visualização com seleção", "ZIP / 7z + criptografia", "Versionamento", "100% offline"],
+        "card_desc": "Backups inteligentes com análise prévia, compressão, criptografia, versionamento e restauração local.",
+        "card_tag": "Backup offline para Windows"
+      }
     }
   ]
 }

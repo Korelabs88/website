@@ -57,18 +57,20 @@ git push -u origin main
 
 ---
 
-## Paso 2b — (Opcional) Deploy vía GitHub Actions
+## Paso 2b — Deploy vía GitHub Actions (recomendado)
 
-Si el build nativo de Cloudflare sigue fallando, podés desplegar con Wrangler desde GitHub:
+> **Sin esto, los `git push` no actualizan la web.** GitHub Actions compila y publica con Wrangler. Cloudflare Pages solo por Git a veces no redeploya.
 
-1. En Cloudflare → **My Profile → API Tokens** → Create token → template **Edit Cloudflare Workers** (incluye Pages).
-2. Copiá el **Account ID** (dashboard derecha, Workers & Pages).
-3. En GitHub → repo `website` → **Settings → Secrets → Actions**:
-   - `CLOUDFLARE_API_TOKEN`
-   - `CLOUDFLARE_ACCOUNT_ID`
-4. Cada `git push` a `main` ejecutará `.github/workflows/deploy.yml` (build Python + `wrangler pages deploy public`).
+1. En Cloudflare → **My Profile → API Tokens** → **Create token** → plantilla **Edit Cloudflare Workers** (incluye Pages).
+2. Copiá el **Account ID**: dashboard → Workers & Pages → columna derecha.
+3. En GitHub → https://github.com/Korelabs88/website/settings/secrets/actions → **New repository secret**:
+   - `CLOUDFLARE_API_TOKEN` = el token del paso 1
+   - `CLOUDFLARE_ACCOUNT_ID` = el Account ID
+4. En GitHub → **Actions → Deploy to Cloudflare Pages → Run workflow** (o hacé un push a `main`).
 
-Podés desactivar el build automático de Pages (Settings → Builds) para evitar dos deploys en paralelo.
+Verificá que producción tenga la versión nueva: en el HTML debe aparecer `styles.css?v=13` o superior.
+
+**Alternativa manual (sin secrets):** Cloudflare → **Workers & Pages → website → Deployments** → **Retry deployment** en el último commit de `main`.
 
 ---
 

@@ -1,0 +1,249 @@
+{
+  "projects": [
+    {
+      "id": "aia",
+      "category": "enterprise",
+      "tags": ["Python", "FastAPI", "React", "IA", "Mobile"],
+      "es": {
+        "name": "AIA",
+        "tagline": "Asistente IA empresarial white-label",
+        "description": "Plataforma de chat inteligente con RAG por departamento, portal web, app móvil y conexión a bases de datos. Se despliega con el branding de cada cliente.",
+        "highlights": [
+          "Chat con contexto por área y rol",
+          "Portal web + app móvil nativa",
+          "Integración MCP para automatizaciones"
+        ]
+      },
+      "en": {
+        "name": "AIA",
+        "tagline": "White-label enterprise AI assistant",
+        "description": "Smart chat platform with department RAG, web portal, mobile app and database connectors. Deployed with each client's branding.",
+        "highlights": [
+          "Role-aware chat by department",
+          "Web portal + native mobile app",
+          "MCP integration for automations"
+        ]
+      },
+      "pt": {
+        "name": "AIA",
+        "tagline": "Assistente IA empresarial white-label",
+        "description": "Plataforma de chat inteligente com RAG por departamento, portal web, app móvel e conexão a bases de dados. Implantada com a marca de cada cliente.",
+        "highlights": [
+          "Chat com contexto por área e função",
+          "Portal web + app móvel nativa",
+          "Integração MCP para automações"
+        ]
+      }
+    },
+    {
+      "id": "procesa",
+      "category": "enterprise",
+      "tags": ["FastAPI", "React", "BPMN", "IA", "Docker"],
+      "es": {
+        "name": "PROCESA",
+        "tagline": "Gestión, procesos e inteligencia organizacional",
+        "description": "Suite para mapear procesos BPMN, medir KPIs, evaluar madurez (IGME), auditar y planificar mejoras con IA contextual sobre los datos de la empresa.",
+        "highlights": [
+          "Editor BPMN y dashboard ejecutivo",
+          "Índice de madurez con benchmark",
+          "Reportes exportables e IA sobre KPIs"
+        ]
+      },
+      "en": {
+        "name": "PROCESA",
+        "tagline": "Management, processes and organizational intelligence",
+        "description": "Suite to map BPMN processes, track KPIs, assess maturity (IGME), audit and plan improvements with contextual AI on company data.",
+        "highlights": [
+          "BPMN editor and executive dashboard",
+          "Maturity index with benchmarking",
+          "Exportable reports and KPI-focused AI"
+        ]
+      },
+      "pt": {
+        "name": "PROCESA",
+        "tagline": "Gestão, processos e inteligência organizacional",
+        "description": "Suite para mapear processos BPMN, medir KPIs, avaliar maturidade (IGME), auditar e planejar melhorias com IA contextual sobre os dados da empresa.",
+        "highlights": [
+          "Editor BPMN e dashboard executivo",
+          "Índice de maturidade com benchmark",
+          "Relatórios exportáveis e IA sobre KPIs"
+        ]
+      }
+    },
+    {
+      "id": "mi-bodega",
+      "category": "retail",
+      "tags": ["React", "Supabase", "PWA", "POS", "Android"],
+      "es": {
+        "name": "Mi Bodega",
+        "tagline": "Punto de venta e inventario para comercios",
+        "description": "Sistema completo para bodegas y almacenes: ventas con lector QR, control de caja, compras, proveedores y reportes. PWA instalable y app Android.",
+        "highlights": [
+          "POS rápido con código de barras",
+          "Caja, kardex y roles de usuario",
+          "Dashboard con KPIs del día"
+        ]
+      },
+      "en": {
+        "name": "Mi Bodega",
+        "tagline": "POS and inventory for local stores",
+        "description": "Full system for shops and warehouses: QR sales, cash register, purchases, suppliers and reports. Installable PWA and Android app.",
+        "highlights": [
+          "Fast POS with barcode scanning",
+          "Cash drawer, kardex and user roles",
+          "Daily KPI dashboard"
+        ]
+      },
+      "pt": {
+        "name": "Mi Bodega",
+        "tagline": "Ponto de venda e inventário para comércios",
+        "description": "Sistema completo para lojas e armazéns: vendas com QR, controle de caixa, compras, fornecedores e relatórios. PWA instalável e app Android.",
+        "highlights": [
+          "PDV rápido com código de barras",
+          "Caixa, kardex e papéis de usuário",
+          "Dashboard com KPIs do dia"
+        ]
+      }
+    },
+    {
+      "id": "webventas",
+      "category": "retail",
+      "tags": ["React", "Supabase", "E-commerce"],
+      "es": {
+        "name": "WebVentas",
+        "tagline": "Tienda online con panel de administración",
+        "description": "E-commerce con catálogo, categorías, carrito, pedidos e imágenes en la nube. Panel admin para gestionar productos sin tocar código.",
+        "highlights": [
+          "Catálogo con productos destacados",
+          "Panel admin completo",
+          "Perfil de usuario e historial de pedidos"
+        ]
+      },
+      "en": {
+        "name": "WebVentas",
+        "tagline": "Online store with admin panel",
+        "description": "E-commerce with catalog, categories, cart, orders and cloud image storage. Admin panel to manage products without code.",
+        "highlights": [
+          "Catalog with featured products",
+          "Full admin panel",
+          "User profile and order history"
+        ]
+      },
+      "pt": {
+        "name": "WebVentas",
+        "tagline": "Loja online com painel administrativo",
+        "description": "E-commerce com catálogo, categorias, carrinho, pedidos e imagens na nuvem. Painel admin para gerenciar produtos sem código.",
+        "highlights": [
+          "Catálogo com produtos em destaque",
+          "Painel admin completo",
+          "Perfil de usuário e histórico de pedidos"
+        ]
+      }
+    },
+    {
+      "id": "servicios-moviles",
+      "category": "mobile",
+      "tags": ["React Native", "Expo", "Supabase", "Geolocalización"],
+      "es": {
+        "name": "Servicios Móviles",
+        "tagline": "Marketplace de servicios locales",
+        "description": "App para conectar clientes con proveedores cercanos, publicar pedidos y ver trabajos en clips cortos. Roles dual cliente/proveedor con geolocalización.",
+        "highlights": [
+          "Búsqueda por radio (~20 km)",
+          "Feed de trabajos en video",
+          "Doble rol en una sola cuenta"
+        ]
+      },
+      "en": {
+        "name": "Servicios Móviles",
+        "tagline": "Local services marketplace",
+        "description": "App connecting customers with nearby providers, job posting and short work clips. Dual client/provider roles with geolocation.",
+        "highlights": [
+          "Search within ~20 km radius",
+          "Short-form work video feed",
+          "Dual role in one account"
+        ]
+      },
+      "pt": {
+        "name": "Servicios Móviles",
+        "tagline": "Marketplace de serviços locais",
+        "description": "App para conectar clientes a prestadores próximos, publicar pedidos e ver trabalhos em clips curtos. Papéis dual cliente/prestador com geolocalização.",
+        "highlights": [
+          "Busca por raio (~20 km)",
+          "Feed de trabalhos em vídeo",
+          "Papel dual em uma conta"
+        ]
+      }
+    },
+    {
+      "id": "album-interactivo",
+      "category": "consumer",
+      "tags": ["React", "Supabase", "QR", "Netlify"],
+      "es": {
+        "name": "Álbum Interactivo",
+        "tagline": "Álbumes fotográficos con QR para eventos",
+        "description": "Editor web para crear presentaciones de fotos a pantalla completa con música. Se publica con enlace y código QR — ideal para bodas, regalos y eventos.",
+        "highlights": [
+          "Varios modos de presentación",
+          "Publicación con URL y QR",
+          "Personalización de estilo y música"
+        ]
+      },
+      "en": {
+        "name": "Interactive Album",
+        "tagline": "Photo albums with QR for events",
+        "description": "Web editor to create fullscreen photo presentations with music. Published via link and QR code — ideal for weddings, gifts and events.",
+        "highlights": [
+          "Multiple presentation modes",
+          "Publish with URL and QR",
+          "Style and music customization"
+        ]
+      },
+      "pt": {
+        "name": "Álbum Interativo",
+        "tagline": "Álbuns fotográficos com QR para eventos",
+        "description": "Editor web para criar apresentações de fotos em tela cheia com música. Publicado com link e QR — ideal para casamentos, presentes e eventos.",
+        "highlights": [
+          "Vários modos de apresentação",
+          "Publicação com URL e QR",
+          "Personalização de estilo e música"
+        ]
+      }
+    },
+    {
+      "id": "bot-trading-desk",
+      "category": "fintech",
+      "tags": ["Python", "Desktop", "IA", "Trading"],
+      "es": {
+        "name": "Bot Trading Desk",
+        "tagline": "Terminal de trading con IA y backtesting",
+        "description": "Escritorio profesional para trading automatizado: señales, gráficos, backtest, noticias y aprendizaje de mercado. Distribuible como instalador Windows.",
+        "highlights": [
+          "Gráficos y alertas en tiempo real",
+          "Motor de backtest con historial",
+          "Instalador .exe con login en la nube"
+        ]
+      },
+      "en": {
+        "name": "Bot Trading Desk",
+        "tagline": "Trading terminal with AI and backtesting",
+        "description": "Professional desktop for automated trading: signals, charts, backtest, news and market learning. Shipped as a Windows installer.",
+        "highlights": [
+          "Real-time charts and alerts",
+          "Backtest engine with history",
+          "Windows .exe installer with cloud login"
+        ]
+      },
+      "pt": {
+        "name": "Bot Trading Desk",
+        "tagline": "Terminal de trading com IA e backtest",
+        "description": "Desktop profissional para trading automatizado: sinais, gráficos, backtest, notícias e aprendizado de mercado. Distribuível como instalador Windows.",
+        "highlights": [
+          "Gráficos e alertas em tempo real",
+          "Motor de backtest com histórico",
+          "Instalador .exe com login na nuvem"
+        ]
+      }
+    }
+  ]
+}

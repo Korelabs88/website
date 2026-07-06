@@ -181,6 +181,7 @@ def main() -> None:
     products_data = load_json(CONTENT / "products.json")
     faq_data = load_json(CONTENT / "faq.json")
     guides_manifest = load_json(CONTENT / "guides" / "manifest.json")
+    portfolio_data = load_json(CONTENT / "portfolio.json")
 
     registry: dict[str, dict[str, str]] = {lang: {} for lang in LANGS}
     urls_by_lang: dict[str, list[str]] = {lang: [] for lang in LANGS}
@@ -216,6 +217,7 @@ def main() -> None:
             canonical=SITE_URL + rel,
             alternates=home_alts,
             products=products_data,
+            portfolio=portfolio_data,
             guides_list=guides_list[:3],
             blog_url=url_for(lang, "blog"),
             page_type="home",

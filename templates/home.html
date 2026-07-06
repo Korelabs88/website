@@ -100,6 +100,55 @@
   </div>
 </section>
 
+<section class="section section--services" id="servicios">
+  <div class="container">
+    <div class="section__head section__head--center" data-reveal>
+      <span class="kicker">{{ t.services_kicker }}</span>
+      <h2 class="section__title">{{ t.services_title }}</h2>
+      <p class="section__lead">{{ t.services_lead }}</p>
+    </div>
+    <div class="portfolio-grid">
+      {% for project in portfolio.projects %}
+      {% set pdata = project[lang] %}
+      {% set cat_key = 'portfolio_cat_' ~ project.category %}
+      <article class="portfolio-card" data-reveal>
+        <div class="portfolio-card__head">
+          <span class="pill portfolio-card__cat">{{ t[cat_key] }}</span>
+          <h3 class="portfolio-card__name">{{ pdata.name }}</h3>
+          <p class="portfolio-card__tagline">{{ pdata.tagline }}</p>
+        </div>
+        <p class="portfolio-card__desc">{{ pdata.description }}</p>
+        <ul class="portfolio-card__features">
+          {% for h in pdata.highlights %}
+          <li>{{ h }}</li>
+          {% endfor %}
+        </ul>
+        <div class="portfolio-card__tags">
+          {% for tag in project.tags %}
+          <span class="portfolio-tag">{{ tag }}</span>
+          {% endfor %}
+        </div>
+      </article>
+      {% endfor %}
+    </div>
+    <div class="services-cta" data-reveal>
+      <h3 class="services-cta__title">{{ t.services_cta_title }}</h3>
+      <p class="services-cta__text">{{ t.services_cta_text }}</p>
+      <div class="services-cta__actions">
+        {% if site.contact_email %}
+        <a class="btn btn--primary btn--lg" href="mailto:{{ site.contact_email }}">{{ t.services_cta_btn }}</a>
+        {% endif %}
+        {% if site.ko_fi_url %}
+        <p class="services-cta__alt">
+          {{ t.services_cta_alt }}
+          <a href="{{ site.ko_fi_url }}" target="_blank" rel="noopener noreferrer">Ko-fi</a>
+        </p>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</section>
+
 <section class="section section--guides" id="blog">
   <div class="container">
     <div class="section__head section__head--center" data-reveal>

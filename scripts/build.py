@@ -175,6 +175,7 @@ def main() -> None:
         autoescape=select_autoescape(["html", "xml"]),
     )
     env.filters["url_for"] = lambda lang, pt, slug=None: url_for(lang, pt, slug)
+    env.globals["site"] = load_json(CONTENT / "site.json")
 
     i18n = {lang: load_json(CONTENT / "i18n" / f"{lang}.json") for lang in LANGS}
     products_data = load_json(CONTENT / "products.json")

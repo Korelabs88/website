@@ -83,6 +83,9 @@
           <div class="product-card__downloads">
             <a class="btn btn--primary btn--sm" href="{{ product.downloads.setup }}" rel="noopener">{{ t.btn_installer }}</a>
             <a class="btn btn--secondary btn--sm" href="{{ product.downloads.portable }}" rel="noopener">{{ t.btn_portable }}</a>
+            {% if product.downloads.macos %}
+            <a class="btn btn--secondary btn--sm" href="{{ product.downloads.macos }}" rel="noopener">{{ t.btn_macos }}</a>
+            {% endif %}
           </div>
         </header>
         <div class="product-card__body">

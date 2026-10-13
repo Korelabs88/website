@@ -23,6 +23,9 @@
       <div class="page-hero__actions">
         <a class="btn btn--primary btn--lg" href="{{ product.downloads.setup }}" rel="noopener">{{ t.btn_installer }}</a>
         <a class="btn btn--secondary btn--lg" href="{{ product.downloads.portable }}" rel="noopener">{{ t.btn_portable }}</a>
+        {% if product.downloads.macos %}
+        <a class="btn btn--secondary btn--lg" href="{{ product.downloads.macos }}" rel="noopener">{{ t.btn_macos }}</a>
+        {% endif %}
       </div>
     </div>
   </div>
@@ -61,6 +64,9 @@
         <p>{{ pdata.card_tag }}</p>
         <a class="btn btn--primary" href="{{ product.downloads.setup }}" rel="noopener">{{ t.btn_installer }}</a>
         <a class="btn btn--secondary" href="{{ product.downloads.portable }}" rel="noopener">{{ t.btn_portable }}</a>
+        {% if product.downloads.macos %}
+        <a class="btn btn--secondary" href="{{ product.downloads.macos }}" rel="noopener">{{ t.btn_macos }}</a>
+        {% endif %}
       </div>
       {% if related_guides %}
       <div class="sidebar-card">

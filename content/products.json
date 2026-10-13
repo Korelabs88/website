@@ -3,11 +3,12 @@
     {
       "id": "optimus",
       "name": "Optimus",
-      "version": "v0.3.0",
+      "version": "v0.3.1",
       "logo": "/assets/img/optimus-logo.png",
       "downloads": {
-        "setup": "https://github.com/Korelabs88/optimus-releases/releases/download/v0.3.0/OPTIMUS-0.3.0-Setup.exe",
-        "portable": "https://github.com/Korelabs88/optimus-releases/releases/download/v0.3.0/OPTIMUS-0.3.0-Portable.exe"
+        "setup": "https://github.com/Korelabs88/optimus-releases/releases/download/v0.3.1/OPTIMUS-0.3.1-Setup.exe",
+        "portable": "https://github.com/Korelabs88/optimus-releases/releases/download/v0.3.1/OPTIMUS-0.3.1-Portable.exe",
+        "macos": "https://github.com/Korelabs88/optimus-releases/releases/download/v0.3.1/OPTIMUS-0.3.1-macOS.zip"
       },
       "es": {
         "meta_title": "Liberar RAM en Windows gratis — Optimus | Korelabs",
@@ -39,7 +40,7 @@
             "link_label": "Ver índice de la serie"
           }
         ],
-        "features": ["RAM, CPU y disco en vivo", "Liberación real de memoria standby", "Limpieza profunda reversible", "Modo Gamer", "Sin telemetría"],
+        "features": ["RAM, CPU y disco en vivo", "Liberación real de memoria standby", "Limpieza profunda reversible", "Modo Gamer", "También para macOS 12+", "Sin telemetría"],
         "card_desc": "Monitor de hardware, procesos, inicio, modo gamer y limpieza profunda de disco. Seguro y reversible.",
         "card_tag": "Optimizador inteligente para Windows"
       },
@@ -73,7 +74,7 @@
             "link_label": "View series index"
           }
         ],
-        "features": ["Live RAM, CPU and disk", "Real standby memory purge", "Reversible deep cleanup", "Game Mode", "No telemetry"],
+        "features": ["Live RAM, CPU and disk", "Real standby memory purge", "Reversible deep cleanup", "Game Mode", "Also for macOS 12+", "No telemetry"],
         "card_desc": "Hardware monitor, processes, startup, game mode and deep disk cleanup. Safe and reversible.",
         "card_tag": "Smart Windows optimizer"
       },
@@ -107,7 +108,7 @@
             "link_label": "Ver índice da série"
           }
         ],
-        "features": ["RAM, CPU e disco ao vivo", "Liberação real de standby", "Limpeza profunda reversível", "Modo Gamer", "Sem telemetria"],
+        "features": ["RAM, CPU e disco ao vivo", "Liberação real de standby", "Limpeza profunda reversível", "Modo Gamer", "Também para macOS 12+", "Sem telemetria"],
         "card_desc": "Monitor de hardware, processos, inicialização, modo gamer e limpeza profunda. Seguro e reversível.",
         "card_tag": "Otimizador inteligente para Windows"
       }

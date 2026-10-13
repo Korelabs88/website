@@ -3,11 +3,11 @@
     {
       "id": "optimus",
       "name": "Optimus",
-      "version": "v0.2.0",
+      "version": "v0.3.0",
       "logo": "/assets/img/optimus-logo.png",
       "downloads": {
-        "setup": "https://github.com/Korelabs88/optimus-releases/releases/download/v0.2.0/OPTIMUS-0.2.0-Setup.exe",
-        "portable": "https://github.com/Korelabs88/optimus-releases/releases/download/v0.2.0/OPTIMUS-0.2.0-Portable.exe"
+        "setup": "https://github.com/Korelabs88/optimus-releases/releases/download/v0.3.0/OPTIMUS-0.3.0-Setup.exe",
+        "portable": "https://github.com/Korelabs88/optimus-releases/releases/download/v0.3.0/OPTIMUS-0.3.0-Portable.exe"
       },
       "es": {
         "meta_title": "Liberar RAM en Windows gratis — Optimus | Korelabs",

@@ -258,7 +258,7 @@ def main() -> None:
                 "@type": "SoftwareApplication",
                 "name": product["name"],
                 "applicationCategory": "UtilitiesApplication",
-                "operatingSystem": "Windows 10, Windows 11",
+                "operatingSystem": "Windows 10, Windows 11, macOS 12+" if product["downloads"].get("macos") else "Windows 10, Windows 11",
                 "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"},
                 "publisher": {"@type": "Organization", "name": "Korelabs"},
                 "downloadUrl": product["downloads"]["setup"],
@@ -314,7 +314,7 @@ def main() -> None:
         write_page(rel, html)
 
     # --- Blog (índice de artículos) ---
-    product_labels = {"optimus": "Optimus", "coto": "Coto", "dicto": "Dicto"}
+    product_labels = {"optimus": "Optimus", "coto": "Coto", "dicto": "Dicto", "sentinela": "Sentinela"}
     for lang in LANGS:
         register(lang, "blog", None, url_for(lang, "blog"))
     blog_alts = build_alternates("blog", None, registry)

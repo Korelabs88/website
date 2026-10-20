@@ -385,6 +385,122 @@
           {"src": "/assets/img/echo/echo-preview.png", "caption": "Pré-visualização com seleção parcial"}
         ]
       }
+    },
+    {
+      "id": "sentinela",
+      "name": "Sentinela",
+      "version": "v1.0.0",
+      "logo": "/assets/img/sentinela-logo.png",
+      "downloads": {
+        "setup": "https://github.com/Korelabs88/sentinela-releases/releases/download/v1.0.0/Sentinela-1.0.0-Setup.exe",
+        "portable": "https://github.com/Korelabs88/sentinela-releases/releases/download/v1.0.0/Sentinela-1.0.0-Portable.zip",
+        "macos": "https://github.com/Korelabs88/sentinela-releases/releases/download/v1.0.0/Sentinela-1.0.0-macOS.zip"
+      },
+      "es": {
+        "meta_title": "Auditor de seguridad gratis para Windows y Mac — Sentinela | Korelabs",
+        "meta_description": "Sentinela: auditor de seguridad personal. Muestra qué arranca, persiste y se conecta en tu equipo y qué cambió desde el último análisis. Complementa a Defender. Gratis y local.",
+        "h1": "Sentinela — Auditor de seguridad personal",
+        "tagline": "Mirá qué arranca, persiste y se conecta en tu equipo, y qué cambió desde la última vez",
+        "intro": "Sentinela revisa en minutos los lugares donde se esconde el malware: programas de inicio, tareas programadas, servicios, drivers, extensiones del navegador, conexiones de red y cuentas. Cada hallazgo viene explicado en español llano, con nivel de riesgo y una acción sugerida. Complementa a Microsoft Defender (no lo reemplaza) y todo se analiza en tu equipo.",
+        "sections": [
+          {
+            "title": "Qué cambió desde el último análisis",
+            "text": "Lo que más delata una intrusión es lo nuevo: un programa que empezó a arrancar solo, una tarea que apareció, una cuenta de administrador más. Sentinela compara cada análisis con el anterior (o con tu línea base de \"equipo limpio\") y te muestra solo las novedades."
+          },
+          {
+            "title": "Reputación y reglas YARA",
+            "text": "Consulta el hash de los archivos en VirusTotal y MalwareBazaar, y las IPs remotas en AbuseIPDB, con tus propias claves gratuitas guardadas cifradas. Nunca sube archivos: solo hashes e IPs públicas. El análisis completo agrega reglas YARA locales."
+          },
+          {
+            "title": "Remediación reversible",
+            "text": "Deshabilitar un inicio, una tarea o una extensión, o poner un archivo en cuarentena, siempre con confirmación y respaldo. Cada acción se puede deshacer desde el historial."
+          },
+          {
+            "title": "Análisis diario y también para Mac",
+            "text": "Una tarea programada analiza tu PC todos los días y avisa con una notificación si aparece algo importante o si Defender se apagó. En macOS revisa LaunchAgents, LaunchDaemons, SIP, Gatekeeper, FileVault, perfiles y extensiones del sistema."
+          }
+        ],
+        "features": [
+          "Diferencias entre análisis",
+          "VirusTotal, MalwareBazaar y AbuseIPDB",
+          "Reglas YARA locales",
+          "Remediación con deshacer",
+          "Windows 10/11 y macOS 12+",
+          "Sin telemetría"
+        ],
+        "card_desc": "Inicio, tareas, servicios, red, extensiones y cuentas, con riesgo explicado y qué cambió desde el último análisis.",
+        "card_tag": "Auditor de seguridad para Windows y Mac"
+      },
+      "en": {
+        "meta_title": "Free security auditor for Windows and Mac — Sentinela | Korelabs",
+        "meta_description": "Sentinela: personal security auditor. See what starts, persists and connects on your computer and what changed since the last scan. Complements Defender. Free and local.",
+        "h1": "Sentinela — Personal security auditor",
+        "tagline": "See what starts, persists and connects on your computer, and what changed since last time",
+        "intro": "Sentinela checks in minutes the places where malware hides: startup programs, scheduled tasks, services, drivers, browser extensions, network connections and accounts. Every finding comes with a plain-language explanation, a risk level and a suggested action. It complements Microsoft Defender (it does not replace it) and everything is analyzed on your machine. The interface is in Spanish.",
+        "sections": [
+          {
+            "title": "What changed since the last scan",
+            "text": "New things are what give an intrusion away: a program that started launching itself, a task that appeared, one more administrator account. Sentinela compares each scan with the previous one (or with your \"clean machine\" baseline) and shows you only what is new."
+          },
+          {
+            "title": "Reputation and YARA rules",
+            "text": "File hashes are checked on VirusTotal and MalwareBazaar, and remote IPs on AbuseIPDB, using your own free keys stored encrypted. Files are never uploaded: only hashes and public IPs. The full scan adds local YARA rules."
+          },
+          {
+            "title": "Reversible remediation",
+            "text": "Disable a startup entry, task or extension, or quarantine a file, always with confirmation and a backup. Every action can be undone from the history."
+          },
+          {
+            "title": "Daily scan, and for Mac too",
+            "text": "A scheduled task scans your PC every day and shows a notification if something important appears or Defender was turned off. On macOS it checks LaunchAgents, LaunchDaemons, SIP, Gatekeeper, FileVault, profiles and system extensions."
+          }
+        ],
+        "features": [
+          "Scan-to-scan changes",
+          "VirusTotal, MalwareBazaar and AbuseIPDB",
+          "Local YARA rules",
+          "Remediation with undo",
+          "Windows 10/11 and macOS 12+",
+          "No telemetry"
+        ],
+        "card_desc": "Startup, tasks, services, network, extensions and accounts, with explained risk and what changed since the last scan.",
+        "card_tag": "Security auditor for Windows and Mac"
+      },
+      "pt": {
+        "meta_title": "Auditor de segurança grátis para Windows e Mac — Sentinela | Korelabs",
+        "meta_description": "Sentinela: auditor de segurança pessoal. Mostra o que inicia, persiste e se conecta no seu computador e o que mudou desde a última análise. Complementa o Defender. Grátis e local.",
+        "h1": "Sentinela — Auditor de segurança pessoal",
+        "tagline": "Veja o que inicia, persiste e se conecta no seu computador, e o que mudou desde a última vez",
+        "intro": "O Sentinela revisa em minutos os lugares onde o malware se esconde: programas de inicialização, tarefas agendadas, serviços, drivers, extensões do navegador, conexões de rede e contas. Cada achado vem explicado em linguagem simples, com nível de risco e uma ação sugerida. Complementa o Microsoft Defender (não o substitui) e tudo é analisado no seu computador. A interface está em espanhol.",
+        "sections": [
+          {
+            "title": "O que mudou desde a última análise",
+            "text": "O que mais denuncia uma invasão é o que é novo: um programa que passou a iniciar sozinho, uma tarefa que apareceu, mais uma conta de administrador. O Sentinela compara cada análise com a anterior (ou com a sua linha de base de \"computador limpo\") e mostra só as novidades."
+          },
+          {
+            "title": "Reputação e regras YARA",
+            "text": "Consulta o hash dos arquivos no VirusTotal e no MalwareBazaar, e os IPs remotos no AbuseIPDB, com suas próprias chaves gratuitas guardadas criptografadas. Nunca envia arquivos: só hashes e IPs públicos. A análise completa adiciona regras YARA locais."
+          },
+          {
+            "title": "Correção reversível",
+            "text": "Desativar uma inicialização, tarefa ou extensão, ou colocar um arquivo em quarentena, sempre com confirmação e backup. Cada ação pode ser desfeita pelo histórico."
+          },
+          {
+            "title": "Análise diária, e também para Mac",
+            "text": "Uma tarefa agendada analisa o seu PC todos os dias e avisa com uma notificação se aparecer algo importante ou se o Defender foi desligado. No macOS revisa LaunchAgents, LaunchDaemons, SIP, Gatekeeper, FileVault, perfis e extensões do sistema."
+          }
+        ],
+        "features": [
+          "Diferenças entre análises",
+          "VirusTotal, MalwareBazaar e AbuseIPDB",
+          "Regras YARA locais",
+          "Correção com desfazer",
+          "Windows 10/11 e macOS 12+",
+          "Sem telemetria"
+        ],
+        "card_desc": "Inicialização, tarefas, serviços, rede, extensões e contas, com risco explicado e o que mudou desde a última análise.",
+        "card_tag": "Auditor de segurança para Windows e Mac"
+      }
     }
   ]
 }

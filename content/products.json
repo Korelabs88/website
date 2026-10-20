@@ -389,12 +389,12 @@
     {
       "id": "sentinela",
       "name": "Sentinela",
-      "version": "v1.0.0",
+      "version": "v1.0.1",
       "logo": "/assets/img/sentinela-logo.png",
       "downloads": {
-        "setup": "https://github.com/Korelabs88/sentinela-releases/releases/download/v1.0.0/Sentinela-1.0.0-Setup.exe",
-        "portable": "https://github.com/Korelabs88/sentinela-releases/releases/download/v1.0.0/Sentinela-1.0.0-Portable.zip",
-        "macos": "https://github.com/Korelabs88/sentinela-releases/releases/download/v1.0.0/Sentinela-1.0.0-macOS.zip"
+        "setup": "https://github.com/Korelabs88/sentinela-releases/releases/download/v1.0.1/Sentinela-1.0.1-Setup.exe",
+        "portable": "https://github.com/Korelabs88/sentinela-releases/releases/download/v1.0.1/Sentinela-1.0.1-Portable.zip",
+        "macos": "https://github.com/Korelabs88/sentinela-releases/releases/download/v1.0.1/Sentinela-1.0.1-macOS.zip"
       },
       "es": {
         "meta_title": "Auditor de seguridad gratis para Windows y Mac — Sentinela | Korelabs",
